@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
-#include "MyPlayerController.generated.h"
+#include "PlayerControllerShooter.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class SHOOTER_API AMyPlayerController : public APlayerController
+class SHOOTER_API APlayerControllerShooter : public APlayerController
 {
 	GENERATED_BODY()
 			

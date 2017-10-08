@@ -1,7 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "GameModeBaseShooter.h"
-#include "MyPlayerController.h"
+#include "PlayerControllerShooter.h"
 
 AGameModeBaseShooter::AGameModeBaseShooter(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
@@ -10,7 +10,7 @@ AGameModeBaseShooter::AGameModeBaseShooter(const FObjectInitializer& ObjectIniti
 	bPauseable = true;
 	bStartPlayersAsSpectators = false;
 
-	PlayerControllerClass = AMyPlayerController::StaticClass();
+	PlayerControllerClass = APlayerControllerShooter::StaticClass();
 
 	//DefaultPawnClass = ADefaultPawn::StaticClass();
 	//PlayerStateClass = APlayerState::StaticClass();
