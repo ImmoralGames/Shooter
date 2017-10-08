@@ -5,13 +5,21 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "FloatingPawnMovementShip.h"
+#include "Engine.h"
+#include "Engine/World.h"
+#include "DamageTypeShipExplosion.h"
+#include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 
 
 // Sets default values
 APawnShip::APawnShip()
 {
+	this->MaxHealth = this->Health = 100;
 	this->BaseMaxSpeed = 1200;
 	this->BaseAcceleration = 4000;
+	this->ExplosionDamage = 100;
+	this->ExplosionRange = 200;
+	this->bCanExplode = false;
 
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -35,7 +43,7 @@ APawnShip::APawnShip()
 	this->MovementComponent = CreateDefaultSubobject<UFloatingPawnMovementShip>(TEXT("ShipMovement"));
 	this->MovementComponent->UpdatedComponent = RootComponent;
 	
-	//AutoPossessPlayer = EAutoReceiveInput::Player0;
+	AutoPossessPlayer = EAutoReceiveInput::Player0;
 
 	//Mesh = CreateDefaultSubobject<UMeshComponent>(TEXT("ShipMesh"));
 	//if (Mesh)
@@ -49,6 +57,8 @@ APawnShip::APawnShip()
 void APawnShip::BeginPlay()
 {
 	Super::BeginPlay();
+
+	this->Health = this->MaxHealth;
 	this->MovementComponent->Acceleration	= this->BaseAcceleration;
 	this->MovementComponent->MaxSpeed		= this->BaseMaxSpeed;
 }
@@ -65,4 +75,65 @@ void APawnShip::Tick(float DeltaTime)
 void APawnShip::AddInputVector(const FVector & direction) const
 {
 	this->MovementComponent->AddInputVector(direction);
+}
+
+void APawnShip::Explode()
+{
+	if (this->bCanExplode)
+	{
+		TArray<AActor*> actorsToIgnore = TArray<AActor*>();
+		actorsToIgnore.Add(this);
+
+		bool hasDamagedSomeone = UGameplayStatics::ApplyRadialDamage(this,
+			this->ExplosionDamage, this->GetActorLocation(), this->ExplosionRange,
+			TSubclassOf<UDamageType>(UDamageTypeShipExplosion::StaticClass()),
+			actorsToIgnore, this, this->GetController(),
+			false, ECollisionChannel::ECC_Visibility);
+
+		this->Destroy();
+	}
+}
+
+TArray<APawnShip*> APawnShip::GetShipsInRange(float range) const
+{
+	TArray<APawnShip*> retval = TArray<APawnShip*>();
+
+	const UWorld* const world = this->GetWorld();
+	if (world == nullptr)
+	{
+		return retval;
+	}
+	
+	APawn* pawn;
+	APawnShip* ship;
+	float distance;
+
+	for (FConstPawnIterator itPawn = world->GetPawnIterator(); itPawn; ++itPawn)
+	{
+		pawn = itPawn->Get();
+		if (pawn != nullptr)
+		{
+			ship = Cast<APawnShip>(pawn);
+			if (ship != nullptr && ship->GetController()->IsPlayerController())
+			{
+				distance = this->GetDistanceTo(ship);
+
+				if (distance < range)
+				{
+					retval.Add(ship);
+				}
+			}
+		}
+	}
+
+	return retval;
+}
+
+float APawnShip::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	this->Health -= Damage;
+	if (this->Health <= 0)
+		this->Destroy();
+	
+	return Damage;
 }
