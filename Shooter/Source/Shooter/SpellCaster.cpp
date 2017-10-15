@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "SpellCaster.h"
+#include "Spell.h"
 
 
 // Sets default values for this component's properties
@@ -10,60 +11,54 @@ USpellCaster::USpellCaster()
 	// off to improve performance if you don't need them.
 	PrimaryComponentTick.bCanEverTick = true;
 
-	this->CastTime = 0;				// Instant charge cast
-	this->CooldownTime = 0;			// Instant cooldown
-	this->ChargesCountMax = 1;		// One stack spell
-	this->ChargeReloadTime = 5;		// 5 seconds
-	this->bIsReloadable = true;		// Can reload charges
 
 }
 
-
-// Called when the game starts
-void USpellCaster::BeginPlay()
+void USpellCaster::SetSpell(USpell* spell)
 {
-	Super::BeginPlay();
+	this->Spell = spell;
 
-	this->ChargesCount = this->ChargesCountMax; // Starts the game with every charges
-
-	this->ReloadTimer = this->ReloadTimer;
+	this->ChargesCount = this->Spell->ChargesCountMax; // Starts the game with every charges
+	this->ReloadTimer = this->Spell->ChargeReloadTime;
 	this->CastingTimer = 0;
 	this->CooldownTimer = 0;
 }
-
 
 // Called every frame
 void USpellCaster::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	if (this->bIsReloadable)
+	if (this->Spell != NULL)
 	{
-		if (this->ChargesCount < this->ChargesCountMax)
+		if (this->Spell->bIsReloadable)
 		{
-			this->ReloadTimer -= DeltaTime;
-			if (this->ReloadTimer <= 0)
+			if (this->ChargesCount < this->Spell->ChargesCountMax)
 			{
-				this->ReloadTimer += this->ChargeReloadTime;
-				this->GetNewCharge();
+				this->ReloadTimer -= DeltaTime;
+				if (this->ReloadTimer <= 0)
+				{
+					this->ReloadTimer += this->Spell->ChargeReloadTime;
+					this->GetNewCharge();
+				}
 			}
 		}
-	}
 
-	if (this->CastingTimer > 0)
-	{
-		this->CastingTimer -= DeltaTime;
-		if (this->CastingTimer <= 0)
+		if (this->CastingTimer > 0)
 		{
-			this->OnCastFinished();
+			this->CastingTimer -= DeltaTime;
+			if (this->CastingTimer <= 0)
+			{
+				this->OnCastFinished();
+			}
 		}
-	}
 
-	if (this->CooldownTimer > 0)
-	{
-		this->CooldownTimer -= DeltaTime;
-		if (this->CooldownTimer <= 0)
-			this->CooldownTimer = 0;
+		if (this->CooldownTimer > 0)
+		{
+			this->CooldownTimer -= DeltaTime;
+			if (this->CooldownTimer <= 0)
+				this->CooldownTimer = 0;
+		}
 	}
 }
 
@@ -71,12 +66,15 @@ void USpellCaster::OnCastFinished()
 {
 	this->ChargesCount -= 1;
 	this->CastingTimer = 0;
-	this->CooldownTimer = this->CooldownTime;
-	this->DoSpellAction();
+	this->CooldownTimer = this->Spell->CooldownTime;
+	this->Spell->Casted(this->GetOwner());
 }
 
 bool USpellCaster::CanCast()
 {
+	if (this->Spell == NULL)
+		return false;
+
 	if (this->CastingTimer > 0)
 		return false;
 
@@ -93,9 +91,9 @@ void USpellCaster::CastSpell()
 {
 	if (this->CanCast())
 	{
-		if (this->CastTime > 0)
+		if (this->CastingTimer > 0)
 		{
-			this->CastingTimer = this->CastTime;
+			this->CastingTimer = this->Spell->CastTime;
 		}
 		else 
 		{
@@ -106,13 +104,16 @@ void USpellCaster::CastSpell()
 
 void USpellCaster::GetNewCharge()
 {
-	if (this->ChargesCount < this->ChargesCountMax)
+	if (this->Spell != NULL)
 	{
-		this->ChargesCount++;
-	}
+		if (this->ChargesCount < this->Spell->ChargesCountMax)
+		{
+			this->ChargesCount++;
+		}
 
-	if (this->ChargesCount == this->ChargesCountMax)
-	{
-		this->ReloadTimer = this->ChargeReloadTime;
+		if (this->ChargesCount == this->Spell->ChargesCountMax)
+		{
+			this->ReloadTimer = this->Spell->ChargeReloadTime;
+		}
 	}
 }

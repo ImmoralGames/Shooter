@@ -1,20 +1,20 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "SpellCasterSpawn.h"
+#include "SpellSpawn.h"
 #include "PawnShip.h"
 #include "Runtime/Engine/Classes/Engine/World.h"
 
-USpellCasterSpawn::USpellCasterSpawn() : USpellCaster()
+USpellSpawn::USpellSpawn() : USpell()
 {
 
 }
 
-void USpellCasterSpawn::DoSpellAction()
+void USpellSpawn::Casted(AActor* caster)
 {
 	if (this->SpawnableShips.Num() == 0)
 		return;
 
-	UWorld* world = this->GetWorld();
+	UWorld* world = caster->GetWorld();
 
 	int32 randomIndex = FMath::RandRange(0, this->SpawnableShips.Num() - 1);
 	UClass* shipClass = this->SpawnableShips[randomIndex];
@@ -23,7 +23,7 @@ void USpellCasterSpawn::DoSpellAction()
 	
 	APawnShip* spawnedShip = world->SpawnActor<APawnShip>(
 		shipClass,
-		this->GetOwner()->GetTransform(),
+		caster->GetTransform(),
 		spawnParams);
 	
 }

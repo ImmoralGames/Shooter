@@ -5,7 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Building.h"
-#include "SpellCasterSpawn.h"
+#include "SpellCaster.h"
+#include "SpellSpawn.h"
 #include "BuildingSpawner.generated.h"
 
 UCLASS()
@@ -14,12 +15,15 @@ class SHOOTER_API ABuildingSpawner : public ABuilding
 	GENERATED_BODY()
 
 private:
-	UPROPERTY(Category = "Building|Spells", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USpellCasterSpawn* SpawnCaster;
+	//UPROPERTY(Category = "Building", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USpellCaster* SpawnCaster;
 	
 public:	
 	// Sets default values for this actor's properties
 	ABuildingSpawner();
+
+	UPROPERTY(Category = "Building", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USpellSpawn* SpawningSpell;
 
 protected:
 	// Called when the game starts or when spawned

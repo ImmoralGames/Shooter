@@ -2,14 +2,19 @@
 
 #include "BuildingSpawner.h"
 #include "Building.h"
-#include "SpellCasterSpawn.h"
+#include "SpellSpawn.h"
 
 
 // Sets default values
 ABuildingSpawner::ABuildingSpawner() : ABuilding()
 {
-	USpellCasterSpawn* spawnCaster = CreateDefaultSubobject<USpellCasterSpawn>(TEXT("SpawnCaster"));
-	
+	this->SpawningSpell = NewObject<USpellSpawn>(
+		(UObject*)GetTransientPackage(), 
+		USpellSpawn::StaticClass());
+
+	USpellCaster* spawnCaster = CreateDefaultSubobject<USpellCaster>(TEXT("SpawnCaster"));
+	spawnCaster->SetSpell(this->SpawningSpell);
+
 	this->SpawnCaster = spawnCaster;
 }
 
@@ -17,7 +22,8 @@ ABuildingSpawner::ABuildingSpawner() : ABuilding()
 void ABuildingSpawner::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	if(this->SpawningSpell != NULL)
+		this->SpawnCaster->SetSpell(this->SpawningSpell);
 }
 
 // Called every frame

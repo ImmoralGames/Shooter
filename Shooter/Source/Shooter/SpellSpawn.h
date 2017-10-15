@@ -3,25 +3,24 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "SpellCaster.h"
+#include "Spell.h"
 #include "PawnShip.h"
-#include "SpellCasterSpawn.generated.h"
+#include "SpellSpawn.generated.h"
 
 /**
  * 
  */
 UCLASS(ClassGroup = (Spell), BlueprintType, meta = (BlueprintSpawnableComponent))
-class SHOOTER_API USpellCasterSpawn : public USpellCaster
+class SHOOTER_API USpellSpawn : public USpell
 {
 	GENERATED_BODY()
 	
-protected:
-	virtual void DoSpellAction() override;
-
 public:
 	// Sets default values for this component's properties
-	USpellCasterSpawn();
+	USpellSpawn();
 	
 	UPROPERTY(Category = "Spell|Spawn", EditAnywhere, BlueprintReadOnly)
 	TArray<TSubclassOf<APawnShip>> SpawnableShips;
+	
+	virtual void Casted(AActor* caster) override;
 };
