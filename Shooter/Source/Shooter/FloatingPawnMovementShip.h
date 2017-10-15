@@ -9,7 +9,7 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(Blueprintable, BlueprintType)
 class SHOOTER_API UFloatingPawnMovementShip : public UFloatingPawnMovement
 {
 	GENERATED_BODY()
