@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "DamageTypeShipExplosion.h"
+#include "DamageTypeExplosion.h"
 
-UDamageTypeShipExplosion::UDamageTypeShipExplosion()
+UDamageTypeExplosion::UDamageTypeExplosion()
 {
 	this->bCausedByWorld = false;
 	this->bRadialDamageVelChange = false;
@@ -12,5 +12,4 @@ UDamageTypeShipExplosion::UDamageTypeShipExplosion()
 	this->DestructibleDamageSpreadScale = 1;
 	this->DestructibleImpulse = 1;
 }
-
 

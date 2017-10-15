@@ -7,7 +7,7 @@
 #include "FloatingPawnMovementShip.h"
 #include "Engine.h"
 #include "Engine/World.h"
-#include "DamageTypeShipExplosion.h"
+#include "DamageTypeExplosion.h"
 #include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 
 
@@ -89,7 +89,7 @@ void APawnShip::Explode()
 
 		bool hasDamagedSomeone = UGameplayStatics::ApplyRadialDamage(this,
 			this->ExplosionDamage, this->GetActorLocation(), this->ExplosionRange,
-			TSubclassOf<UDamageType>(UDamageTypeShipExplosion::StaticClass()),
+			TSubclassOf<UDamageType>(UDamageTypeExplosion::StaticClass()),
 			actorsToIgnore, this, this->GetController(),
 			false, ECollisionChannel::ECC_Visibility);
 

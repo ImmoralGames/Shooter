@@ -4,18 +4,19 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/DamageType.h"
-#include "DamageTypeShipExplosion.generated.h"
+#include "DamageTypeExplosion.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class SHOOTER_API UDamageTypeShipExplosion : public UDamageType
+class SHOOTER_API UDamageTypeExplosion : public UDamageType
 {
 	GENERATED_BODY()
 	
 public:
-	UDamageTypeShipExplosion();
+	UDamageTypeExplosion();
+	
 	
 	
 };
