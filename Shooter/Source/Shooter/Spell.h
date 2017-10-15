@@ -10,7 +10,7 @@
 /**
  * 
  */
-UCLASS(abstract, BlueprintType, ClassGroup = (Spells))
+UCLASS(abstract, Blueprintable, BlueprintType, ClassGroup = (Spells))
 class SHOOTER_API USpell : public UDataAsset
 {
 	GENERATED_BODY()
@@ -36,11 +36,19 @@ public:
 	/** Tells whether the spell can reload its stack or not */
 	UPROPERTY(Category = "Spell|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	bool bIsReloadable;
+
+	/** Tells whether the spell can reload its stack or not */
+	UPROPERTY(Category = "Spell|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	bool bIsUltimate;
 	
 protected:
 	USpell();
 
+	UFUNCTION(BlueprintCallable, Category = "Spell")
+	virtual void Casted_Implementation(AActor* caster) PURE_VIRTUAL(USpell::Casted, );
+
 public:
-	virtual void Casted(AActor* caster) PURE_VIRTUAL(USpell::Casted, );
+	UFUNCTION(BlueprintNativeEvent, Category = "Spell")
+	void Casted(AActor* caster);
 
 };

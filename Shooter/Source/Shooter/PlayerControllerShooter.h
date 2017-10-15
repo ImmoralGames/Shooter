@@ -19,6 +19,12 @@ protected:
 	void SetupInputComponent() override;
 	void MoveShipForward(const float Value);
 	void MoveShipRight(const float Value);
-
-	
+	void CastSpellX();
+	void CastSpellY();
+	void CastSpellA();
+	void CastSpellB();
+	void CancelSpellX();
+	void CancelSpellY();
+	void CancelSpellA();
+	void CancelSpellB();
 };

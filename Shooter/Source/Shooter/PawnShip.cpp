@@ -9,7 +9,7 @@
 #include "Engine/World.h"
 #include "DamageTypeExplosion.h"
 #include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
-
+#include "SpellCaster.h"
 
 // Sets default values
 APawnShip::APawnShip()
@@ -42,9 +42,19 @@ APawnShip::APawnShip()
 	UFloatingPawnMovementShip* FloatingPawnMovementShip = CreateDefaultSubobject<UFloatingPawnMovementShip>(TEXT("ShipMovement"));
 	FloatingPawnMovementShip->UpdatedComponent = BaseCollision;
 
+	USpellCaster* spellCasterX = CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterX"));
+	USpellCaster* spellCasterY = CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterY"));
+	USpellCaster* spellCasterA = CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterA"));
+	USpellCaster* spellCasterB = CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterB"));
+
 	this->RootComponent = BaseCollision;
 	this->CameraSpringArm = SpringArm;
 	this->MovementComponent = FloatingPawnMovementShip;
+
+	this->SpellCasterX = spellCasterX;
+	this->SpellCasterY = spellCasterY;
+	this->SpellCasterA = spellCasterA;
+	this->SpellCasterB = spellCasterB;
 	
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 
@@ -140,3 +150,13 @@ float APawnShip::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent
 	
 	return Damage;
 }
+
+void APawnShip::CastSpellX() { this->SpellCasterX->CastSpell(); }
+void APawnShip::CastSpellY() { this->SpellCasterY->CastSpell(); }
+void APawnShip::CastSpellA() { this->SpellCasterA->CastSpell(); }
+void APawnShip::CastSpellB() { this->SpellCasterB->CastSpell(); }
+
+void APawnShip::CancelSpellX() { this->SpellCasterX->CancelCasting(); }
+void APawnShip::CancelSpellY() { this->SpellCasterY->CancelCasting(); }
+void APawnShip::CancelSpellA() { this->SpellCasterA->CancelCasting(); }
+void APawnShip::CancelSpellB() { this->SpellCasterB->CancelCasting(); }

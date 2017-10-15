@@ -22,5 +22,6 @@ public:
 	UPROPERTY(Category = "Spell|Spawn", EditAnywhere, BlueprintReadOnly)
 	TArray<TSubclassOf<APawnShip>> SpawnableShips;
 	
-	virtual void Casted(AActor* caster) override;
+protected:
+	virtual void Casted_Implementation(AActor* caster) override;
 };

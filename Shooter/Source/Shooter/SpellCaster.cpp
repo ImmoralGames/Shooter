@@ -102,6 +102,11 @@ void USpellCaster::CastSpell()
 	}
 }
 
+void USpellCaster::CancelCasting() 
+{
+	this->CastingTimer = 0;
+}
+
 void USpellCaster::GetNewCharge()
 {
 	if (this->Spell != NULL)

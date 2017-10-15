@@ -6,6 +6,7 @@
 #include "GameFramework/Pawn.h"
 #include "FloatingPawnMovementShip.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "SpellCaster.h"
 #include "PawnShip.generated.h"
 
 UCLASS()
@@ -44,8 +45,20 @@ private:
 	UPROPERTY(Category = "Ship|Movement", BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UFloatingPawnMovementShip * MovementComponent;
 	
-	UPROPERTY(Category = "Ship", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	USpringArmComponent* CameraSpringArm;
+
+	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USpellCaster* SpellCasterY;
+
+	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USpellCaster* SpellCasterX;
+
+	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USpellCaster* SpellCasterA;
+
+	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USpellCaster* SpellCasterB;
 		
 // Constructors
 public:
@@ -65,6 +78,16 @@ public:
 
 	virtual float TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 
+	void CastSpellX();
+	void CastSpellY();
+	void CastSpellA();
+	void CastSpellB();
+
+	void CancelSpellX();
+	void CancelSpellY();
+	void CancelSpellA();
+	void CancelSpellB();
+	
 // Public methods
 public:
 	

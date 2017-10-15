@@ -9,6 +9,5 @@ USpell::USpell()
 	this->ChargesCountMax = 1;		// One stack spell
 	this->ChargeReloadTime = 5;		// 5 seconds
 	this->bIsReloadable = true;		// Can reload charges
+	this->bIsUltimate = false;
 }
-
-

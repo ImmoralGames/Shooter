@@ -32,7 +32,7 @@ private:
 	int32 ChargesCount;
 	
 	/** Current setted spell */
-	UPROPERTY(Category = "Spell", VisibleAnywhere, Transient, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = "Spell", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	USpell* Spell;
 
 public:	
@@ -57,6 +57,9 @@ public:
 
 	// Called to cast the spell
 	void CastSpell();
+
+	// Called to cancel the casting
+	void CancelCasting();
 
 	void SetSpell(USpell* spell);
 };
