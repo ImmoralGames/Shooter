@@ -24,14 +24,13 @@ APawnShip::APawnShip()
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	UBoxComponent *BaseCollision;
-	RootComponent = BaseCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("ShipBaseCollision"));
+	UBoxComponent *BaseCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("ShipBaseCollision"));
 	BaseCollision->InitBoxExtent(FVector(50, 50, 50));
 	BaseCollision->CanCharacterStepUpOn = ECB_No;
 	
 	USpringArmComponent* SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraAttachmentArm"));
-	SpringArm->SetupAttachment(RootComponent);
-	SpringArm->RelativeRotation = FRotator(-90.f, 0.f, 0.f);
+	SpringArm->SetupAttachment(BaseCollision);
+	SpringArm->RelativeRotation = FRotator(300.f, 0.f, 0.f);
 	SpringArm->TargetArmLength = 800.0f;
 	SpringArm->bEnableCameraLag = true;
 	SpringArm->CameraLagSpeed = 10.0f;
@@ -40,8 +39,12 @@ APawnShip::APawnShip()
 	UCameraComponent* Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("ActualCamera"));
 	Camera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
 
-	this->MovementComponent = CreateDefaultSubobject<UFloatingPawnMovementShip>(TEXT("ShipMovement"));
-	this->MovementComponent->UpdatedComponent = RootComponent;
+	UFloatingPawnMovementShip* FloatingPawnMovementShip = CreateDefaultSubobject<UFloatingPawnMovementShip>(TEXT("ShipMovement"));
+	FloatingPawnMovementShip->UpdatedComponent = BaseCollision;
+
+	this->RootComponent = BaseCollision;
+	this->CameraSpringArm = SpringArm;
+	this->MovementComponent = FloatingPawnMovementShip;
 	
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 

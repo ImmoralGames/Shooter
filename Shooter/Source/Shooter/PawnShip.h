@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "FloatingPawnMovementShip.h"
+#include "GameFramework/SpringArmComponent.h"
 #include "PawnShip.generated.h"
 
 UCLASS()
@@ -42,6 +43,9 @@ private:
 
 	UPROPERTY(Category = "Ship|Movement", BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UFloatingPawnMovementShip * MovementComponent;
+	
+	UPROPERTY(Category = "Ship", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	USpringArmComponent* CameraSpringArm;
 		
 // Constructors
 public:
