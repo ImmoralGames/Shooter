@@ -160,3 +160,19 @@ void APawnShip::CancelSpellX() { this->SpellCasterX->CancelCasting(); }
 void APawnShip::CancelSpellY() { this->SpellCasterY->CancelCasting(); }
 void APawnShip::CancelSpellA() { this->SpellCasterA->CancelCasting(); }
 void APawnShip::CancelSpellB() { this->SpellCasterB->CancelCasting(); }
+
+
+int32 APawnShip::GetCurrentHealth()
+{
+	return this->Health;
+}
+
+int32 APawnShip::GetMaxHealth()
+{
+	return this->MaxHealth;
+}
+
+float APawnShip::GetPercentHealth()
+{
+	return (float)this->Health / this->MaxHealth;
+}

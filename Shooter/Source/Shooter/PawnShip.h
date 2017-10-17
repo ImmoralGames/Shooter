@@ -99,4 +99,13 @@ public:
 
 	UFUNCTION(Category = "AI Tools", BlueprintCallable, meta = (DefaultToSelf))
 	TArray<APawnShip*> GetShipsInRange(float range) const;
+
+	UFUNCTION(Category = "Ship|stats", BlueprintPure, meta = (DefaultToSelf))
+	int32 GetCurrentHealth();
+
+	UFUNCTION(Category = "Ship|stats", BlueprintPure, meta = (DefaultToSelf))
+	int32 GetMaxHealth();
+
+	UFUNCTION(Category = "Ship|stats", BlueprintPure, meta = (DefaultToSelf))
+	float GetPercentHealth();
 };
