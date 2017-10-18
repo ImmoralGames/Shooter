@@ -26,7 +26,7 @@ AWeaponProjectile::AWeaponProjectile()
 
 void AWeaponProjectile::InitProjectileCollision()
 {
-	this->BaseCollision->InitSphereRadius(5);
+	this->BaseCollision->InitSphereRadius(25);
 	this->BaseCollision->CanCharacterStepUpOn = ECB_No;
 	this->BaseCollision->SetCanEverAffectNavigation(false);
 

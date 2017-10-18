@@ -28,7 +28,7 @@ APawnBuilding::APawnBuilding()
 
 void APawnBuilding::InitBuildingCollision()
 {
-	this->BaseCollision->InitBoxExtent(FVector(50, 50, 50));
+	this->BaseCollision->InitBoxExtent(FVector(500, 500, 500));
 	this->BaseCollision->CanCharacterStepUpOn = ECB_No;
 	this->BaseCollision->SetCanEverAffectNavigation(false);
 

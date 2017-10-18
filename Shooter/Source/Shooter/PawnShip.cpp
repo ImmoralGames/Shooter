@@ -31,8 +31,8 @@
 APawnShip::APawnShip()
 {
 	this->MaxHealth = this->Health = 100;
-	this->BaseMaxSpeed = 1200;
-	this->BaseAcceleration = 4000;
+	this->BaseMaxSpeed = 4000;
+	this->BaseAcceleration = 8000;
 	this->ExplosionDamage = 100;
 	this->ExplosionRange = 200;
 	this->bCanExplode = false;
@@ -46,8 +46,8 @@ APawnShip::APawnShip()
 	
 	USpringArmComponent* SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraAttachmentArm"));
 	SpringArm->SetupAttachment(baseCollision);
-	SpringArm->RelativeRotation = FRotator(300.f, 0.f, 0.f);
-	SpringArm->TargetArmLength = 800.0f;
+	SpringArm->RelativeRotation = FRotator(320.f, 0.f, 0.f);
+	SpringArm->TargetArmLength = 3500.0f;
 	SpringArm->bEnableCameraLag = true;
 	SpringArm->CameraLagSpeed = 10.0f;
 	SpringArm->bDoCollisionTest = false;
@@ -93,7 +93,7 @@ APawnShip::APawnShip()
 
 void APawnShip::InitShipCollision()
 {	
-	this->BaseCollision->InitBoxExtent(FVector(50, 50, 50));
+	this->BaseCollision->InitBoxExtent(FVector(300, 150, 150));
 	this->BaseCollision->CanCharacterStepUpOn = ECB_No;
 
 	this->BaseCollision->SetCollisionEnabled(ECollisionEnabled::Type::QueryAndPhysics);
