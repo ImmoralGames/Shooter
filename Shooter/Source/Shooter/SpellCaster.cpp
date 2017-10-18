@@ -75,7 +75,7 @@ void USpellCaster::OnCastFinished()
 	this->ChargesCount -= 1;
 	this->CastingTimer = 0;
 	this->CooldownTimer = this->Spell->CooldownTime;
-	this->Spell->Casted(this->GetOwner());
+	this->Spell->Casted((APawn*)this->GetOwner());
 }
 
 bool USpellCaster::CanCast()

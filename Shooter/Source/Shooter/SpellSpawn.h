@@ -23,5 +23,5 @@ public:
 	TArray<TSubclassOf<APawnShip>> SpawnableShips;
 	
 protected:
-	virtual void Casted_Implementation(AActor* caster) override;
+	virtual void Casted_Implementation(APawn* caster) override;
 };

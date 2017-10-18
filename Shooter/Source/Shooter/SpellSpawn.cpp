@@ -9,7 +9,7 @@ USpellSpawn::USpellSpawn() : USpell()
 
 }
 
-void USpellSpawn::Casted_Implementation(AActor* caster)
+void USpellSpawn::Casted_Implementation(APawn* caster)
 {
 	if (this->SpawnableShips.Num() == 0)
 		return;
