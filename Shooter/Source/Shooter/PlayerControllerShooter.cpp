@@ -2,7 +2,7 @@
 
 #include "PlayerControllerShooter.h"
 #include "PawnShip.h"
-
+#include "Shooter.h"
 
 
 void APlayerControllerShooter::SetupInputComponent()
@@ -23,6 +23,16 @@ void APlayerControllerShooter::SetupInputComponent()
 	InputComponent->BindAction("BasicShoot", IE_Pressed, this, &APlayerControllerShooter::StartShootingBasicWeapon);
 	InputComponent->BindAction("BasicShoot", IE_Released, this, &APlayerControllerShooter::StopShootingBasicWeapon);
 
+}
+
+void APlayerControllerShooter::Possess(APawn* aPawn)
+{
+	if (aPawn->GetClass()->ImplementsInterface(UPawnTeamed::StaticClass()))
+	{
+		Cast<IPawnTeamed>(aPawn)->SetTeamID(PLAYER_TEAM_1);
+	}
+
+	Super::Possess(aPawn);
 }
 
 void APlayerControllerShooter::MoveShipForward(const float Value)

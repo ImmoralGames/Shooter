@@ -1,4 +1,4 @@
-// Ascii banners made with Bagill's ASCII Signature Generator using the Font: "Small"
+// Ascii banners made with Bagill's ASCII Signature Generator using the Font: "Small" (width:53)
 
 // ___________________________________________________ //
 //           ___         _         _                   //
@@ -19,6 +19,7 @@
 #include "SpellCaster.h"
 #include "WeaponShooter.h"
 #include "WeaponMiniShootingGun.h"
+#include "Shooter.h"
 
 // ___________________________________________________ //
 //   ___             _               _                 //
@@ -35,16 +36,16 @@ APawnShip::APawnShip()
 	this->ExplosionDamage = 100;
 	this->ExplosionRange = 200;
 	this->bCanExplode = false;
+	
+	this->TeamID = MONSTER_TEAM;
 
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	UBoxComponent *BaseCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("ShipBaseCollision"));
-	BaseCollision->InitBoxExtent(FVector(50, 50, 50));
-	BaseCollision->CanCharacterStepUpOn = ECB_No;
+	UBoxComponent *baseCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("ShipBaseCollision"));
 	
 	USpringArmComponent* SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraAttachmentArm"));
-	SpringArm->SetupAttachment(BaseCollision);
+	SpringArm->SetupAttachment(baseCollision);
 	SpringArm->RelativeRotation = FRotator(300.f, 0.f, 0.f);
 	SpringArm->TargetArmLength = 800.0f;
 	SpringArm->bEnableCameraLag = true;
@@ -55,7 +56,7 @@ APawnShip::APawnShip()
 	Camera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
 
 	UFloatingPawnMovementShip* FloatingPawnMovementShip = CreateDefaultSubobject<UFloatingPawnMovementShip>(TEXT("ShipMovement"));
-	FloatingPawnMovementShip->UpdatedComponent = BaseCollision;
+	FloatingPawnMovementShip->UpdatedComponent = baseCollision;
 	
 	USpellCaster* spellCasterY		= CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterY"));
 	USpellCaster* spellCasterX		= CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterX"));
@@ -65,7 +66,8 @@ APawnShip::APawnShip()
 	UWeaponShooter* basicWeaponShooter	= CreateDefaultSubobject<UWeaponShooter>(TEXT("WeaponShooterBasic"));
 	basicWeaponShooter->SetWeapon(UWeaponMiniShootingGun::StaticClass());
 
-	this->RootComponent = BaseCollision;
+	this->RootComponent = baseCollision;
+	this->BaseCollision = baseCollision;
 	this->CameraSpringArm = SpringArm;
 	this->MovementComponent = FloatingPawnMovementShip;
 
@@ -85,6 +87,20 @@ APawnShip::APawnShip()
 	//	Mesh->SetupAttachment(BaseCollision);
 	//	Mesh->SetCollisionProfileName(TEXT("Pawn"));
 	//}
+	
+	this->InitShipCollision();
+}
+
+void APawnShip::InitShipCollision()
+{	
+	this->BaseCollision->InitBoxExtent(FVector(50, 50, 50));
+	this->BaseCollision->CanCharacterStepUpOn = ECB_No;
+
+	this->BaseCollision->SetCollisionEnabled(ECollisionEnabled::Type::QueryAndPhysics);
+	this->BaseCollision->SetCollisionObjectType(ECollisionChannel::ECC_Pawn);
+	this->BaseCollision->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Block);
+	this->BaseCollision->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
+	this->BaseCollision->SetCollisionResponseToChannel(ECollisionChannel::ECC_Visibility, ECollisionResponse::ECR_Ignore);
 }
 
 // ___________________________________________________ //
@@ -107,6 +123,11 @@ int32 APawnShip::GetMaxHealth() const
 float APawnShip::GetPercentHealth() const
 {
 	return (float)this->Health / this->MaxHealth;
+}
+
+int32 APawnShip::GetTeamID() const 
+{
+	return this->TeamID;
 }
 
 TArray<APawnShip*> APawnShip::GetShipsInRange(float range) const
@@ -143,6 +164,19 @@ TArray<APawnShip*> APawnShip::GetShipsInRange(float range) const
 
 	return retval;
 }
+
+// ___________________________________________________ //
+//             ___      _   _                          //
+//            / __| ___| |_| |_ ___ _ _ ___            //
+//            \__ \/ -_)  _|  _/ -_) '_(_-<            //
+//            |___/\___|\__|\__\___|_| /__/            //
+// ___________________________________________________ //
+
+void APawnShip::SetTeamID(int32 teamID)
+{
+	this->TeamID = teamID;
+}
+
 
 // ___________________________________________________ //
 //              ___             _                      //

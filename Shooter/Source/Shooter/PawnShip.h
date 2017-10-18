@@ -3,16 +3,18 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Components/BoxComponent.h"
 #include "GameFramework/Pawn.h"
 #include "FloatingPawnMovementShip.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "SpellCaster.h"
 #include "WeaponShooter.h"
+#include "PawnTeamed.h"
 #include "PawnShip.generated.h"
 
 /** PawnShip is the base class of all ship pawns in a Shooter game */
 UCLASS(BlueprintType, Blueprintable, meta = (ShortTooltip = "A PawnShip is a pawn that acts as a ship for a Shooter game."))
-class SHOOTER_API APawnShip : public APawn
+class SHOOTER_API APawnShip : public APawn, public IPawnTeamed
 {
 	GENERATED_BODY()
 
@@ -47,8 +49,14 @@ private:
 	UPROPERTY(Category = "Ship|stats", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	float ExplosionRange;
 
+	/** The ship's team id */
+	UPROPERTY(Category = "Team", VisibleAnywhere, Transient, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	int32 TeamID;
+
 // Private reference properties
 private:
+
+	UBoxComponent* BaseCollision;
 
 	/** The component that makes the ship move */
 	UPROPERTY(Category = "Ship|Movement", BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
@@ -83,8 +91,13 @@ public:
 
 	/** Constructs the basic components and sets the default ship properties */
 	APawnShip();
+	
+protected:
 
-// Getters
+	UFUNCTION(Category = "Ship|Construction", BlueprintCallable, meta = (DefaultToSelf))
+	void InitShipCollision();
+
+// Public Getters
 public:
 
 	/** Returns the ships around this given ship, at the given range (or less) */
@@ -102,6 +115,17 @@ public:
 	/** Returns the ship's current health (in percent of its max health) */
 	UFUNCTION(Category = "Ship|stats", BlueprintPure, meta = (DefaultToSelf))
 	float GetPercentHealth() const;
+
+	/** Returns the ship's team ID */
+	UFUNCTION(BlueprintCallable, Category = "Team")
+	virtual int32 GetTeamID() const override;
+
+// Public Setters
+public:
+
+	/** Sets the ship's team ID */
+	UFUNCTION(BlueprintCallable, Category = "Team")
+	virtual void SetTeamID(int32 id) override;
 
 // Protected events
 protected:

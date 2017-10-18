@@ -3,6 +3,7 @@
 #include "AIControllerShooter.h"
 #include "PawnShip.h"
 #include "Engine/World.h"
+#include "Shooter.h"
 
 AAIControllerShooter::AAIControllerShooter()
 {
@@ -46,7 +47,7 @@ APawnShip* AAIControllerShooter::GetNearestPlayerShip() const
 		if (pawn != nullptr)
 		{
 			ship = Cast<APawnShip>(pawn);
-			if (ship != nullptr && ship->GetController()->IsPlayerController())
+			if (ship != nullptr && !IS_MONSTER_TEAM(ship->GetTeamID()))
 			{
 				distance = possessedShip->GetDistanceTo(ship);
 

@@ -13,7 +13,10 @@ UCLASS()
 class SHOOTER_API APlayerControllerShooter : public APlayerController
 {
 	GENERATED_BODY()
-			
+
+public:
+	virtual void Possess(APawn* aPawn) override;
+
 protected:
 
 	void SetupInputComponent() override;
