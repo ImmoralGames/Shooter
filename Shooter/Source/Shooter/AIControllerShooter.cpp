@@ -37,7 +37,7 @@ APawnShip* AAIControllerShooter::GetNearestPlayerShip() const
 	APawn* pawn;
 	APawnShip* ship;
 	APawnShip* nearest = nullptr;
-	float nearestDistance;
+	float nearestDistance = 0;
 	float distance;
 	
 	for(FConstPawnIterator itPawn = world->GetPawnIterator(); itPawn; ++itPawn)
