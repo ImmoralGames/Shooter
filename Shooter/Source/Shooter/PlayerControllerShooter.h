@@ -27,4 +27,6 @@ protected:
 	void CancelSpellY();
 	void CancelSpellA();
 	void CancelSpellB();
+	void StartShootingBasicWeapon();
+	void StopShootingBasicWeapon();
 };

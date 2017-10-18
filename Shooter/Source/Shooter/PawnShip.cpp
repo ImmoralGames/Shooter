@@ -1,4 +1,11 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Ascii banners made with Bagill's ASCII Signature Generator using the Font: "Small"
+
+// ___________________________________________________ //
+//           ___         _         _                   //
+//          |_ _|_ _  __| |_  _ __| |___ ___           //
+//           | || ' \/ _| | || / _` / -_|_-<           //
+//          |___|_||_\__|_|\_,_\__,_\___/__/           //
+// ___________________________________________________ //
 
 #include "PawnShip.h"
 #include "Components/BoxComponent.h"
@@ -10,8 +17,16 @@
 #include "DamageTypeExplosion.h"
 #include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 #include "SpellCaster.h"
+#include "WeaponShooter.h"
+#include "WeaponMiniShootingGun.h"
 
-// Sets default values
+// ___________________________________________________ //
+//   ___             _               _                 //
+//  / __|___ _ _  __| |_ _ _ _  _ __| |_ ___ _ _ ___   //
+// | (__/ _ \ ' \(_-<  _| '_| || / _|  _/ _ \ '_(_-<   //
+//  \___\___/_||_/__/\__|_|  \_,_\__|\__\___/_| /__/   //
+// ___________________________________________________ //
+
 APawnShip::APawnShip()
 {
 	this->MaxHealth = this->Health = 100;
@@ -41,11 +56,14 @@ APawnShip::APawnShip()
 
 	UFloatingPawnMovementShip* FloatingPawnMovementShip = CreateDefaultSubobject<UFloatingPawnMovementShip>(TEXT("ShipMovement"));
 	FloatingPawnMovementShip->UpdatedComponent = BaseCollision;
+	
+	USpellCaster* spellCasterY		= CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterY"));
+	USpellCaster* spellCasterX		= CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterX"));
+	USpellCaster* spellCasterA		= CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterA"));
+	USpellCaster* spellCasterB		= CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterB"));
 
-	USpellCaster* spellCasterX = CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterX"));
-	USpellCaster* spellCasterY = CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterY"));
-	USpellCaster* spellCasterA = CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterA"));
-	USpellCaster* spellCasterB = CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterB"));
+	UWeaponShooter* basicWeaponShooter	= CreateDefaultSubobject<UWeaponShooter>(TEXT("WeaponShooterBasic"));
+	basicWeaponShooter->SetWeapon(UWeaponMiniShootingGun::StaticClass());
 
 	this->RootComponent = BaseCollision;
 	this->CameraSpringArm = SpringArm;
@@ -55,8 +73,11 @@ APawnShip::APawnShip()
 	this->SpellCasterY = spellCasterY;
 	this->SpellCasterA = spellCasterA;
 	this->SpellCasterB = spellCasterB;
+
+	this->BasicWeaponShooter = basicWeaponShooter;
 	
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
+	AutoReceiveInput = EAutoReceiveInput::Player0;
 
 	//Mesh = CreateDefaultSubobject<UMeshComponent>(TEXT("ShipMesh"));
 	//if (Mesh)
@@ -66,45 +87,26 @@ APawnShip::APawnShip()
 	//}
 }
 
-// Called when the game starts or when spawned
-void APawnShip::BeginPlay()
-{
-	Super::BeginPlay();
+// ___________________________________________________ //
+//              ___     _   _                          //
+//             / __|___| |_| |_ ___ _ _ ___            //
+//            | (_ / -_)  _|  _/ -_) '_(_-<            //
+//             \___\___|\__|\__\___|_| /__/            //
+// ___________________________________________________ //
 
-	this->Health = this->MaxHealth;
-	this->MovementComponent->Acceleration	= this->BaseAcceleration;
-	this->MovementComponent->MaxSpeed		= this->BaseMaxSpeed;
+int32 APawnShip::GetCurrentHealth() const
+{
+	return this->Health;
 }
 
-// Called every frame
-void APawnShip::Tick(float DeltaTime)
+int32 APawnShip::GetMaxHealth() const
 {
-	Super::Tick(DeltaTime);
-
-
+	return this->MaxHealth;
 }
 
-// Called by script or blueprint to move the ship
-void APawnShip::AddInputVector(const FVector & direction) const
+float APawnShip::GetPercentHealth() const
 {
-	this->MovementComponent->AddInputVector(direction);
-}
-
-void APawnShip::Explode()
-{
-	if (this->bCanExplode)
-	{
-		TArray<AActor*> actorsToIgnore = TArray<AActor*>();
-		actorsToIgnore.Add(this);
-
-		bool hasDamagedSomeone = UGameplayStatics::ApplyRadialDamage(this,
-			this->ExplosionDamage, this->GetActorLocation(), this->ExplosionRange,
-			TSubclassOf<UDamageType>(UDamageTypeExplosion::StaticClass()),
-			actorsToIgnore, this, this->GetController(),
-			false, ECollisionChannel::ECC_Visibility);
-
-		this->Destroy();
-	}
+	return (float)this->Health / this->MaxHealth;
 }
 
 TArray<APawnShip*> APawnShip::GetShipsInRange(float range) const
@@ -116,7 +118,7 @@ TArray<APawnShip*> APawnShip::GetShipsInRange(float range) const
 	{
 		return retval;
 	}
-	
+
 	APawn* pawn;
 	APawnShip* ship;
 	float distance;
@@ -142,37 +144,120 @@ TArray<APawnShip*> APawnShip::GetShipsInRange(float range) const
 	return retval;
 }
 
+// ___________________________________________________ //
+//              ___             _                      //
+//             | __|_ _____ _ _| |_ ___                //
+//             | _|\ V / -_) ' \  _(_-<                //
+//             |___|\_/\___|_||_\__/__/                //
+// ___________________________________________________ //
+
+void APawnShip::BeginPlay()
+{
+	Super::BeginPlay();
+
+	if(!this->BasicWeaponShooter->HasWeaponLoaded())
+		this->BasicWeaponShooter->SetWeapon(UWeaponMiniShootingGun::StaticClass());
+
+	this->Health = this->MaxHealth;
+	this->MovementComponent->Acceleration	= this->BaseAcceleration;
+	this->MovementComponent->MaxSpeed		= this->BaseMaxSpeed;
+}
+
+void APawnShip::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+
+}
+
 float APawnShip::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
 	this->Health -= Damage;
 	if (this->Health <= 0)
 		this->Destroy();
-	
+
 	return Damage;
 }
 
-void APawnShip::CastSpellX() { this->SpellCasterX->CastSpell(); }
-void APawnShip::CastSpellY() { this->SpellCasterY->CastSpell(); }
-void APawnShip::CastSpellA() { this->SpellCasterA->CastSpell(); }
-void APawnShip::CastSpellB() { this->SpellCasterB->CastSpell(); }
+// ___________________________________________________ //
+//               _      _   _                          //
+//              /_\  __| |_(_)___ _ _  ___             //
+//             / _ \/ _|  _| / _ \ ' \(_-<             //
+//            /_/ \_\__|\__|_\___/_||_/__/             //
+// ___________________________________________________ //
 
-void APawnShip::CancelSpellX() { this->SpellCasterX->CancelCasting(); }
-void APawnShip::CancelSpellY() { this->SpellCasterY->CancelCasting(); }
-void APawnShip::CancelSpellA() { this->SpellCasterA->CancelCasting(); }
-void APawnShip::CancelSpellB() { this->SpellCasterB->CancelCasting(); }
+// ___________________________________________________ //
+//        ___                              _           //
+//       / __|___ _ __  _ __  __ _ _ _  __| |___       //
+//      | (__/ _ \ '  \| '  \/ _` | ' \/ _` (_-<       //
+//       \___\___/_|_|_|_|_|_\__,_|_||_\__,_/__/       //
+// ___________________________________________________ //
 
-
-int32 APawnShip::GetCurrentHealth()
+void APawnShip::Explode()
 {
-	return this->Health;
+	if (this->bCanExplode)
+	{
+		TArray<AActor*> actorsToIgnore = TArray<AActor*>();
+		actorsToIgnore.Add(this);
+
+		bool hasDamagedSomeone = UGameplayStatics::ApplyRadialDamage(this,
+			this->ExplosionDamage, this->GetActorLocation(), this->ExplosionRange,
+			TSubclassOf<UDamageType>(UDamageTypeExplosion::StaticClass()),
+			actorsToIgnore, this, this->GetController(),
+			false, ECollisionChannel::ECC_Visibility);
+
+		this->Destroy();
+	}
 }
 
-int32 APawnShip::GetMaxHealth()
-{
-	return this->MaxHealth;
+void APawnShip::CastSpellX() { 
+	this->SpellCasterX->CastSpell(); 
 }
 
-float APawnShip::GetPercentHealth()
+void APawnShip::CastSpellY() { 
+	this->SpellCasterY->CastSpell(); 
+}
+
+void APawnShip::CastSpellA() { 
+	this->SpellCasterA->CastSpell(); 
+}
+
+void APawnShip::CastSpellB() { 
+	this->SpellCasterB->CastSpell(); 
+}
+
+void APawnShip::CancelSpellX() { 
+	this->SpellCasterX->CancelCasting(); 
+}
+
+void APawnShip::CancelSpellY() { 
+	this->SpellCasterY->CancelCasting(); 
+}
+
+void APawnShip::CancelSpellA() {
+	this->SpellCasterA->CancelCasting(); 
+}
+
+void APawnShip::CancelSpellB() { 
+	this->SpellCasterB->CancelCasting(); 
+}
+
+void APawnShip::ShootBasicWeapon()
 {
-	return (float)this->Health / this->MaxHealth;
+	this->BasicWeaponShooter->ShootAsap();
+}
+
+void APawnShip::StartShootingBasicWeapon()
+{
+	this->BasicWeaponShooter->StartShooting();
+}
+
+void APawnShip::StopShootingBasicWeapon()
+{
+	this->BasicWeaponShooter->StopShooting();
+}
+
+void APawnShip::AddInputVector(const FVector & direction) const
+{
+	this->MovementComponent->AddInputVector(direction);
 }

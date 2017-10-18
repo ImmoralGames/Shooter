@@ -20,6 +20,9 @@ void APlayerControllerShooter::SetupInputComponent()
 	InputComponent->BindAction("CastSpellA", IE_Released, this, &APlayerControllerShooter::CancelSpellA);
 	InputComponent->BindAction("CastSpellB", IE_Pressed, this, &APlayerControllerShooter::CastSpellB);
 	InputComponent->BindAction("CastSpellB", IE_Released, this, &APlayerControllerShooter::CancelSpellB);
+	InputComponent->BindAction("BasicShoot", IE_Pressed, this, &APlayerControllerShooter::StartShootingBasicWeapon);
+	InputComponent->BindAction("BasicShoot", IE_Released, this, &APlayerControllerShooter::StopShootingBasicWeapon);
+
 }
 
 void APlayerControllerShooter::MoveShipForward(const float Value)
@@ -115,5 +118,23 @@ void APlayerControllerShooter::CancelSpellB()
 	if (pawn)
 	{
 		pawn->CancelSpellB();
+	}
+}
+
+void APlayerControllerShooter::StartShootingBasicWeapon()
+{
+	auto pawn = Cast<APawnShip>(this->GetPawn());
+	if (pawn)
+	{
+		pawn->StartShootingBasicWeapon();
+	}
+}
+
+void APlayerControllerShooter::StopShootingBasicWeapon()
+{
+	auto pawn = Cast<APawnShip>(this->GetPawn());
+	if (pawn)
+	{
+		pawn->StopShootingBasicWeapon();
 	}
 }
