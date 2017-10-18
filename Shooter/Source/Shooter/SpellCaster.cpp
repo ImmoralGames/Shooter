@@ -24,6 +24,14 @@ void USpellCaster::SetSpell(USpell* spell)
 	this->CooldownTimer = 0;
 }
 
+
+void USpellCaster::SetSpell(TSubclassOf<USpell> spellType) 
+{
+	USpell* spell = NewObject<USpell>((UObject*)GetTransientPackage(), spellType);
+	if(spell)
+		this->SetSpell(spell);
+}
+
 // Called every frame
 void USpellCaster::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {

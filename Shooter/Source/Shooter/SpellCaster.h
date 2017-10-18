@@ -62,4 +62,6 @@ public:
 	void CancelCasting();
 
 	void SetSpell(USpell* spell);
+
+	void SetSpell(TSubclassOf<USpell> spellType);
 };

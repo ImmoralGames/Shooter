@@ -45,7 +45,7 @@ protected:
 	USpell();
 
 	UFUNCTION(BlueprintCallable, Category = "Spell")
-	virtual void Casted_Implementation(AActor* caster) PURE_VIRTUAL(USpell::Casted, );
+	virtual void Casted_Implementation(AActor* caster) PURE_VIRTUAL(USpell::Casted_Implementation, );
 
 public:
 	UFUNCTION(BlueprintNativeEvent, Category = "Spell")
