@@ -1,29 +1,56 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "Building.h"
+#include "PawnBuilding.h"
 #include "DamageTypeExplosion.h"
 #include "Engine/World.h"
 #include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 #include "Components/BoxComponent.h"
+#include "Shooter.h"
 
 
 // Sets default values
-ABuilding::ABuilding()
+APawnBuilding::APawnBuilding()
 {
 	this->MaxHealth = this->Health = 100;
 
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	UBoxComponent *BaseCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("BuildingBaseCollision"));
-	BaseCollision->InitBoxExtent(FVector(50, 50, 50));
-	BaseCollision->CanCharacterStepUpOn = ECB_No;
+	UBoxComponent* baseCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("BuildingBaseCollision"));
+	baseCollision->SetMobility(EComponentMobility::Static);
 
-	this->RootComponent = BaseCollision;
+	this->BaseCollision = baseCollision;
+	this->RootComponent = baseCollision;
+
+	this->TeamID = MONSTER_TEAM;
+	this->InitBuildingCollision();
+}
+
+void APawnBuilding::InitBuildingCollision()
+{
+	this->BaseCollision->InitBoxExtent(FVector(50, 50, 50));
+	this->BaseCollision->CanCharacterStepUpOn = ECB_No;
+	this->BaseCollision->SetCanEverAffectNavigation(false);
+
+	this->BaseCollision->SetCollisionEnabled(ECollisionEnabled::Type::QueryOnly);
+	this->BaseCollision->SetCollisionObjectType(ECollisionChannel::ECC_WorldStatic);
+	this->BaseCollision->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Block);
+	this->BaseCollision->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
+	this->BaseCollision->SetCollisionResponseToChannel(ECollisionChannel::ECC_Visibility, ECollisionResponse::ECR_Ignore);
+}
+
+int32 APawnBuilding::GetTeamID() const
+{
+	return this->TeamID;
+}
+
+void APawnBuilding::SetTeamID(int32 teamID)
+{
+	this->TeamID = teamID;
 }
 
 // Called when the game starts or when spawned
-void ABuilding::BeginPlay()
+void APawnBuilding::BeginPlay()
 {
 	Super::BeginPlay();
 
@@ -32,13 +59,13 @@ void ABuilding::BeginPlay()
 }
 
 // Called every frame
-void ABuilding::Tick(float DeltaTime)
+void APawnBuilding::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
 }
 
-void ABuilding::Explode()
+void APawnBuilding::Explode()
 {
 	if (this->bCanExplode)
 	{
@@ -55,7 +82,7 @@ void ABuilding::Explode()
 	}
 }
 
-TArray<APawnShip*> ABuilding::GetShipsInRange(float range) const
+TArray<APawnShip*> APawnBuilding::GetShipsInRange(float range) const
 {
 	TArray<APawnShip*> retval = TArray<APawnShip*>();
 
@@ -90,7 +117,7 @@ TArray<APawnShip*> ABuilding::GetShipsInRange(float range) const
 	return retval;
 }
 
-float ABuilding::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+float APawnBuilding::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
 	this->Health -= Damage;
 	if (this->Health <= 0)

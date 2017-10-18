@@ -3,14 +3,18 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
+#include "Components/BoxComponent.h"
+#include "GameFramework/Pawn.h"
 #include "PawnShip.h"
-#include "Building.generated.h"
+#include "PawnTeamed.h"
+#include "PawnBuilding.generated.h"
 
-UCLASS()
-class SHOOTER_API ABuilding : public AActor
+UCLASS(BlueprintType, Blueprintable)
+class SHOOTER_API APawnBuilding : public APawn, public IPawnTeamed
 {
 	GENERATED_BODY()
+
+private:
 
 	/** The building's current health */
 	UPROPERTY(Category = "Building|stats", VisibleAnywhere, BlueprintReadOnly, Transient, meta = (AllowPrivateAccess = "true"))
@@ -32,10 +36,21 @@ class SHOOTER_API ABuilding : public AActor
 	UPROPERTY(Category = "Building|stats", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	float ExplosionRange;
 
+	/** The building's team id */
+	UPROPERTY(Category = "Team", VisibleAnywhere, Transient, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	int32 TeamID;
+
+private:
+	UBoxComponent* BaseCollision;
 	
 public:	
 	// Sets default values for this actor's properties
-	ABuilding();
+	APawnBuilding();
+
+protected:
+
+	UFUNCTION(Category = "Building|Construction", BlueprintCallable, meta = (DefaultToSelf))
+	void InitBuildingCollision();
 
 protected:
 	// Called when the game starts or when spawned
@@ -51,5 +66,13 @@ public:
 	void Explode();
 
 	UFUNCTION(Category = "AI Tools", BlueprintCallable, meta = (DefaultToSelf))
-	TArray<APawnShip*> GetShipsInRange(float range) const;	
+	TArray<APawnShip*> GetShipsInRange(float range) const;
+
+public:
+
+	UFUNCTION(BlueprintCallable, Category = "Team")
+	virtual int32 GetTeamID() const override;
+
+	UFUNCTION(BlueprintCallable, Category = "Team")
+	virtual void SetTeamID(int32 id) override;
 };

@@ -1,12 +1,12 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "BuildingSpawner.h"
-#include "Building.h"
+#include "PawnBuildingSpawner.h"
+#include "PawnBuilding.h"
 #include "SpellSpawn.h"
 
 
 // Sets default values
-ABuildingSpawner::ABuildingSpawner() : ABuilding()
+APawnBuildingSpawner::APawnBuildingSpawner()
 {
 	this->SpawningSpell = NewObject<USpellSpawn>(
 		(UObject*)GetTransientPackage(), 
@@ -19,7 +19,7 @@ ABuildingSpawner::ABuildingSpawner() : ABuilding()
 }
 
 // Called when the game starts or when spawned
-void ABuildingSpawner::BeginPlay()
+void APawnBuildingSpawner::BeginPlay()
 {
 	Super::BeginPlay();
 	if(this->SpawningSpell != NULL)
@@ -27,7 +27,7 @@ void ABuildingSpawner::BeginPlay()
 }
 
 // Called every frame
-void ABuildingSpawner::Tick(float DeltaTime)
+void APawnBuildingSpawner::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 

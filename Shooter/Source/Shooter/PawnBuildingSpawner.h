@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Building.h"
+#include "PawnBuilding.h"
 #include "SpellCaster.h"
 #include "SpellSpawn.h"
-#include "BuildingSpawner.generated.h"
+#include "PawnBuildingSpawner.generated.h"
 
 UCLASS()
-class SHOOTER_API ABuildingSpawner : public ABuilding
+class SHOOTER_API APawnBuildingSpawner : public APawnBuilding
 {
 	GENERATED_BODY()
 
@@ -20,7 +20,7 @@ private:
 	
 public:	
 	// Sets default values for this actor's properties
-	ABuildingSpawner();
+	APawnBuildingSpawner();
 
 	UPROPERTY(Category = "Building", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	USpellSpawn* SpawningSpell;
