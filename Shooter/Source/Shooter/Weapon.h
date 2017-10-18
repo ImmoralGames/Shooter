@@ -9,7 +9,7 @@
 #include "Weapon.generated.h"
 
 
-UCLASS(abstract, Blueprintable, BlueprintType, ClassGroup = (Weapons))
+UCLASS(Blueprintable, BlueprintType, ClassGroup = (Weapons))
 class SHOOTER_API UWeapon : public UDataAsset
 {
 	GENERATED_BODY()
@@ -47,21 +47,49 @@ public:
 	/** Tells whether the weapon can reload its bullet stack or not only if empty */
 	UPROPERTY(Category = "Weapon|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	bool bReloadWhenEmpty;
+	
+	/** Tells whether the weapon can damage allies */
+	UPROPERTY(Category = "Weapon|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	bool bFriendlyFireShips;
+
+	/** Tells whether the weapon can damage allied buildings */
+	UPROPERTY(Category = "Weapon|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	bool bFriendlyFireBuilding;
+
+	/** Tells whether the weapon can damage allies IF in monster team */
+	UPROPERTY(Category = "Weapon|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	bool bFriendlyFireShipsMonster;
+
+	/** Tells whether the weapon can damage allied buildings IF in monster team*/
+	UPROPERTY(Category = "Weapon|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	bool bFriendlyFireBuildingMonster;
+	
+	/** Max charges the weapon can stack */
+	UPROPERTY(Category = "Weapon|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	int32 ProjectileDamage;
+
+	/** Max charges the weapon can stack */
+	UPROPERTY(Category = "Weapon|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	int32 ProjectileSpeed;
+
+	/** Max charges the weapon can stack */
+	UPROPERTY(Category = "Weapon|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	int32 ProjectileRange;
 
 protected:
 	UWeapon();
 
 	UFUNCTION(BlueprintCallable, Category = "Weapon")
-	virtual void Shot_Implementation(AActor* shooter) PURE_VIRTUAL(UWeapon::Shot_Implementation, );
+	virtual void Shot_Implementation(APawn* shooter);
 
 	UFUNCTION(BlueprintCallable, Category = "Weapon")
-	virtual void MakeProjectile_Implementation(AActor* shooter);
+	virtual AWeaponProjectile* MakeProjectile_Implementation(APawn* shooter);
 
 	UFUNCTION(BlueprintNativeEvent, Category = "Weapon")
-	void MakeProjectile(AActor* shooter);
+	AWeaponProjectile* MakeProjectile(APawn* shooter);
 
 public:
 	UFUNCTION(BlueprintNativeEvent, Category = "Weapon")
-	void Shot(AActor* shooter);
+	void Shot(APawn* shooter);
 
 };

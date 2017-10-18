@@ -17,9 +17,4 @@ class SHOOTER_API UWeaponMiniShootingGun : public UWeapon
 public:
 	UWeaponMiniShootingGun();
 	
-protected:
-
-	virtual void Shot_Implementation(AActor* shooter) override;
-	
-	
 };

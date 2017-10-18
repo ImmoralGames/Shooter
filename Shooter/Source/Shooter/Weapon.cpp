@@ -14,9 +14,12 @@ UWeapon::UWeapon()
 	this->bIsReloadable = true;		// Can reload charges
 	this->bIsBasic = false;			// Not a basic weapon
 	this->bReloadWhenEmpty = true;	// Basic reload mode
+	this->ProjectileSpeed = 1000;
+	this->ProjectileRange = 10000;
+	this->ProjectileDamage = 10;
 }
 
-void UWeapon::MakeProjectile_Implementation(AActor* shooter)
+AWeaponProjectile* UWeapon::MakeProjectile_Implementation(APawn* shooter)
 {
 	if (this->Projectile != NULL)
 	{
@@ -24,10 +27,31 @@ void UWeapon::MakeProjectile_Implementation(AActor* shooter)
 		UClass* projectileClass = this->Projectile;
 
 		FActorSpawnParameters spawnParams = FActorSpawnParameters();
+		spawnParams.Instigator = shooter;
+
+		FVector location = shooter->GetActorLocation();
+		FRotator rotation = shooter->GetActorRotation();
+
+		location = location + shooter->GetActorForwardVector() * 75;
 
 		AWeaponProjectile* spawnedProjectile = world->SpawnActor<AWeaponProjectile>(
 			projectileClass,
-			shooter->GetTransform(),
+			location,
+			rotation,
 			spawnParams);
+
+		return spawnedProjectile;
 	}
+
+	return NULL;
+}
+
+void UWeapon::Shot_Implementation(APawn* shooter)
+{
+	AWeaponProjectile* spawnedProjectile = this->MakeProjectile(shooter);
+
+	spawnedProjectile->SetSpeed(this->ProjectileSpeed);
+	spawnedProjectile->SetRange(this->ProjectileRange);
+	spawnedProjectile->SetDamage(this->ProjectileDamage);
+	spawnedProjectile->Shoot();
 }
