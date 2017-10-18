@@ -9,6 +9,7 @@
 
 #include "PawnShip.h"
 #include "Components/BoxComponent.h"
+#include "Components/StaticMeshComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "FloatingPawnMovementShip.h"
@@ -55,6 +56,10 @@ APawnShip::APawnShip()
 	UCameraComponent* Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("ActualCamera"));
 	Camera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
 
+	UStaticMeshComponent* model = CreateDefaultSubobject<UStaticMeshComponent>("Model");
+	model->RelativeLocation = FVector(0, 0, -150);
+	model->SetupAttachment(baseCollision);
+
 	UFloatingPawnMovementShip* FloatingPawnMovementShip = CreateDefaultSubobject<UFloatingPawnMovementShip>(TEXT("ShipMovement"));
 	FloatingPawnMovementShip->UpdatedComponent = baseCollision;
 	
@@ -67,6 +72,7 @@ APawnShip::APawnShip()
 	basicWeaponShooter->SetWeapon(UWeaponMiniShootingGun::StaticClass());
 
 	this->RootComponent = baseCollision;
+	this->ModelComponent = model;
 	this->BaseCollision = baseCollision;
 	this->CameraSpringArm = SpringArm;
 	this->MovementComponent = FloatingPawnMovementShip;
@@ -101,6 +107,10 @@ void APawnShip::InitShipCollision()
 	this->BaseCollision->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Block);
 	this->BaseCollision->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
 	this->BaseCollision->SetCollisionResponseToChannel(ECollisionChannel::ECC_Visibility, ECollisionResponse::ECR_Ignore);
+
+	this->ModelComponent->bGenerateOverlapEvents = false;
+	this->ModelComponent->SetCollisionEnabled(ECollisionEnabled::Type::NoCollision);
+	this->ModelComponent->CanCharacterStepUpOn = ECB_No;
 }
 
 // ___________________________________________________ //

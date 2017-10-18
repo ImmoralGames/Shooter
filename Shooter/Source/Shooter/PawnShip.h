@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Components/StaticMeshComponent.h"
 #include "Components/BoxComponent.h"
 #include "GameFramework/Pawn.h"
 #include "FloatingPawnMovementShip.h"
@@ -59,8 +60,12 @@ private:
 	UBoxComponent* BaseCollision;
 
 	/** The component that makes the ship move */
-	UPROPERTY(Category = "Ship|Movement", BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UFloatingPawnMovementShip * MovementComponent;
+	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UStaticMeshComponent* ModelComponent;
+
+	/** The component that makes the ship move */
+	UPROPERTY(Category = "Ship", BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UFloatingPawnMovementShip* MovementComponent;
 	
 	/** The component that handles the camera movement */
 	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
