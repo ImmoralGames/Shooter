@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "GameModeBaseShooter.h"
+#include "PawnShip.h"
 #include "PlayerControllerShooter.h"
 
 AGameModeBaseShooter::AGameModeBaseShooter(const FObjectInitializer& ObjectInitializer)
@@ -9,8 +10,8 @@ AGameModeBaseShooter::AGameModeBaseShooter(const FObjectInitializer& ObjectIniti
 	bNetLoadOnClient = false;
 	bPauseable = true;
 	bStartPlayersAsSpectators = false;
-
 	PlayerControllerClass = APlayerControllerShooter::StaticClass();
+	DefaultPawnClass = APawnShip::StaticClass();
 
 	//DefaultPawnClass = ADefaultPawn::StaticClass();
 	//PlayerStateClass = APlayerState::StaticClass();
@@ -20,5 +21,3 @@ AGameModeBaseShooter::AGameModeBaseShooter(const FObjectInitializer& ObjectIniti
 	//SpectatorClass = ASpectatorPawn::StaticClass();
 	//ReplaySpectatorPlayerControllerClass = APlayerController::StaticClass();
 }
-
-
