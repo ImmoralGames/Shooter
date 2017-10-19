@@ -35,7 +35,7 @@ APawnShip::APawnShip()
 	this->BaseMaxSpeed = 4000;
 	this->BaseAcceleration = 8000;
 	this->ExplosionDamage = 100;
-	this->ExplosionRange = 200;
+	this->ExplosionRange = 1000;
 	this->bCanExplode = false;
 	
 	this->TeamID = MONSTER_TEAM;
