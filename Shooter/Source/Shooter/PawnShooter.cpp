@@ -30,6 +30,7 @@ APawnShooter::APawnShooter()
 	this->ExplosionRange = 1000;
 	this->bCanExplode = false;
 	this->TeamID = MONSTER_TEAM;
+	this->bIsGodMode = false;
 
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -54,7 +55,9 @@ void APawnShooter::BeginPlay()
 
 float APawnShooter::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
-	this->Health -= Damage;
+	if(!this->bIsGodMode)
+		this->Health -= Damage;
+	
 	if (this->Health <= 0)
 		this->Destroy();
 
