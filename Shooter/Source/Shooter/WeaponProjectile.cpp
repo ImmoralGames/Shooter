@@ -4,9 +4,9 @@
 #include "Components/SphereComponent.h"
 #include "PawnShip.h"
 #include "PawnBuilding.h"
-#include "Engine.h"
 #include "DamageTypeBulletImpact.h"
 #include "Shooter.h"
+#include "Engine.h"
 
 // Sets default values
 AWeaponProjectile::AWeaponProjectile()
@@ -80,20 +80,25 @@ void AWeaponProjectile::Tick(float DeltaTime)
 					UGameplayStatics::ApplyPointDamage(hitActor, this->Damage, this->GetActorForwardVector(), hitResult, this->GetInstigatorController(), this, UDamageTypeBulletImpact::StaticClass());
 
 					hitManaged = true;
-					if (MUST_LOG_HITS && GEngine)
+					
+#ifdef MUST_LOG_HITS
+					if (GEngine)
 					{
 						FString debugMessage = TEXT("Hit an ennemy : ");
 						debugMessage = debugMessage.Append(hitActor->GetName());
 						GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, debugMessage);
 					}
+#endif
 				}
 				
 				this->Destroy();
 			}
 			else
 			{
-				if (MUST_LOG_HITS && GEngine)
+#ifdef MUST_LOG_HITS
+				if (GEngine)
 					GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, TEXT("Hit something (not actor)"));
+#endif
 
 				this->Destroy();
 			}
@@ -104,8 +109,10 @@ void AWeaponProjectile::Tick(float DeltaTime)
 
 			if (this->TravelledDistance >= this->Range)
 			{
-				if (MUST_LOG_HITS && GEngine)
+#ifdef MUST_LOG_HITS
+				if (GEngine)
 					GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, TEXT("Hit range"));
+#endif
 
 				this->Destroy();
 			}
@@ -141,7 +148,8 @@ void AWeaponProjectile::Shoot_Implementation()
 	this->bIsShot = true;
 	this->BaseCollision->IgnoreActorWhenMoving(this->GetInstigator(), true);
 	this->SetActorTickEnabled(true);
-
-	if (MUST_LOG_HITS && GEngine)
+#ifdef MUST_LOG_HITS
+	if (GEngine)
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, TEXT("Pew!"));
+#endif
 }
