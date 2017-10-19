@@ -13,10 +13,6 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "FloatingPawnMovementShip.h"
-#include "Engine.h"
-#include "Engine/World.h"
-#include "DamageTypeExplosion.h"
-#include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 #include "SpellCaster.h"
 #include "WeaponShooter.h"
 #include "WeaponMiniShootingGun.h"
@@ -31,17 +27,8 @@
 
 APawnShip::APawnShip()
 {
-	this->MaxHealth = this->Health = 100;
 	this->BaseMaxSpeed = 4000;
 	this->BaseAcceleration = 8000;
-	this->ExplosionDamage = 100;
-	this->ExplosionRange = 1000;
-	this->bCanExplode = false;
-	
-	this->TeamID = MONSTER_TEAM;
-
- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
 
 	UBoxComponent *baseCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("ShipBaseCollision"));
 	
@@ -97,6 +84,13 @@ APawnShip::APawnShip()
 	this->InitShipCollision();
 }
 
+// ___________________________________________________ //
+//       ___      _ _   _      _ _                     //
+//      |_ _|_ _ (_) |_(_)__ _| (_)______ _ _ ___      //
+//       | || ' \| |  _| / _` | | |_ / -_) '_(_-<      //
+//      |___|_||_|_|\__|_\__,_|_|_/__\___|_| /__/      //
+// ___________________________________________________ //
+
 void APawnShip::InitShipCollision()
 {	
 	this->BaseCollision->InitBoxExtent(FVector(300, 150, 150));
@@ -111,80 +105,6 @@ void APawnShip::InitShipCollision()
 	this->ModelComponent->bGenerateOverlapEvents = false;
 	this->ModelComponent->SetCollisionEnabled(ECollisionEnabled::Type::NoCollision);
 	this->ModelComponent->CanCharacterStepUpOn = ECB_No;
-}
-
-// ___________________________________________________ //
-//              ___     _   _                          //
-//             / __|___| |_| |_ ___ _ _ ___            //
-//            | (_ / -_)  _|  _/ -_) '_(_-<            //
-//             \___\___|\__|\__\___|_| /__/            //
-// ___________________________________________________ //
-
-int32 APawnShip::GetCurrentHealth() const
-{
-	return this->Health;
-}
-
-int32 APawnShip::GetMaxHealth() const
-{
-	return this->MaxHealth;
-}
-
-float APawnShip::GetPercentHealth() const
-{
-	return (float)this->Health / this->MaxHealth;
-}
-
-int32 APawnShip::GetTeamID() const 
-{
-	return this->TeamID;
-}
-
-TArray<APawnShip*> APawnShip::GetShipsInRange(float range) const
-{
-	TArray<APawnShip*> retval = TArray<APawnShip*>();
-
-	const UWorld* const world = this->GetWorld();
-	if (world == nullptr)
-	{
-		return retval;
-	}
-
-	APawn* pawn;
-	APawnShip* ship;
-	float distance;
-
-	for (FConstPawnIterator itPawn = world->GetPawnIterator(); itPawn; ++itPawn)
-	{
-		pawn = itPawn->Get();
-		if (pawn != nullptr)
-		{
-			ship = Cast<APawnShip>(pawn);
-			if (ship != nullptr && ship->GetController()->IsPlayerController())
-			{
-				distance = this->GetDistanceTo(ship);
-
-				if (distance < range)
-				{
-					retval.Add(ship);
-				}
-			}
-		}
-	}
-
-	return retval;
-}
-
-// ___________________________________________________ //
-//             ___      _   _                          //
-//            / __| ___| |_| |_ ___ _ _ ___            //
-//            \__ \/ -_)  _|  _/ -_) '_(_-<            //
-//            |___/\___|\__|\__\___|_| /__/            //
-// ___________________________________________________ //
-
-void APawnShip::SetTeamID(int32 teamID)
-{
-	this->TeamID = teamID;
 }
 
 
@@ -202,33 +122,9 @@ void APawnShip::BeginPlay()
 	if(!this->BasicWeaponShooter->HasWeaponLoaded())
 		this->BasicWeaponShooter->SetWeapon(UWeaponMiniShootingGun::StaticClass());
 
-	this->Health = this->MaxHealth;
 	this->MovementComponent->Acceleration	= this->BaseAcceleration;
 	this->MovementComponent->MaxSpeed		= this->BaseMaxSpeed;
 }
-
-void APawnShip::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-
-}
-
-float APawnShip::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
-{
-	this->Health -= Damage;
-	if (this->Health <= 0)
-		this->Destroy();
-
-	return Damage;
-}
-
-// ___________________________________________________ //
-//               _      _   _                          //
-//              /_\  __| |_(_)___ _ _  ___             //
-//             / _ \/ _|  _| / _ \ ' \(_-<             //
-//            /_/ \_\__|\__|_\___/_||_/__/             //
-// ___________________________________________________ //
 
 // ___________________________________________________ //
 //        ___                              _           //
@@ -237,22 +133,7 @@ float APawnShip::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent
 //       \___\___/_|_|_|_|_|_\__,_|_||_\__,_/__/       //
 // ___________________________________________________ //
 
-void APawnShip::Explode()
-{
-	if (this->bCanExplode)
-	{
-		TArray<AActor*> actorsToIgnore = TArray<AActor*>();
-		actorsToIgnore.Add(this);
 
-		bool hasDamagedSomeone = UGameplayStatics::ApplyRadialDamage(this,
-			this->ExplosionDamage, this->GetActorLocation(), this->ExplosionRange,
-			TSubclassOf<UDamageType>(UDamageTypeExplosion::StaticClass()),
-			actorsToIgnore, this, this->GetController(),
-			false, ECollisionChannel::ECC_Visibility);
-
-		this->Destroy();
-	}
-}
 
 void APawnShip::CastSpellX() { 
 	this->SpellCasterX->CastSpell(); 

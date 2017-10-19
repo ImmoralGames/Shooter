@@ -2,6 +2,7 @@
 
 #include "PlayerControllerShooter.h"
 #include "PawnShip.h"
+#include "PawnShooter.h"
 #include "Shooter.h"
 
 
@@ -27,9 +28,10 @@ void APlayerControllerShooter::SetupInputComponent()
 
 void APlayerControllerShooter::Possess(APawn* aPawn)
 {
-	if (aPawn->GetClass()->ImplementsInterface(UPawnTeamed::StaticClass()))
+	auto pawn = Cast<APawnShooter>(this->GetPawn());
+	if (pawn)
 	{
-		Cast<IPawnTeamed>(aPawn)->SetTeamID(PLAYER_TEAM_1);
+		pawn->SetTeamID(PLAYER_TEAM_1);
 	}
 
 	Super::Possess(aPawn);

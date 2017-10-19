@@ -52,8 +52,8 @@ void AWeaponProjectile::Tick(float DeltaTime)
 		APawn* instigator = this->GetInstigator();
 
 		int32 teamID = MONSTER_TEAM;
-		if (instigator->GetClass()->ImplementsInterface(UPawnTeamed::StaticClass()))
-			teamID = Cast<IPawnTeamed>(instigator)->GetTeamID();
+		if (instigator->GetClass()->IsChildOf(APawnShooter::StaticClass()))
+			teamID = Cast<APawnShooter>(instigator)->GetTeamID();
 
 		bool isTeamMonster = IS_MONSTER_TEAM(teamID);
 		
@@ -65,8 +65,8 @@ void AWeaponProjectile::Tick(float DeltaTime)
 			if (hitActor != nullptr)
 			{
 				int32 hitTeamID = MONSTER_TEAM;
-				if (hitActor->GetClass()->ImplementsInterface(UPawnTeamed::StaticClass()))
-					hitTeamID = Cast<IPawnTeamed>(hitActor)->GetTeamID();
+				if (hitActor->GetClass()->IsChildOf(APawnShooter::StaticClass()))
+					hitTeamID = Cast<APawnShooter>(hitActor)->GetTeamID();
 
 				bool isHitActorShip = hitActor->GetClass()->IsChildOf(APawnShip::StaticClass());
 				bool isHitActorBuilding = hitActor->GetClass()->IsChildOf(APawnBuilding::StaticClass());
