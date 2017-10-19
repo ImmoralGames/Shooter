@@ -8,7 +8,7 @@
 #include "PawnRotation.generated.h"
 
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS(Blueprintable, BlueprintType)
 class SHOOTER_API UPawnRotation : public UActorComponent
 {
 	GENERATED_BODY()
@@ -19,10 +19,15 @@ public:
 
 private:
 
-	FVector2D targetRotation;
-	bool ConsumateRotationVector(FVector2D& rotation);
+	FRotator currentRotation;
+	FVector2D inputRotation;
+	bool ConsumateInputRotationVector(FVector2D& rotation);
 
 public:	
+
+	UPROPERTY(Category = "PawnShip", EditAnywhere, BlueprintReadWrite)
+	float alphaLerp;
+
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 

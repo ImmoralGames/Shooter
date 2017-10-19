@@ -5,8 +5,10 @@
 
 // Sets default values for this component's properties
 UPawnRotation::UPawnRotation() : 
-	targetRotation(FVector2D())
+	inputRotation(FVector2D()),
+	currentRotation(FRotator())
 {
+	this->alphaLerp = 10.f;
 	PrimaryComponentTick.bCanEverTick = true;
 }
 
@@ -17,31 +19,34 @@ void UPawnRotation::TickComponent(float DeltaTime, ELevelTick TickType, FActorCo
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	FVector2D rotation;
-	if (ConsumateRotationVector(rotation))
+	if (ConsumateInputRotationVector(rotation))
 	{
 		if (this->UpdatedComponent != nullptr)
 		{
 			float angleRad = FMath::Atan2(rotation.Y, rotation.X);
-			float angleDegrees = FMath::RadiansToDegrees(angleRad) + 90;
-			FRotator rotator = FRotator(0, angleDegrees, 0);
-			this->UpdatedComponent->SetRelativeRotation(rotator);
+			float angleDegrees = FMath::RadiansToDegrees(angleRad);
+			FRotator rotator = FRotator(0, angleDegrees + 90, 0);
+
+			currentRotation = FMath::Lerp(currentRotation, rotator, alphaLerp * DeltaTime);
+
+			this->UpdatedComponent->SetRelativeRotation(currentRotation);
 		}
 	}
 }
 
-bool UPawnRotation::ConsumateRotationVector(FVector2D& rotation)
+bool UPawnRotation::ConsumateInputRotationVector(FVector2D& rotation)
 {
-	if (this->targetRotation == FVector2D::ZeroVector)
+	if (this->inputRotation == FVector2D::ZeroVector)
 		return false;
 
-	rotation = this->targetRotation;
+	rotation = this->inputRotation;
 	rotation.Normalize();
-	this->targetRotation = FVector2D::ZeroVector;
+	this->inputRotation = FVector2D::ZeroVector;
 
 	return true;
 }
 
 void UPawnRotation::AddInputRotationVector(const FVector2D & axis)
 {
-	this->targetRotation += axis;
+	this->inputRotation += axis;
 }
