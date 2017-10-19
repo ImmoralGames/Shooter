@@ -80,7 +80,7 @@ void AWeaponProjectile::Tick(float DeltaTime)
 					UGameplayStatics::ApplyPointDamage(hitActor, this->Damage, this->GetActorForwardVector(), hitResult, this->GetInstigatorController(), this, UDamageTypeBulletImpact::StaticClass());
 
 					hitManaged = true;
-					if (GEngine)
+					if (MUST_LOG_HITS && GEngine)
 					{
 						FString debugMessage = TEXT("Hit an ennemy : ");
 						debugMessage = debugMessage.Append(hitActor->GetName());
@@ -92,7 +92,7 @@ void AWeaponProjectile::Tick(float DeltaTime)
 			}
 			else
 			{
-				if (GEngine)
+				if (MUST_LOG_HITS && GEngine)
 					GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, TEXT("Hit something (not actor)"));
 
 				this->Destroy();
@@ -104,7 +104,7 @@ void AWeaponProjectile::Tick(float DeltaTime)
 
 			if (this->TravelledDistance >= this->Range)
 			{
-				if (GEngine)
+				if (MUST_LOG_HITS && GEngine)
 					GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, TEXT("Hit range"));
 
 				this->Destroy();
@@ -142,6 +142,6 @@ void AWeaponProjectile::Shoot_Implementation()
 	this->BaseCollision->IgnoreActorWhenMoving(this->GetInstigator(), true);
 	this->SetActorTickEnabled(true);
 
-	if (GEngine)
+	if (MUST_LOG_HITS && GEngine)
 		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Yellow, TEXT("Pew!"));
 }

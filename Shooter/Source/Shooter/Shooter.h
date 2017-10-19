@@ -14,3 +14,4 @@ const int32 PLAYER_TEAM_1 = 1;
 const int32 PLAYER_TEAM_2 = 3;
 
 #define IS_MONSTER_TEAM(x) (((x)%2)==0)
+#define MUST_LOG_HITS (false)
