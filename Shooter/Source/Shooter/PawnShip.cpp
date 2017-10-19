@@ -11,6 +11,7 @@
 #include "Components/BoxComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "PawnRotation.h"
 #include "Camera/CameraComponent.h"
 #include "FloatingPawnMovementShip.h"
 #include "SpellCaster.h"
@@ -30,8 +31,8 @@ APawnShip::APawnShip()
 	this->BaseMaxSpeed = 4000;
 	this->BaseAcceleration = 8000;
 
-	UBoxComponent *baseCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("ShipBaseCollision"));
-	
+	UBoxComponent* baseCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("ShipBaseCollision"));
+
 	USpringArmComponent* SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraAttachmentArm"));
 	SpringArm->SetupAttachment(baseCollision);
 	SpringArm->RelativeRotation = FRotator(320.f, 0.f, 0.f);
@@ -43,19 +44,33 @@ APawnShip::APawnShip()
 	UCameraComponent* Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("ActualCamera"));
 	Camera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
 
+	USceneComponent* pivot = CreateDefaultSubobject<UBoxComponent>(TEXT("RotationPivot"));
+	pivot->SetupAttachment(baseCollision);
+
 	UStaticMeshComponent* model = CreateDefaultSubobject<UStaticMeshComponent>("Model");
+	model->SetupAttachment(pivot);
 	model->RelativeLocation = FVector(0, 0, -150);
-	model->SetupAttachment(baseCollision);
 
 	UFloatingPawnMovementShip* FloatingPawnMovementShip = CreateDefaultSubobject<UFloatingPawnMovementShip>(TEXT("ShipMovement"));
 	FloatingPawnMovementShip->UpdatedComponent = baseCollision;
+
+	UPawnRotation* rotationComponent = CreateDefaultSubobject<UPawnRotation>(TEXT("ShipRotation"));
+	rotationComponent->UpdatedComponent = pivot;
 	
 	USpellCaster* spellCasterY		= CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterY"));
+	spellCasterY->SetupAttachment(pivot);
+
 	USpellCaster* spellCasterX		= CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterX"));
+	spellCasterX->SetupAttachment(pivot);
+
 	USpellCaster* spellCasterA		= CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterA"));
+	spellCasterA->SetupAttachment(pivot);
+
 	USpellCaster* spellCasterB		= CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterB"));
+	spellCasterB->SetupAttachment(pivot);
 
 	UWeaponShooter* basicWeaponShooter	= CreateDefaultSubobject<UWeaponShooter>(TEXT("WeaponShooterBasic"));
+	basicWeaponShooter->SetupAttachment(pivot);
 	basicWeaponShooter->SetWeapon(UWeaponMiniShootingGun::StaticClass());
 
 	this->RootComponent = baseCollision;
@@ -63,6 +78,7 @@ APawnShip::APawnShip()
 	this->BaseCollision = baseCollision;
 	this->CameraSpringArm = SpringArm;
 	this->MovementComponent = FloatingPawnMovementShip;
+	this->RotationComponent = rotationComponent;
 
 	this->SpellCasterX = spellCasterX;
 	this->SpellCasterY = spellCasterY;
@@ -185,4 +201,9 @@ void APawnShip::StopShootingBasicWeapon()
 void APawnShip::AddInputVector(const FVector & direction) const
 {
 	this->MovementComponent->AddInputVector(direction);
+}
+
+void APawnShip::AddInputRotationVector(const FVector2D & axis) const
+{
+	this->RotationComponent->AddInputRotationVector(axis);
 }

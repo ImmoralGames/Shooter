@@ -73,7 +73,7 @@ void UWeaponShooter::OnShotFinished()
 	this->ChargesCount -= 1;
 	this->ShootingTimer = 0;
 	this->CooldownTimer = this->LoadedWeapon->CooldownTime;
-	this->LoadedWeapon->Shot((APawn*)this->GetOwner());
+	this->LoadedWeapon->Shot((APawn*)this->GetOwner(), this);
 
 	if (this->bIsShooting)
 		this->ShootAsap();

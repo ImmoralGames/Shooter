@@ -9,7 +9,7 @@ USpellSpawn::USpellSpawn() : USpell()
 
 }
 
-void USpellSpawn::Casted_Implementation(APawn* caster)
+void USpellSpawn::Casted_Implementation(APawn* caster, USceneComponent* castingComponent)
 {
 	if (this->SpawnableShips.Num() == 0)
 		return;
@@ -23,7 +23,7 @@ void USpellSpawn::Casted_Implementation(APawn* caster)
 	
 	APawnShip* spawnedShip = world->SpawnActor<APawnShip>(
 		shipClass,
-		caster->GetTransform(),
+		castingComponent->GetComponentTransform(),
 		spawnParams);
 	
 }

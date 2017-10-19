@@ -45,10 +45,10 @@ protected:
 	USpell();
 
 	UFUNCTION(BlueprintCallable, Category = "Spell")
-	virtual void Casted_Implementation(APawn* caster) PURE_VIRTUAL(USpell::Casted_Implementation, );
+	virtual void Casted_Implementation(APawn* caster, USceneComponent* castingComponent) PURE_VIRTUAL(USpell::Casted_Implementation, );
 
 public:
 	UFUNCTION(BlueprintNativeEvent, Category = "Spell")
-	void Casted(APawn* caster);
+	void Casted(APawn* caster, USceneComponent* castingComponent);
 
 };

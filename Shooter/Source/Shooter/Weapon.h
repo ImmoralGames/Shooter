@@ -80,16 +80,16 @@ protected:
 	UWeapon();
 
 	UFUNCTION(BlueprintCallable, Category = "Weapon")
-	virtual void Shot_Implementation(APawn* shooter);
+	virtual void Shot_Implementation(APawn* shooter, USceneComponent* shootingComponent);
 
 	UFUNCTION(BlueprintCallable, Category = "Weapon")
-	virtual AWeaponProjectile* MakeProjectile_Implementation(APawn* shooter);
+	virtual AWeaponProjectile* MakeProjectile_Implementation(APawn* shooter, USceneComponent* shootingComponent);
 
 	UFUNCTION(BlueprintNativeEvent, Category = "Weapon")
-	AWeaponProjectile* MakeProjectile(APawn* shooter);
+	AWeaponProjectile* MakeProjectile(APawn* shooter, USceneComponent* shootingComponent);
 
 public:
 	UFUNCTION(BlueprintNativeEvent, Category = "Weapon")
-	void Shot(APawn* shooter);
+	void Shot(APawn* shooter, USceneComponent* shootingComponent);
 
 };

@@ -9,7 +9,7 @@
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class SHOOTER_API UWeaponShooter : public UActorComponent
+class SHOOTER_API UWeaponShooter : public USceneComponent
 {
 	GENERATED_BODY()
 	

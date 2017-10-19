@@ -10,6 +10,7 @@
 #include "SpellCaster.h"
 #include "WeaponShooter.h"
 #include "PawnShooter.h"
+#include "PawnRotation.h"
 #include "PawnShip.generated.h"
 
 /** PawnShip is the base class of all ship pawns in a Shooter game */
@@ -42,6 +43,10 @@ private:
 	/** The component that makes the ship move */
 	UPROPERTY(Category = "Ship", BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UFloatingPawnMovementShip* MovementComponent;
+
+	/** The component that makes the ship rotate */
+	UPROPERTY(Category = "Ship", BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPawnRotation* RotationComponent;
 	
 	/** The component that handles the camera movement */
 	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
@@ -125,5 +130,9 @@ public:
 	/** Add a directional command to the Movement component */
 	UFUNCTION(Category = "Movement", BlueprintCallable)
 	void AddInputVector(const FVector & input) const;
+
+	/** Add a rotation command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	void AddInputRotationVector(const FVector2D & input) const;
 	
 };

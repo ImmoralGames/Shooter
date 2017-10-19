@@ -9,7 +9,7 @@
 
 
 UCLASS(BlueprintType, ClassGroup=(Spells))
-class SHOOTER_API USpellCaster : public UActorComponent
+class SHOOTER_API USpellCaster : public USceneComponent
 {
 	GENERATED_BODY()
 

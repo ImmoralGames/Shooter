@@ -19,7 +19,7 @@ UWeapon::UWeapon()
 	this->ProjectileDamage = 10;
 }
 
-AWeaponProjectile* UWeapon::MakeProjectile_Implementation(APawn* shooter)
+AWeaponProjectile* UWeapon::MakeProjectile_Implementation(APawn* shooter, USceneComponent* shootingComponent)
 {
 	if (this->Projectile != NULL)
 	{
@@ -29,10 +29,9 @@ AWeaponProjectile* UWeapon::MakeProjectile_Implementation(APawn* shooter)
 		FActorSpawnParameters spawnParams = FActorSpawnParameters();
 		spawnParams.Instigator = shooter;
 
-		FVector location = shooter->GetActorLocation();
-		FRotator rotation = shooter->GetActorRotation();
-
-		location = location + shooter->GetActorForwardVector() * 550;
+		FVector location = shootingComponent->GetComponentLocation();
+		FRotator rotation = shootingComponent->GetComponentRotation();
+		location = location + shootingComponent->GetForwardVector() * 550;
 
 		AWeaponProjectile* spawnedProjectile = world->SpawnActor<AWeaponProjectile>(
 			projectileClass,
@@ -46,9 +45,9 @@ AWeaponProjectile* UWeapon::MakeProjectile_Implementation(APawn* shooter)
 	return NULL;
 }
 
-void UWeapon::Shot_Implementation(APawn* shooter)
+void UWeapon::Shot_Implementation(APawn* shooter, USceneComponent* shootingComponent)
 {
-	AWeaponProjectile* spawnedProjectile = this->MakeProjectile(shooter);
+	AWeaponProjectile* spawnedProjectile = this->MakeProjectile(shooter, shootingComponent);
 
 	spawnedProjectile->SetSpeed(this->ProjectileSpeed);
 	spawnedProjectile->SetRange(this->ProjectileRange);

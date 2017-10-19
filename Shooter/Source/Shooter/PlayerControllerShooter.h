@@ -20,6 +20,8 @@ public:
 protected:
 
 	void SetupInputComponent() override;
+	void RotateShipSin(const float Value);
+	void RotateShipCos(const float Value);
 	void MoveShipForward(const float Value);
 	void MoveShipRight(const float Value);
 	void CastSpellX();

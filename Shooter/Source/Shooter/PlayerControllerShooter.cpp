@@ -12,6 +12,8 @@ void APlayerControllerShooter::SetupInputComponent()
 
 	InputComponent->BindAxis("MoveForward", this, &APlayerControllerShooter::MoveShipForward);
 	InputComponent->BindAxis("MoveRight", this, &APlayerControllerShooter::MoveShipRight);
+	InputComponent->BindAxis("RotateSin", this, &APlayerControllerShooter::RotateShipSin);
+	InputComponent->BindAxis("RotateCos", this, &APlayerControllerShooter::RotateShipCos);
 
 	InputComponent->BindAction("CastSpellX", IE_Pressed, this, &APlayerControllerShooter::CastSpellX);
 	InputComponent->BindAction("CastSpellX", IE_Released, this, &APlayerControllerShooter::CancelSpellX);
@@ -35,6 +37,24 @@ void APlayerControllerShooter::Possess(APawn* aPawn)
 	}
 
 	Super::Possess(aPawn);
+}
+
+void APlayerControllerShooter::RotateShipSin(const float Value)
+{
+	auto pawn = Cast<APawnShip>(this->GetPawn());
+	if (pawn)
+	{
+		pawn->AddInputRotationVector(FVector2D(0, Value));
+	}
+}
+
+void APlayerControllerShooter::RotateShipCos(const float Value)
+{
+	auto pawn = Cast<APawnShip>(this->GetPawn());
+	if (pawn)
+	{
+		pawn->AddInputRotationVector(FVector2D(Value, 0));
+	}
 }
 
 void APlayerControllerShooter::MoveShipForward(const float Value)
