@@ -23,7 +23,8 @@ void USpellSpawn::Casted_Implementation(APawn* caster, USceneComponent* castingC
 	
 	APawnShip* spawnedShip = world->SpawnActor<APawnShip>(
 		shipClass,
-		castingComponent->GetComponentTransform(),
+		castingComponent->GetComponentLocation(),
+		castingComponent->GetComponentRotation(),
 		spawnParams);
 	
 }

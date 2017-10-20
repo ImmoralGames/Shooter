@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "UserWidgetHealthBar.h"
+#include "WidgetComponent.h"
 #include "PawnShooter.generated.h"
 
 UCLASS(abstract, BlueprintType, Blueprintable)
@@ -14,19 +16,23 @@ class SHOOTER_API APawnShooter : public APawn
 // Private properties
 private:
 
-	/** The building's current health */
+	/** The pawn's health bar ui */
+	UPROPERTY(Category = "PawnShooter", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	TSubclassOf<UUserWidgetHealthBar> HealthBarSkin;
+
+	/** The pawn's current health */
 	UPROPERTY(Category = "PawnShooter", VisibleAnywhere, BlueprintReadOnly, Transient, meta = (AllowPrivateAccess = "true"))
 	int32 Health;
 	
-	/** The building's current health */
+	/** The pawn's current health */
 	UPROPERTY(Category = "PawnShooter", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	bool bIsGodMode;
 
-	/** The building's max health */
+	/** The pawn's max health */
 	UPROPERTY(Category = "PawnShooter", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	int32 MaxHealth;
 
-	/** Can the building explode? */
+	/** Can the pawn explode? */
 	UPROPERTY(Category = "PawnShooter", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	bool bCanExplode;
 
@@ -38,9 +44,18 @@ private:
 	UPROPERTY(Category = "PawnShooter", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	float ExplosionRange;
 
-	/** The building's team id */
+	/** The pawn's team id */
 	UPROPERTY(Category = "PawnShooter", VisibleAnywhere, Transient, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	int32 TeamID;
+
+// Protected references
+private:
+	UPROPERTY(Category = "PawnShooter", VisibleAnywhere, Transient, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UUserWidgetHealthBar* HealthBar;
+
+protected:
+	UPROPERTY(Category = "PawnShooter", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UWidgetComponent* HealthbarWidgetComponent;
 
 // Constructors
 public:
@@ -58,8 +73,10 @@ protected:
 
 // Public events
 public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+
+#if WITH_EDITOR
+	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
+#endif
 	
 // Public getters
 public:

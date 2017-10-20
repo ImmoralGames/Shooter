@@ -12,8 +12,10 @@
 #include "GameFramework/Pawn.h"
 #include "Engine.h"
 #include "Engine/World.h"
+#include "UserWidgetHealthBar.h"
 #include "DamageTypeExplosion.h"
 #include "Shooter.h"
+#include "UserWidgetHealthBar.h"
 
 // ___________________________________________________ //
 //   ___             _               _                 //
@@ -35,6 +37,9 @@ APawnShooter::APawnShooter()
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	this->HealthbarWidgetComponent = CreateDefaultSubobject<UWidgetComponent>(TEXT("HealthBarWidget"));
+	this->HealthbarWidgetComponent->SetRelativeLocation(FVector(0, 0, 500));
+	this->HealthbarWidgetComponent->SetWidgetSpace(EWidgetSpace::Screen);
 }
 
 // ___________________________________________________ //
@@ -44,6 +49,15 @@ APawnShooter::APawnShooter()
 //             |___|\_/\___|_||_\__/__/                //
 // ___________________________________________________ //
 
+#if WITH_EDITOR
+void APawnShooter::PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent)
+{
+	Super::PostEditChangeProperty(PropertyChangedEvent);
+	this->HealthbarWidgetComponent->SetWidgetClass(this->HealthBarSkin);
+	this->HealthbarWidgetComponent->SetupAttachment(this->RootComponent);
+}
+#endif
+
 // Called when the game starts or when spawned
 void APawnShooter::BeginPlay()
 {
@@ -51,6 +65,14 @@ void APawnShooter::BeginPlay()
 
 	this->Health = this->MaxHealth;
 
+	if (HealthBarSkin != nullptr)
+	{
+		this->HealthBar = CreateWidget<UUserWidgetHealthBar>(this->GetWorld(), HealthBarSkin);
+		this->HealthBar->UpdateHealth(this->Health, this->MaxHealth);
+	}
+
+	this->HealthbarWidgetComponent->SetWidget(this->HealthBar);
+	this->HealthbarWidgetComponent->SetupAttachment(this->RootComponent);
 }
 
 float APawnShooter::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
@@ -60,15 +82,10 @@ float APawnShooter::TakeDamage(float Damage, struct FDamageEvent const& DamageEv
 	
 	if (this->Health <= 0)
 		this->Destroy();
+	else if(this->HealthBar != nullptr)
+		this->HealthBar->UpdateHealth(this->Health, this->MaxHealth);
 
 	return Damage;
-}
-
-// Called every frame
-void APawnShooter::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
 }
 
 // ___________________________________________________ //

@@ -2,6 +2,7 @@
 
 #include "PawnBuildingSpawner.h"
 #include "PawnBuilding.h"
+#include "Components/ArrowComponent.h"
 #include "SpellSpawn.h"
 
 
@@ -13,9 +14,13 @@ APawnBuildingSpawner::APawnBuildingSpawner()
 		USpellSpawn::StaticClass());
 
 	USpellCaster* spawnCaster = CreateDefaultSubobject<USpellCaster>(TEXT("SpawnCaster"));
+	spawnCaster->SetupAttachment(RootComponent);
 	spawnCaster->SetSpell(this->SpawningSpell);
-
 	this->SpawnCaster = spawnCaster;
+
+	SpawnPlace = CreateDefaultSubobject<UArrowComponent>(TEXT("SpawnPlace"));
+	SpawnPlace->SetupAttachment(RootComponent);
+
 }
 
 // Called when the game starts or when spawned
@@ -24,6 +29,7 @@ void APawnBuildingSpawner::BeginPlay()
 	Super::BeginPlay();
 	if(this->SpawningSpell != NULL)
 		this->SpawnCaster->SetSpell(this->SpawningSpell);
+	this->SpawnCaster->SetWorldLocation(this->SpawnPlace->GetComponentLocation());
 }
 
 // Called every frame

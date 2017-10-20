@@ -10,6 +10,11 @@ void APlayerControllerShooter::SetupInputComponent()
 {
 	Super::SetupInputComponent();
 
+	FInputModeGameAndUI Mode;
+	Mode.SetLockMouseToViewport(true);
+	Mode.SetHideCursorDuringCapture(false);
+	SetInputMode(Mode);
+
 	InputComponent->BindAxis("MoveForward", this, &APlayerControllerShooter::MoveShipForward);
 	InputComponent->BindAxis("MoveRight", this, &APlayerControllerShooter::MoveShipRight);
 	InputComponent->BindAxis("RotateSin", this, &APlayerControllerShooter::RotateShipSin);

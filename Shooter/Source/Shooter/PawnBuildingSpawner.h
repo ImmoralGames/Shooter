@@ -7,17 +7,19 @@
 #include "PawnBuilding.h"
 #include "SpellCaster.h"
 #include "SpellSpawn.h"
+#include "Components/ArrowComponent.h"
 #include "PawnBuildingSpawner.generated.h"
 
-UCLASS()
+UCLASS(BlueprintType, Blueprintable)
 class SHOOTER_API APawnBuildingSpawner : public APawnBuilding
 {
 	GENERATED_BODY()
 
 private:
-	//UPROPERTY(Category = "Building", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	USpellCaster* SpawnCaster;
-	
+
+	UPROPERTY(Category = "Building", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UArrowComponent* SpawnPlace;
 public:	
 	// Sets default values for this actor's properties
 	APawnBuildingSpawner();
