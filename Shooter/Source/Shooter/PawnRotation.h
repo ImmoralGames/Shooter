@@ -20,8 +20,12 @@ public:
 private:
 
 	FRotator currentRotation;
+
 	FVector2D inputRotation;
+	FVector2D inputForward;
 	bool ConsumateInputRotationVector(FVector2D& rotation);
+	bool ConsumateInputForwardVector(FVector2D& forward);
+	
 
 public:	
 
@@ -34,5 +38,5 @@ public:
 	USceneComponent* UpdatedComponent;
 
 	void AddInputRotationVector(const FVector2D & axis);
-
+	void AddInputForwardVector(const FVector2D & axis);
 };

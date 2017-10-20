@@ -45,7 +45,7 @@ private:
 	UFloatingPawnMovementShip* MovementComponent;
 
 	/** The component that makes the ship rotate */
-	UPROPERTY(Category = "Ship", BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UPawnRotation* RotationComponent;
 	
 	/** The component that handles the camera movement */
@@ -134,5 +134,9 @@ public:
 	/** Add a rotation command to the Movement component */
 	UFUNCTION(Category = "Movement", BlueprintCallable)
 	void AddInputRotationVector(const FVector2D & input) const;
+
+	/** Add a rotation command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	void AddInputForwardVector(const FVector2D & input) const;
 	
 };

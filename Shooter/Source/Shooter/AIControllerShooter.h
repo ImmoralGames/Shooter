@@ -24,5 +24,8 @@ public:
 
 	UFUNCTION(Category = "AI Tools", BlueprintPure, BlueprintCallable, meta = (DefaultToSelf))
 	APawnShip* GetShip() const;
+
+	UFUNCTION(Category = "AI Tools", BlueprintCallable, meta = (DefaultToSelf))
+	void LookAt(AActor* actor);
 	
 };

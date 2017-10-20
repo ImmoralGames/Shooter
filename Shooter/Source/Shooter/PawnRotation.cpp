@@ -32,6 +32,19 @@ void UPawnRotation::TickComponent(float DeltaTime, ELevelTick TickType, FActorCo
 			this->UpdatedComponent->SetRelativeRotation(currentRotation);
 		}
 	}
+	else if (ConsumateInputForwardVector(rotation))
+	{
+		if (this->UpdatedComponent != nullptr)
+		{
+			float angleRad = FMath::Atan2(rotation.X, rotation.Y);
+			float angleDegrees = FMath::RadiansToDegrees(angleRad);
+			FRotator rotator = FRotator(0, -angleDegrees + 90, 0);
+
+			currentRotation = FMath::Lerp(currentRotation, rotator, alphaLerp * DeltaTime);
+
+			this->UpdatedComponent->SetRelativeRotation(currentRotation);
+		}
+	}
 }
 
 bool UPawnRotation::ConsumateInputRotationVector(FVector2D& rotation)
@@ -46,7 +59,25 @@ bool UPawnRotation::ConsumateInputRotationVector(FVector2D& rotation)
 	return true;
 }
 
+bool UPawnRotation::ConsumateInputForwardVector(FVector2D& rotation)
+{
+	if (this->inputForward == FVector2D::ZeroVector)
+		return false;
+
+	rotation = this->inputForward;
+	rotation.Normalize();
+	this->inputForward = FVector2D::ZeroVector;
+
+	return true;
+}
+
 void UPawnRotation::AddInputRotationVector(const FVector2D & axis)
 {
 	this->inputRotation += axis;
 }
+
+void UPawnRotation::AddInputForwardVector(const FVector2D & axis)
+{
+	this->inputForward += axis;
+}
+

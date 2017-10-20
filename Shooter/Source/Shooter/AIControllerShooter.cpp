@@ -62,3 +62,15 @@ APawnShip* AAIControllerShooter::GetNearestPlayerShip() const
 
 	return nearest;
 }
+
+void AAIControllerShooter::LookAt(AActor* actor)
+{
+	const APawnShip* const possessedShip = GetShip();
+	if (possessedShip == nullptr)
+	{
+		return;
+	}
+
+	FVector dir = actor->GetActorLocation() - possessedShip->GetActorLocation();
+	possessedShip->AddInputForwardVector(FVector2D(dir.X, dir.Y));
+}

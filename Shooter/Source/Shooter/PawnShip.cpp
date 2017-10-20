@@ -20,10 +20,10 @@
 #include "Shooter.h"
 
 // ___________________________________________________ //
-//   ___             _               _                 //
-//  / __|___ _ _  __| |_ _ _ _  _ __| |_ ___ _ _ ___   //
-// | (__/ _ \ ' \(_-<  _| '_| || / _|  _/ _ \ '_(_-<   //
-//  \___\___/_||_/__/\__|_|  \_,_\__|\__\___/_| /__/   //
+//    ___             _               _                //
+//   / __|___ _ _  __| |_ _ _ _  _ __| |_ ___ _ _ ___  //
+//  | (__/ _ \ ' \(_-<  _| '_| || / _|  _/ _ \ '_(_-<  //
+//   \___\___/_||_/__/\__|_|  \_,_\__|\__\___/_| /__/  //
 // ___________________________________________________ //
 
 APawnShip::APawnShip()
@@ -35,8 +35,8 @@ APawnShip::APawnShip()
 
 	USpringArmComponent* SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraAttachmentArm"));
 	SpringArm->SetupAttachment(baseCollision);
-	SpringArm->RelativeRotation = FRotator(320.f, 0.f, 0.f);
-	SpringArm->TargetArmLength = 3500.0f;
+	SpringArm->RelativeRotation = FRotator(300.f, 0.f, 0.f);
+	SpringArm->TargetArmLength = 9000.0f;
 	SpringArm->bEnableCameraLag = true;
 	SpringArm->CameraLagSpeed = 10.0f;
 	SpringArm->bDoCollisionTest = false;
@@ -44,7 +44,7 @@ APawnShip::APawnShip()
 	UCameraComponent* Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("ActualCamera"));
 	Camera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
 
-	USceneComponent* pivot = CreateDefaultSubobject<UBoxComponent>(TEXT("RotationPivot"));
+	USceneComponent* pivot = CreateDefaultSubobject<USceneComponent>(TEXT("RotationPivot"));
 	pivot->SetupAttachment(baseCollision);
 
 	UStaticMeshComponent* model = CreateDefaultSubobject<UStaticMeshComponent>("Model");
@@ -206,4 +206,9 @@ void APawnShip::AddInputVector(const FVector & direction) const
 void APawnShip::AddInputRotationVector(const FVector2D & axis) const
 {
 	this->RotationComponent->AddInputRotationVector(axis);
+}
+
+void APawnShip::AddInputForwardVector(const FVector2D & axis) const
+{
+	this->RotationComponent->AddInputForwardVector(axis);
 }
