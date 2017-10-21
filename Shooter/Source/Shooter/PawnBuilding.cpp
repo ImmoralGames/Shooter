@@ -23,3 +23,23 @@ void APawnBuilding::InitBuildingCollision()
 	this->BaseCollision->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
 	this->BaseCollision->SetCollisionResponseToChannel(ECollisionChannel::ECC_Visibility, ECollisionResponse::ECR_Ignore);
 }
+
+void APawnBuilding::AddInputVector(const FVector& input)
+{
+
+}
+
+void APawnBuilding::LookAt(const FVector& position)
+{
+
+}
+
+void APawnBuilding::AddInputRotationVector(const FVector2D& input)
+{
+
+}
+
+void APawnBuilding::AddInputForwardVector(const FVector2D& input)
+{
+
+}
