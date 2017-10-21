@@ -187,17 +187,25 @@ void APawnShip::StopShootingBasicWeapon()
 	this->BasicWeaponShooter->StopShooting();
 }
 
-void APawnShip::AddInputVector(const FVector & direction) const
+void APawnShip::AddInputVector(const FVector & direction) 
 {
 	this->MovementComponent->AddInputVector(direction);
 }
 
-void APawnShip::AddInputRotationVector(const FVector2D & axis) const
+void APawnShip::AddInputRotationVector(const FVector2D & axis) 
 {
 	this->RotationComponent->AddInputRotationVector(axis);
 }
 
-void APawnShip::AddInputForwardVector(const FVector2D & axis) const
+void APawnShip::AddInputForwardVector(const FVector2D & axis) 
 {
 	this->RotationComponent->AddInputForwardVector(axis);
+}
+
+void APawnShip::LookAt(const FVector& position)
+{
+	FVector p = position - this->GetActorLocation();
+	p.Normalize();
+
+	this->RotationComponent->AddInputForwardVector(FVector2D(p.X, p.Y));
 }
