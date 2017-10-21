@@ -6,25 +6,31 @@
 #include "PawnGhost.h"
 #include "Shooter.h"
 
-
 void APlayerControllerShooter::SetupInputComponent()
 {
 	Super::SetupInputComponent();
 
-	FInputModeGameAndUI Mode;
+	bShowMouseCursor = true;
+	bEnableClickEvents = true;
+	bEnableMouseOverEvents = true;
+
+ 	FInputModeGameAndUI Mode;
 #if WITH_EDITOR
 	Mode.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
 #else
 	Mode.SetLockMouseToViewportBehavior(EMouseLockMode::LockAlways);
 #endif
 	Mode.SetHideCursorDuringCapture(false);
-	SetInputMode(Mode);
+ 
+ 	SetInputMode(Mode);
 
-	InputComponent->BindAxis("MoveForward", this, &APlayerControllerShooter::MoveShipForward);
-	InputComponent->BindAxis("MoveRight", this, &APlayerControllerShooter::MoveShipRight);
-	InputComponent->BindAxis("RotateSin", this, &APlayerControllerShooter::RotateShipSin);
-	InputComponent->BindAxis("RotateCos", this, &APlayerControllerShooter::RotateShipCos);
-
+	bIsMouseLastDetected = true;
+	
+	InputComponent->BindAxis("MoveForward", this, &APlayerControllerShooter::MovePawnForward);
+	InputComponent->BindAxis("MoveRight", this, &APlayerControllerShooter::MovePawnRight);
+	InputComponent->BindAxis("RotateSin", this, &APlayerControllerShooter::RotatePawnSin);
+	InputComponent->BindAxis("RotateCos", this, &APlayerControllerShooter::RotatePawnCos);
+	
 	InputComponent->BindAction("CastSpellX", IE_Pressed, this, &APlayerControllerShooter::CastSpellX);
 	InputComponent->BindAction("CastSpellX", IE_Released, this, &APlayerControllerShooter::CancelSpellX);
 	InputComponent->BindAction("CastSpellY", IE_Pressed, this, &APlayerControllerShooter::CastSpellY);
@@ -35,6 +41,44 @@ void APlayerControllerShooter::SetupInputComponent()
 	InputComponent->BindAction("CastSpellB", IE_Released, this, &APlayerControllerShooter::CancelSpellB);
 	InputComponent->BindAction("BasicShoot", IE_Pressed, this, &APlayerControllerShooter::StartShootingBasicWeapon);
 	InputComponent->BindAction("BasicShoot", IE_Released, this, &APlayerControllerShooter::StopShootingBasicWeapon);
+
+}
+
+void APlayerControllerShooter::PostProcessInput(const float DeltaTime, const bool bGamePaused)
+{
+	Super::PostProcessInput(DeltaTime, bGamePaused);
+
+	float MouseX, MouseY;
+	this->GetMousePosition(MouseX, MouseY);
+
+	FVector2D MousePosition = FVector2D(MouseX, MouseY);
+	FVector2D MouseDeltaPosition = LastMousePosition - MousePosition;
+	LastMousePosition = MousePosition;
+	
+	bIsMouseLastDetected = (bIsMouseLastDetected || MouseDeltaPosition.SizeSquared() >= 0.01f);
+	if(!bIsMouseLastDetected)
+		return;
+	
+	APawn* pawn = this->GetPawn();
+	if (pawn == nullptr)
+		return;
+
+	APawnShooter* pawnShooter = Cast<APawnShooter>(pawn);
+	if (pawnShooter == nullptr)
+		return;
+
+	FVector location, direction;
+	if (!this->DeprojectMousePositionToWorld(location, direction))
+		return;
+
+	FVector pawnLocation = pawn->GetActorLocation();
+
+	// how many times shall we add 'direction' to 'location' 
+	// in order to 'location.Z' and 'pawnLocation.Z' to be equals?
+	float ratio = (pawnLocation.Z - location.Z) / direction.Z;
+
+	location += direction * ratio;
+	pawnShooter->LookAt(location);
 
 }
 
@@ -78,29 +122,35 @@ void APlayerControllerShooter::UnPossess()
 	Super::UnPossess();
 }
 
-void APlayerControllerShooter::RotateShipSin(const float Value)
+void APlayerControllerShooter::RotatePawnSin(const float Value)
 {
-	auto pawn = Cast<APawnShip>(this->GetPawn());
+	auto pawn = Cast<APawnShooter>(this->GetPawn());
 	if (pawn)
 	{
 		pawn->AddInputRotationVector(FVector2D(0, Value));
 		return;
 	}
+
+	if (Value > 0)
+		bIsMouseLastDetected = false;
 }
 
-void APlayerControllerShooter::RotateShipCos(const float Value)
+void APlayerControllerShooter::RotatePawnCos(const float Value)
 {
-	auto pawn = Cast<APawnShip>(this->GetPawn());
+	auto pawn = Cast<APawnShooter>(this->GetPawn());
 	if (pawn)
 	{
 		pawn->AddInputRotationVector(FVector2D(Value, 0));
 		return;
 	}
+
+	if (Value > 0)
+		bIsMouseLastDetected = false;
 }
 
-void APlayerControllerShooter::MoveShipForward(const float Value)
+void APlayerControllerShooter::MovePawnForward(const float Value)
 {
-	auto pawn = Cast<APawnShip>(this->GetPawn());
+	auto pawn = Cast<APawnShooter>(this->GetPawn());
 	if (pawn)
 	{
 		pawn->AddInputVector(FVector(Value, 0, 0));
@@ -115,9 +165,9 @@ void APlayerControllerShooter::MoveShipForward(const float Value)
 	}
 }
 
-void APlayerControllerShooter::MoveShipRight(const float Value)
+void APlayerControllerShooter::MovePawnRight(const float Value)
 {
-	auto pawn = Cast<APawnShip>(this->GetPawn());
+	auto pawn = Cast<APawnShooter>(this->GetPawn());
 	if (pawn)
 	{
 		pawn->AddInputVector(FVector(0, Value, 0));
