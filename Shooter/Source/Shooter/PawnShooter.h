@@ -84,6 +84,24 @@ public:
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
 #endif
 
+// Public commands
+public:
+
+	/** Add a directional command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	virtual void AddInputVector(const FVector& input) PURE_VIRTUAL(APawnShooter::AddInputVector, );
+
+	/** Add a rotation command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	virtual void LookAt(const FVector& position) PURE_VIRTUAL(APawnShooter::LookAt,);
+
+	/** Add a rotation command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	virtual void AddInputRotationVector(const FVector2D& input) PURE_VIRTUAL(APawnShooter::AddInputRotationVector, );
+
+	/** Add a rotation command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	virtual void AddInputForwardVector(const FVector2D& input) PURE_VIRTUAL(APawnShooter::AddInputForwardVector, );
 	
 // Public getters
 public:
