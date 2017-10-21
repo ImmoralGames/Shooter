@@ -2,6 +2,7 @@
 
 #include "AIControllerShooter.h"
 #include "PawnShip.h"
+#include "PawnBuilding.h"
 #include "Engine/World.h"
 #include "Shooter.h"
 
@@ -12,13 +13,24 @@ AAIControllerShooter::AAIControllerShooter()
 
 APawnShip* AAIControllerShooter::GetShip() const 
 {
-	APawn* pawn = this->GetPawn();
+	APawn* const pawn = this->GetPawn();
 	if (pawn == nullptr)
 	{
 		return nullptr;
 	}
 	
 	return Cast<APawnShip>(pawn);
+}
+
+APawnBuilding* AAIControllerShooter::GetBuilding() const
+{
+	APawn* const pawn = this->GetPawn();
+	if (pawn == nullptr)
+	{
+		return nullptr;
+	}
+
+	return Cast<APawnBuilding>(pawn);
 }
 
 APawnShip* AAIControllerShooter::GetNearestPlayerShip() const
@@ -65,12 +77,8 @@ APawnShip* AAIControllerShooter::GetNearestPlayerShip() const
 
 void AAIControllerShooter::LookAt(AActor* actor)
 {
-	const APawnShip* const possessedShip = GetShip();
-	if (possessedShip == nullptr)
-	{
-		return;
-	}
+	APawnShip* const possessedShip = GetShip();
+	if (possessedShip != nullptr)
+		possessedShip->LookAt(actor->GetActorLocation());
 
-	FVector dir = actor->GetActorLocation() - possessedShip->GetActorLocation();
-	possessedShip->AddInputForwardVector(FVector2D(dir.X, dir.Y));
 }
