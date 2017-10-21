@@ -3,7 +3,7 @@
 #include "PlayerControllerShooter.h"
 #include "PawnShip.h"
 #include "PawnBuilding.h"
-#include "PawnShooter.h"
+#include "PawnGhost.h"
 #include "Shooter.h"
 
 
@@ -12,7 +12,11 @@ void APlayerControllerShooter::SetupInputComponent()
 	Super::SetupInputComponent();
 
 	FInputModeGameAndUI Mode;
-	Mode.SetLockMouseToViewport(true);
+#if WITH_EDITOR
+	Mode.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
+#else
+	Mode.SetLockMouseToViewportBehavior(EMouseLockMode::LockAlways);
+#endif
 	Mode.SetHideCursorDuringCapture(false);
 	SetInputMode(Mode);
 
@@ -38,27 +42,40 @@ void APlayerControllerShooter::Possess(APawn* aPawn)
 {
 	Super::Possess(aPawn);
 
-	auto pawn = Cast<APawnShooter>(this->GetPawn());
+	auto pawn = Cast<APawnShooter>(aPawn);
 	if (pawn)
 	{
 		pawn->SetTeamID(PLAYER_TEAM_1);
 
 		auto ship = Cast<APawnShip>(pawn);
 		if (ship)
+		{
 			this->OnPossessShip(ship);
+			return;
+		}
 
 		auto building = Cast<APawnBuilding>(pawn);
 		if (building)
+		{
 			this->OnPossessBuilding(building);
+			return;
+		}
+
+		return;
+	}
+
+	auto ghost = Cast<APawnGhost>(aPawn);
+	if (ghost)
+	{
+		this->OnPossessGhost(ghost);
+		return;
 	}
 }
 
 void APlayerControllerShooter::UnPossess()
 {
-	Super::UnPossess();
-
 	this->OnUnPossess();
-
+	Super::UnPossess();
 }
 
 void APlayerControllerShooter::RotateShipSin(const float Value)
@@ -67,6 +84,7 @@ void APlayerControllerShooter::RotateShipSin(const float Value)
 	if (pawn)
 	{
 		pawn->AddInputRotationVector(FVector2D(0, Value));
+		return;
 	}
 }
 
@@ -76,6 +94,7 @@ void APlayerControllerShooter::RotateShipCos(const float Value)
 	if (pawn)
 	{
 		pawn->AddInputRotationVector(FVector2D(Value, 0));
+		return;
 	}
 }
 
@@ -85,6 +104,14 @@ void APlayerControllerShooter::MoveShipForward(const float Value)
 	if (pawn)
 	{
 		pawn->AddInputVector(FVector(Value, 0, 0));
+		return;
+	}
+
+	auto ghost = Cast<APawnGhost>(this->GetPawn());
+	if (ghost)
+	{
+		ghost->AddInputVector(FVector(Value, 0, 0));
+		return;
 	}
 }
 
@@ -94,6 +121,14 @@ void APlayerControllerShooter::MoveShipRight(const float Value)
 	if (pawn)
 	{
 		pawn->AddInputVector(FVector(0, Value, 0));
+		return;
+	}
+
+	auto ghost = Cast<APawnGhost>(this->GetPawn());
+	if (ghost)
+	{
+		ghost->AddInputVector(FVector(0, Value, 0));
+		return;
 	}
 }
 
@@ -103,6 +138,7 @@ void APlayerControllerShooter::CastSpellX()
 	if (pawn)
 	{
 		pawn->CastSpellX();
+		return;
 	}
 }
 
@@ -113,6 +149,7 @@ void APlayerControllerShooter::CastSpellY()
 	if (pawn)
 	{
 		pawn->CastSpellY();
+		return;
 	}
 }
 
@@ -123,6 +160,7 @@ void APlayerControllerShooter::CastSpellA()
 	if (pawn)
 	{
 		pawn->CastSpellA();
+		return;
 	}
 }
 
@@ -133,6 +171,7 @@ void APlayerControllerShooter::CastSpellB()
 	if (pawn)
 	{
 		pawn->CastSpellB();
+		return;
 	}
 }
 
@@ -142,6 +181,7 @@ void APlayerControllerShooter::CancelSpellX()
 	if (pawn)
 	{
 		pawn->CancelSpellX();
+		return;
 	}
 }
 
@@ -152,6 +192,7 @@ void APlayerControllerShooter::CancelSpellY()
 	if (pawn)
 	{
 		pawn->CancelSpellY();
+		return;
 	}
 }
 
@@ -162,6 +203,7 @@ void APlayerControllerShooter::CancelSpellA()
 	if (pawn)
 	{
 		pawn->CancelSpellA();
+		return;
 	}
 }
 
@@ -172,6 +214,7 @@ void APlayerControllerShooter::CancelSpellB()
 	if (pawn)
 	{
 		pawn->CancelSpellB();
+		return;
 	}
 }
 
@@ -181,6 +224,7 @@ void APlayerControllerShooter::StartShootingBasicWeapon()
 	if (pawn)
 	{
 		pawn->StartShootingBasicWeapon();
+		return;
 	}
 }
 
@@ -190,5 +234,6 @@ void APlayerControllerShooter::StopShootingBasicWeapon()
 	if (pawn)
 	{
 		pawn->StopShootingBasicWeapon();
+		return;
 	}
 }

@@ -19,31 +19,31 @@ class SHOOTER_API USpell : public UDataAsset
 public:
 
 	/** Time to wait to have a new charge */
-	UPROPERTY(Category = "Spell|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = "Spell", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	float ChargeReloadTime;
 
 	/** Time to wait after casting the spell for the spell action to start */
-	UPROPERTY(Category = "Spell|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = "Spell", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	float CastTime;
 
 	/** Time to wait after a spell action before casting a new time */
-	UPROPERTY(Category = "Spell|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = "Spell", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	float CooldownTime;
 
 	/** Max charges the spell can stack */
-	UPROPERTY(Category = "Spell|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = "Spell", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	int32 ChargesCountMax;
 
 	/** Tells whether the spell can reload its stack or not */
-	UPROPERTY(Category = "Spell|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = "Spell", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	bool bIsReloadable;
 
 	/** Tells whether the spell can reload its stack or not */
-	UPROPERTY(Category = "Spell|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = "Spell", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	bool bIsUltimate;
 
 	/** UI: Texture for the spell button */
-	UPROPERTY(Category = "Spell|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = "Spell", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UTexture2D* SpellImage;
 	
 protected:

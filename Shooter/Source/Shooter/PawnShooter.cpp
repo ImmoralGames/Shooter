@@ -15,7 +15,7 @@
 #include "UserWidgetHealthBar.h"
 #include "DamageTypeExplosion.h"
 #include "Shooter.h"
-#include "UserWidgetHealthBar.h"
+#include "PawnGhost.h"
 
 // ___________________________________________________ //
 //   ___             _               _                 //
@@ -37,7 +37,12 @@ APawnShooter::APawnShooter()
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	UBoxComponent* baseCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("ShipBaseCollision"));
+	this->BaseCollision = baseCollision;
+	this->RootComponent = baseCollision;
+
 	this->HealthbarWidgetComponent = CreateDefaultSubobject<UWidgetComponent>(TEXT("HealthBarWidget"));
+	this->HealthbarWidgetComponent->SetupAttachment(this->RootComponent);
 	this->HealthbarWidgetComponent->SetRelativeLocation(FVector(0, 0, 500));
 	this->HealthbarWidgetComponent->SetWidgetSpace(EWidgetSpace::Screen);
 }
@@ -54,9 +59,9 @@ void APawnShooter::PostEditChangeProperty(FPropertyChangedEvent& PropertyChanged
 {
 	Super::PostEditChangeProperty(PropertyChangedEvent);
 	this->HealthbarWidgetComponent->SetWidgetClass(this->HealthBarSkin);
-	this->HealthbarWidgetComponent->SetupAttachment(this->RootComponent);
 }
 #endif
+
 
 // Called when the game starts or when spawned
 void APawnShooter::BeginPlay()
@@ -71,7 +76,6 @@ void APawnShooter::BeginPlay()
 		this->HealthBar->UpdateHealth(this->Health, this->MaxHealth);
 	}
 
-	this->HealthbarWidgetComponent->SetupAttachment(this->RootComponent);
 	this->HealthbarWidgetComponent->SetWidget(this->HealthBar);
 }
 
@@ -81,11 +85,31 @@ float APawnShooter::TakeDamage(float Damage, struct FDamageEvent const& DamageEv
 		this->Health -= Damage;
 	
 	if (this->Health <= 0)
-		this->Destroy();
+		this->Dead();
 	else if(this->HealthBar != nullptr)
 		this->HealthBar->UpdateHealth(this->Health, this->MaxHealth);
 
 	return Damage;
+}
+
+void APawnShooter::Dead()
+{
+	AController* controller = this->GetController();
+	if (controller != nullptr && controller->IsPlayerController())
+	{
+		APawnGhost* ghost = this->GetWorld()->SpawnActor<APawnGhost>();
+
+		ghost->InitResurrection(10, this->GetClass());
+
+		ghost->SetActorLocationAndRotation(
+			this->GetActorLocation(),
+			this->GetActorRotation());
+
+		controller->UnPossess();
+		controller->Possess(ghost);
+	}
+
+	this->Destroy();
 }
 
 // ___________________________________________________ //
@@ -182,6 +206,6 @@ void APawnShooter::Explode()
 			actorsToIgnore, this, NULL,
 			false, ECollisionChannel::ECC_Visibility);
 
-		this->Destroy();
+		this->Dead();
 	}
 }

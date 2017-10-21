@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "Components/BoxComponent.h"
 #include "UserWidgetHealthBar.h"
 #include "WidgetComponent.h"
 #include "PawnShooter.generated.h"
@@ -57,6 +58,9 @@ protected:
 	UPROPERTY(Category = "PawnShooter", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UWidgetComponent* HealthbarWidgetComponent;
 
+
+	UBoxComponent* BaseCollision;
+
 // Constructors
 public:
 
@@ -65,6 +69,8 @@ public:
 
 // Protected events
 protected:
+
+	virtual void Dead();
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -77,6 +83,7 @@ public:
 #if WITH_EDITOR
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
 #endif
+
 	
 // Public getters
 public:
@@ -88,15 +95,15 @@ public:
 	TArray<APawnShooter*> GetPlayerPawnsInRange(float range) const;
 
 	/** Returns the pawn's current health */
-	UFUNCTION(Category = "Ship|stats", BlueprintPure, meta = (DefaultToSelf))
+	UFUNCTION(Category = "Ship", BlueprintPure, meta = (DefaultToSelf))
 	int32 GetCurrentHealth() const;
 
 	/** Returns the pawn's max health */
-	UFUNCTION(Category = "Ship|stats", BlueprintPure, meta = (DefaultToSelf))
+	UFUNCTION(Category = "Ship", BlueprintPure, meta = (DefaultToSelf))
 	int32 GetMaxHealth() const;
 
 	/** Returns the pawn's current health (in percent of its max health) */
-	UFUNCTION(Category = "Ship|stats", BlueprintPure, meta = (DefaultToSelf))
+	UFUNCTION(Category = "Ship", BlueprintPure, meta = (DefaultToSelf))
 	float GetPercentHealth() const;
 
 // Public setters

@@ -25,6 +25,9 @@ public:
 	void OnPossessShip(APawnShip* ship);
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void OnPossessGhost(APawnGhost* ghost);
+	
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void OnUnPossess();
 
 	virtual void Possess(APawn* pawn) override;

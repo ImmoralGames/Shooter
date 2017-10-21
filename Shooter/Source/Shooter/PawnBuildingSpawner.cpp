@@ -1,8 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "PawnBuildingSpawner.h"
-#include "PawnBuilding.h"
-#include "Components/ArrowComponent.h"
 #include "SpellSpawn.h"
 
 

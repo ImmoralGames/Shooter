@@ -8,14 +8,7 @@
 // ___________________________________________________ //
 
 #include "PawnShip.h"
-#include "Components/BoxComponent.h"
-#include "Components/StaticMeshComponent.h"
-#include "GameFramework/SpringArmComponent.h"
-#include "PawnRotation.h"
 #include "Camera/CameraComponent.h"
-#include "FloatingPawnMovementShip.h"
-#include "SpellCaster.h"
-#include "WeaponShooter.h"
 #include "WeaponMiniShootingGun.h"
 #include "Shooter.h"
 
@@ -30,11 +23,9 @@ APawnShip::APawnShip()
 {
 	this->BaseMaxSpeed = 4000;
 	this->BaseAcceleration = 8000;
-
-	UBoxComponent* baseCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("ShipBaseCollision"));
-
+	
 	USpringArmComponent* SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraAttachmentArm"));
-	SpringArm->SetupAttachment(baseCollision);
+	SpringArm->SetupAttachment(this->RootComponent);
 	SpringArm->RelativeRotation = FRotator(300.f, 0.f, 0.f);
 	SpringArm->TargetArmLength = 9000.0f;
 	SpringArm->bEnableCameraLag = true;
@@ -45,14 +36,14 @@ APawnShip::APawnShip()
 	Camera->SetupAttachment(SpringArm, USpringArmComponent::SocketName);
 
 	USceneComponent* pivot = CreateDefaultSubobject<USceneComponent>(TEXT("RotationPivot"));
-	pivot->SetupAttachment(baseCollision);
+	pivot->SetupAttachment(this->RootComponent);
 
 	UStaticMeshComponent* model = CreateDefaultSubobject<UStaticMeshComponent>("Model");
 	model->SetupAttachment(pivot);
 	model->RelativeLocation = FVector(0, 0, -150);
 
-	UFloatingPawnMovementShip* FloatingPawnMovementShip = CreateDefaultSubobject<UFloatingPawnMovementShip>(TEXT("ShipMovement"));
-	FloatingPawnMovementShip->UpdatedComponent = baseCollision;
+	UFloatingPawnMovement* FloatingPawnMovementShip = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("ShipMovement"));
+	FloatingPawnMovementShip->UpdatedComponent = this->RootComponent;
 
 	UPawnRotation* rotationComponent = CreateDefaultSubobject<UPawnRotation>(TEXT("ShipRotation"));
 	rotationComponent->UpdatedComponent = pivot;
@@ -73,9 +64,7 @@ APawnShip::APawnShip()
 	basicWeaponShooter->SetupAttachment(pivot);
 	basicWeaponShooter->SetWeapon(UWeaponMiniShootingGun::StaticClass());
 
-	this->RootComponent = baseCollision;
 	this->ModelComponent = model;
-	this->BaseCollision = baseCollision;
 	this->CameraSpringArm = SpringArm;
 	this->MovementComponent = FloatingPawnMovementShip;
 	this->RotationComponent = rotationComponent;

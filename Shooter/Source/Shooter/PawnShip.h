@@ -4,8 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/StaticMeshComponent.h"
-#include "Components/BoxComponent.h"
-#include "FloatingPawnMovementShip.h"
+#include "GameFramework/FloatingPawnMovement.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "SpellCaster.h"
 #include "WeaponShooter.h"
@@ -23,18 +22,17 @@ class SHOOTER_API APawnShip : public APawnShooter
 private:
 
 	/** The ship's base max speed */
-	UPROPERTY(Category = "Ship|stats", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = "Ship", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	float BaseMaxSpeed;
 
 	/** The ship's base acceleration */
-	UPROPERTY(Category = "Ship|stats", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(Category = "Ship", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	float BaseAcceleration;
 
 
 // Private reference properties
 private:
 
-	UBoxComponent* BaseCollision;
 
 	/** The component that makes the ship move */
 	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
@@ -42,7 +40,7 @@ private:
 
 	/** The component that makes the ship move */
 	UPROPERTY(Category = "Ship", BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UFloatingPawnMovementShip* MovementComponent;
+	UFloatingPawnMovement* MovementComponent;
 
 	/** The component that makes the ship rotate */
 	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
