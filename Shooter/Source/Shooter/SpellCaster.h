@@ -42,10 +42,11 @@ public:
 private:
 	void GetNewCharge();
 	void OnCastFinished();
+	void InitStats();
 
-//protected:
+protected:
 	// Called when the game starts
-	//virtual void BeginPlay() override;
+	virtual void BeginPlay() override;
 	
 public:	
 
@@ -53,15 +54,23 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 	// Tells whether the spell is ready or not
-	bool CanCast();
+	UFUNCTION(BlueprintPure, BlueprintCallable)
+	bool CanCast() const;
 
 	// Called to cast the spell
+	UFUNCTION(BlueprintCallable)
 	void CastSpell();
 
 	// Called to cancel the casting
+	UFUNCTION(BlueprintCallable)
 	void CancelCasting();
 
-	void SetSpell(USpell* spell);
+	UFUNCTION(BlueprintCallable)
+	void SetSpell(USpell* newSpell);
 
-	void SetSpell(TSubclassOf<USpell> spellType);
+	UFUNCTION(BlueprintCallable)
+	void SetSpellType(TSubclassOf<USpell> newSpellType);
+
+	UFUNCTION(BlueprintPure, BlueprintCallable)
+	bool HasSpellSetted() const;
 };

@@ -2,6 +2,7 @@
 
 #include "PlayerControllerShooter.h"
 #include "PawnShip.h"
+#include "PawnBuilding.h"
 #include "PawnShooter.h"
 #include "Shooter.h"
 
@@ -35,13 +36,29 @@ void APlayerControllerShooter::SetupInputComponent()
 
 void APlayerControllerShooter::Possess(APawn* aPawn)
 {
+	Super::Possess(aPawn);
+
 	auto pawn = Cast<APawnShooter>(this->GetPawn());
 	if (pawn)
 	{
 		pawn->SetTeamID(PLAYER_TEAM_1);
-	}
 
-	Super::Possess(aPawn);
+		auto ship = Cast<APawnShip>(pawn);
+		if (ship)
+			this->OnPossessShip(ship);
+
+		auto building = Cast<APawnBuilding>(pawn);
+		if (building)
+			this->OnPossessBuilding(building);
+	}
+}
+
+void APlayerControllerShooter::UnPossess()
+{
+	Super::UnPossess();
+
+	this->OnUnPossess();
+
 }
 
 void APlayerControllerShooter::RotateShipSin(const float Value)

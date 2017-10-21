@@ -71,8 +71,8 @@ void APawnShooter::BeginPlay()
 		this->HealthBar->UpdateHealth(this->Health, this->MaxHealth);
 	}
 
-	this->HealthbarWidgetComponent->SetWidget(this->HealthBar);
 	this->HealthbarWidgetComponent->SetupAttachment(this->RootComponent);
+	this->HealthbarWidgetComponent->SetWidget(this->HealthBar);
 }
 
 float APawnShooter::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)

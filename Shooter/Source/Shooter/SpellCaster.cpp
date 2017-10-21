@@ -14,18 +14,31 @@ USpellCaster::USpellCaster()
 
 }
 
+void USpellCaster::BeginPlay()
+{
+	Super::BeginPlay();
+	this->InitStats();
+}
+
+void USpellCaster::InitStats()
+{
+	if (this->Spell != nullptr)
+	{
+		this->ChargesCount = this->Spell->ChargesCountMax; // Starts the game with every charges
+		this->ReloadTimer = this->Spell->ChargeReloadTime;
+		this->CastingTimer = 0;
+		this->CooldownTimer = 0;
+	}
+}
+
 void USpellCaster::SetSpell(USpell* spell)
 {
 	this->Spell = spell;
-
-	this->ChargesCount = this->Spell->ChargesCountMax; // Starts the game with every charges
-	this->ReloadTimer = this->Spell->ChargeReloadTime;
-	this->CastingTimer = 0;
-	this->CooldownTimer = 0;
+	this->InitStats();
 }
 
 
-void USpellCaster::SetSpell(TSubclassOf<USpell> spellType) 
+void USpellCaster::SetSpellType(TSubclassOf<USpell> spellType)
 {
 	USpell* spell = NewObject<USpell>((UObject*)GetTransientPackage(), spellType);
 	if(spell)
@@ -70,6 +83,11 @@ void USpellCaster::TickComponent(float DeltaTime, ELevelTick TickType, FActorCom
 	}
 }
 
+bool USpellCaster::HasSpellSetted() const
+{
+	return this->Spell != nullptr;
+}
+
 void USpellCaster::OnCastFinished()
 {
 	this->ChargesCount -= 1;
@@ -78,7 +96,7 @@ void USpellCaster::OnCastFinished()
 	this->Spell->Casted((APawn*)this->GetOwner(), this);
 }
 
-bool USpellCaster::CanCast()
+bool USpellCaster::CanCast() const
 {
 	if (this->Spell == NULL)
 		return false;

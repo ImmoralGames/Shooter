@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include "PawnShip.h"
+#include "PawnBuilding.h"
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
 #include "PlayerControllerShooter.generated.h"
@@ -9,13 +11,24 @@
 /**
  * 
  */
-UCLASS()
+UCLASS(BlueprintType, Blueprintable)
 class SHOOTER_API APlayerControllerShooter : public APlayerController
 {
 	GENERATED_BODY()
 
 public:
-	virtual void Possess(APawn* aPawn) override;
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void OnPossessBuilding(APawnBuilding* building);
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void OnPossessShip(APawnShip* ship);
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void OnUnPossess();
+
+	virtual void Possess(APawn* pawn) override;
+	virtual void UnPossess() override;
 
 protected:
 
