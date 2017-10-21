@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
+#include "Engine/Texture2D.h"
 #include "Runtime/Engine/Classes/Engine/DataAsset.h"
 #include "Spell.generated.h"
 
@@ -40,6 +41,10 @@ public:
 	/** Tells whether the spell can reload its stack or not */
 	UPROPERTY(Category = "Spell|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	bool bIsUltimate;
+
+	/** UI: Texture for the spell button */
+	UPROPERTY(Category = "Spell|stats", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UTexture2D* SpellImage;
 	
 protected:
 	USpell();
