@@ -16,6 +16,10 @@ class SHOOTER_API APlayerControllerShooter : public APlayerController
 {
 	GENERATED_BODY()
 
+private:
+	FVector2D LastMousePosition;
+	bool bIsMouseLastDetected;
+
 public:
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
@@ -30,16 +34,16 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
 	void OnUnPossess();
 
+	virtual void PostProcessInput(const float DeltaTime, const bool bGamePaused) override;
 	virtual void Possess(APawn* pawn) override;
 	virtual void UnPossess() override;
 
 protected:
-
 	void SetupInputComponent() override;
-	void RotateShipSin(const float Value);
-	void RotateShipCos(const float Value);
-	void MoveShipForward(const float Value);
-	void MoveShipRight(const float Value);
+	void RotatePawnSin(const float Value);
+	void RotatePawnCos(const float Value);
+	void MovePawnForward(const float Value);
+	void MovePawnRight(const float Value);
 	void CastSpellX();
 	void CastSpellY();
 	void CastSpellA();

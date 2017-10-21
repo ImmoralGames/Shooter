@@ -127,14 +127,18 @@ public:
 	
 	/** Add a directional command to the Movement component */
 	UFUNCTION(Category = "Movement", BlueprintCallable)
-	void AddInputVector(const FVector & input) const;
+	virtual void AddInputVector(const FVector& input) override;
 
 	/** Add a rotation command to the Movement component */
 	UFUNCTION(Category = "Movement", BlueprintCallable)
-	void AddInputRotationVector(const FVector2D & input) const;
+	virtual void AddInputRotationVector(const FVector2D& input) override;
 
 	/** Add a rotation command to the Movement component */
 	UFUNCTION(Category = "Movement", BlueprintCallable)
-	void AddInputForwardVector(const FVector2D & input) const;
+	virtual void AddInputForwardVector(const FVector2D& input) override;
+
+	/** Add a rotation command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	virtual void LookAt(const FVector& position) override;
 	
 };

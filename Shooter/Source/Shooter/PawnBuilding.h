@@ -20,4 +20,20 @@ protected:
 	UFUNCTION(Category = "Building|Construction", BlueprintCallable, meta = (DefaultToSelf))
 	void InitBuildingCollision();
 
+	/** Add a directional command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	virtual void AddInputVector(const FVector& input) override;
+
+	/** Add a rotation command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	virtual void LookAt(const FVector& position) override;
+
+	/** Add a rotation command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	virtual void AddInputRotationVector(const FVector2D& input) override;
+
+	/** Add a rotation command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	virtual void AddInputForwardVector(const FVector2D& input) override;
+
 };
