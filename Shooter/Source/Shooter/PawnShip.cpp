@@ -98,6 +98,8 @@ APawnShip::APawnShip()
 
 void APawnShip::InitShipCollision()
 {	
+	this->BaseCollision->SetConstraintMode(EDOFMode::XYPlane);
+	
 	this->BaseCollision->InitBoxExtent(FVector(300, 150, 150));
 	this->BaseCollision->CanCharacterStepUpOn = ECB_No;
 
