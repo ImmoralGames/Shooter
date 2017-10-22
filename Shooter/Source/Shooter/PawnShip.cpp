@@ -153,7 +153,6 @@ void APawnShip::TickActor(float DeltaTime, enum ELevelTick TickType, FActorTickF
 // ___________________________________________________ //
 
 
-
 void APawnShip::CastSpellX() { 
 	this->SpellCasterX->CastSpell(); 
 }
@@ -218,7 +217,7 @@ void APawnShip::AddInputForwardVector(const FVector2D & axis)
 
 void APawnShip::LookAt(const FVector& position)
 {
-	FVector p = position - this->GetActorLocation();
+	FVector p = this->GetActorLocation() - position;
 	p.Normalize();
 
 	this->RotationComponent->AddInputForwardVector(FVector2D(p.X, p.Y));

@@ -98,36 +98,47 @@ public:
 public:
 	
 	/** Called to cast the spell that should be associated to the X button */
+	UFUNCTION(Category = "Spell", BlueprintCallable)
 	void CastSpellX();
 
 	/** Called to cast the spell that should be associated to the Y button */
+	UFUNCTION(Category = "Spell", BlueprintCallable)
 	void CastSpellY();
 
 	/** Called to cast the spell that should be associated to the A button */
+	UFUNCTION(Category = "Spell", BlueprintCallable)
 	void CastSpellA();
 
 	/** Called to cast the spell that should be associated to the B button */
+	UFUNCTION(Category = "Spell", BlueprintCallable)
 	void CastSpellB();
 
 	/** Called to cancel the cast of the spell that should be associated to the X button */
+	UFUNCTION(Category = "Spell", BlueprintCallable)
 	void CancelSpellX();
 
 	/** Called to cancel the cast of the spell that should be associated to the Y button */
+	UFUNCTION(Category = "Spell", BlueprintCallable)
 	void CancelSpellY();
 
 	/** Called to cancel the cast of the spell that should be associated to the A button */
+	UFUNCTION(Category = "Spell", BlueprintCallable)
 	void CancelSpellA();
 
 	/** Called to cancel the cast of the spell that should be associated to the B button */
+	UFUNCTION(Category = "Spell", BlueprintCallable)
 	void CancelSpellB();
 
 	/** Shoots a normal bullet */
+	UFUNCTION(Category = "Weapon", BlueprintCallable)
 	virtual void ShootBasicWeapon();
 
 	/** Starts shooting normal bullets */
+	UFUNCTION(Category = "Weapon", BlueprintCallable)
 	virtual void StartShootingBasicWeapon();
 
 	/** Stops shooting normal bullets */
+	UFUNCTION(Category = "Weapon", BlueprintCallable)
 	virtual void StopShootingBasicWeapon();
 	
 	/** Add a directional command to the Movement component */

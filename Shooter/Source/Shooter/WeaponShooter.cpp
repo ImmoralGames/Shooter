@@ -80,20 +80,27 @@ void UWeaponShooter::OnShotFinished()
 }	
 
 void UWeaponShooter::StartShooting() 
-{  
-	this->bIsShooting = true;
-	this->ShootAsap();
+{
+	if(!this->bIsShooting)
+	{
+		this->bIsShooting = true;
+		this->ShootAsap();
+	}
 }
 
 void UWeaponShooter::StopShooting() 
 {
-	this->ShootingTimer = 0;
-	this->bIsShooting = false;
+	if(this->bIsShooting)
+	{
+		this->ShootingTimer = 0;
+		this->bIsShooting = false;
+	}
 }
 
 void UWeaponShooter::ShootAsap()
 {
-	this->ShootingTimer = this->LoadedWeapon->ShootTime;
+	if(this->ShootingTimer == 0)
+		this->ShootingTimer = this->LoadedWeapon->ShootTime;
 }
 
 bool UWeaponShooter::HasWeaponLoaded()

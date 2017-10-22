@@ -35,6 +35,12 @@ APawnBuilding* AAIControllerShooter::GetBuilding() const
 
 APawnShip* AAIControllerShooter::GetNearestPlayerShip() const
 {
+	float distance;
+	return this->GetNearestPlayerShipWithDistance(distance);
+}
+
+APawnShip* AAIControllerShooter::GetNearestPlayerShipWithDistance(float& distance) const
+{
 	const APawnShip* const possessedShip = GetShip();
 	if (possessedShip == nullptr)
 	{
@@ -51,7 +57,6 @@ APawnShip* AAIControllerShooter::GetNearestPlayerShip() const
 	APawnShip* ship;
 	APawnShip* nearest = nullptr;
 	float nearestDistance = 0;
-	float distance;
 	
 	for(FConstPawnIterator itPawn = world->GetPawnIterator(); itPawn; ++itPawn)
 	{
@@ -77,6 +82,9 @@ APawnShip* AAIControllerShooter::GetNearestPlayerShip() const
 
 void AAIControllerShooter::LookAt(AActor* actor)
 {
+	if(actor == nullptr)
+		return;
+	
 	APawnShip* const possessedShip = GetShip();
 	if (possessedShip != nullptr)
 		possessedShip->LookAt(actor->GetActorLocation());

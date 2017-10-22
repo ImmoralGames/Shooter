@@ -54,4 +54,6 @@ protected:
 	void CancelSpellB();
 	void StartShootingBasicWeapon();
 	void StopShootingBasicWeapon();
+	void EnableGodMode();
+	void DisableGodMode();
 };

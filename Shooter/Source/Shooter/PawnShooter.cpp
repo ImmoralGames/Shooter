@@ -195,6 +195,11 @@ void APawnShooter::SetTeamID(int32 teamID)
 //       \___\___/_|_|_|_|_|_\__,_|_||_\__,_/__/       //
 // ___________________________________________________ //
 
+void APawnShooter::SetGodMode(bool enabled)
+{
+	this->bIsGodMode = enabled;
+}
+
 void APawnShooter::Explode()
 {
 	if (this->bCanExplode)

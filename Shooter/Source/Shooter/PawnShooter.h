@@ -135,4 +135,7 @@ public:
 
 	UFUNCTION(Category = "PawnShooter", BlueprintCallable, meta = (DefaultToSelf))
 	void Explode();
+	
+	UFUNCTION(Category = "PawnShooter", BlueprintCallable, meta = (DefaultToSelf))	
+	void SetGodMode(bool enable);
 };

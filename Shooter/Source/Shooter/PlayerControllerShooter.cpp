@@ -41,6 +41,9 @@ void APlayerControllerShooter::SetupInputComponent()
 	InputComponent->BindAction("CastSpellB", IE_Released, this, &APlayerControllerShooter::CancelSpellB);
 	InputComponent->BindAction("BasicShoot", IE_Pressed, this, &APlayerControllerShooter::StartShootingBasicWeapon);
 	InputComponent->BindAction("BasicShoot", IE_Released, this, &APlayerControllerShooter::StopShootingBasicWeapon);
+	
+	InputComponent->BindAction("EnableGodMode", IE_Pressed, this, &APlayerControllerShooter::EnableGodMode);
+	InputComponent->BindAction("DisableGodMode", IE_Pressed, this, &APlayerControllerShooter::DisableGodMode);
 
 }
 
@@ -178,6 +181,26 @@ void APlayerControllerShooter::MovePawnRight(const float Value)
 	if (ghost)
 	{
 		ghost->AddInputVector(FVector(0, Value, 0));
+		return;
+	}
+}
+
+void APlayerControllerShooter::EnableGodMode()
+{
+	auto pawn = Cast<APawnShooter>(this->GetPawn());
+	if (pawn)
+	{
+		pawn->SetGodMode(true);
+		return;
+	}
+}
+
+void APlayerControllerShooter::DisableGodMode()
+{
+	auto pawn = Cast<APawnShooter>(this->GetPawn());
+	if (pawn)
+	{
+		pawn->SetGodMode(false);
 		return;
 	}
 }

@@ -12,11 +12,21 @@ UPawnRotation::UPawnRotation() :
 	PrimaryComponentTick.bCanEverTick = true;
 }
 
-
 // Called every frame
 void UPawnRotation::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+
+	bool changed = false;
+	
+	AActor* owner = this->GetOwner();
+	FRotator ownerRotation = owner->GetActorRotation();
+	if(ownerRotation != FRotator::ZeroRotator)
+	{
+		this->currentRotation += ownerRotation;
+		owner->SetActorRotation(FRotator::ZeroRotator, ETeleportType::TeleportPhysics);
+		changed = true;
+	}
 
 	FVector2D rotation;
 	if (ConsumateInputRotationVector(rotation))
@@ -28,8 +38,7 @@ void UPawnRotation::TickComponent(float DeltaTime, ELevelTick TickType, FActorCo
 			FRotator rotator = FRotator(0, angleDegrees + 90, 0);
 
 			currentRotation = FMath::Lerp(currentRotation, rotator, alphaLerp * DeltaTime);
-
-			this->UpdatedComponent->SetRelativeRotation(currentRotation);
+			changed = true;
 		}
 	}
 	else if (ConsumateInputForwardVector(rotation))
@@ -38,13 +47,15 @@ void UPawnRotation::TickComponent(float DeltaTime, ELevelTick TickType, FActorCo
 		{
 			float angleRad = FMath::Atan2(rotation.X, rotation.Y);
 			float angleDegrees = FMath::RadiansToDegrees(angleRad);
-			FRotator rotator = FRotator(0, -angleDegrees + 90, 0);
+			FRotator rotator = FRotator(0, -angleDegrees - 90, 0);
 
 			currentRotation = FMath::Lerp(currentRotation, rotator, alphaLerp * DeltaTime);
-
-			this->UpdatedComponent->SetRelativeRotation(currentRotation);
+			changed = true;
 		}
 	}
+	
+	if(changed)
+		this->UpdatedComponent->SetRelativeRotation(currentRotation);
 }
 
 bool UPawnRotation::ConsumateInputRotationVector(FVector2D& rotation)

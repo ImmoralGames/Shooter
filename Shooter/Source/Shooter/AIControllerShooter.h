@@ -21,6 +21,9 @@ public:
 
 	UFUNCTION(Category="AI Tools", BlueprintPure, BlueprintCallable, meta = (DefaultToSelf))
 	APawnShip* GetNearestPlayerShip() const;
+	
+	UFUNCTION(Category="AI Tools", BlueprintPure, BlueprintCallable, meta = (DefaultToSelf))
+	APawnShip* GetNearestPlayerShipWithDistance(float& distance) const;
 
 	UFUNCTION(Category = "AI Tools", BlueprintPure, BlueprintCallable, meta = (DefaultToSelf))
 	APawnShip* GetShip() const;
