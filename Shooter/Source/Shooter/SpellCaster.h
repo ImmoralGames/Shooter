@@ -40,6 +40,7 @@ public:
 	USpellCaster();
 
 private:
+	void GetFullCharge();
 	void GetNewCharge();
 	void OnCastFinished();
 	void InitStats();

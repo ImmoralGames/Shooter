@@ -54,13 +54,27 @@ void USpellCaster::TickComponent(float DeltaTime, ELevelTick TickType, FActorCom
 	{
 		if (this->Spell->bIsReloadable)
 		{
-			if (this->ChargesCount < this->Spell->ChargesCountMax)
+			if(this->Spell->bReloadWhenEmpty)
 			{
-				this->ReloadTimer -= DeltaTime;
-				if (this->ReloadTimer <= 0)
+				if(this->ChargesCount == 0)
 				{
-					this->ReloadTimer += this->Spell->ChargeReloadTime;
-					this->GetNewCharge();
+					this->ReloadTimer -= DeltaTime;
+					if (this->ReloadTimer <= 0)
+					{
+						this->GetFullCharge();
+					}
+				}
+			}
+			else 
+			{
+				if (this->ChargesCount < this->Spell->ChargesCountMax)
+				{
+					this->ReloadTimer -= DeltaTime;
+					if (this->ReloadTimer <= 0)
+					{
+						this->ReloadTimer += this->Spell->ChargeReloadTime;
+						this->GetNewCharge();
+					}
 				}
 			}
 		}
@@ -131,6 +145,15 @@ void USpellCaster::CastSpell()
 void USpellCaster::CancelCasting() 
 {
 	this->CastingTimer = 0;
+}
+
+void USpellCaster::GetFullCharge()
+{
+	if (this->Spell != NULL)
+	{
+		this->ChargesCount = this->Spell->ChargesCountMax;
+		this->ReloadTimer = this->Spell->ChargeReloadTime;
+	}
 }
 
 void USpellCaster::GetNewCharge()

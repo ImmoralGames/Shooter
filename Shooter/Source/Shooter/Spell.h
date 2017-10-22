@@ -37,6 +37,10 @@ public:
 	/** Tells whether the spell can reload its stack or not */
 	UPROPERTY(Category = "Spell", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	bool bIsReloadable;
+	
+	/** Tells whether the spell can reload its stack or not only if empty */
+	UPROPERTY(Category = "Spell", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	bool bReloadWhenEmpty;
 
 	/** Tells whether the spell can reload its stack or not */
 	UPROPERTY(Category = "Spell", EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))

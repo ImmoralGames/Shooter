@@ -10,4 +10,5 @@ USpell::USpell()
 	this->ChargeReloadTime = 5;		// 5 seconds
 	this->bIsReloadable = true;		// Can reload charges
 	this->bIsUltimate = false;
+	this->bReloadWhenEmpty = false;
 }
