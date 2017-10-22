@@ -20,6 +20,7 @@ void USpellSpawn::Casted_Implementation(APawn* caster, USceneComponent* castingC
 	UClass* shipClass = this->SpawnableShips[randomIndex];
 	
 	FActorSpawnParameters spawnParams = FActorSpawnParameters();
+	spawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn;
 	
 	APawnShip* spawnedShip = world->SpawnActor<APawnShip>(
 		shipClass,

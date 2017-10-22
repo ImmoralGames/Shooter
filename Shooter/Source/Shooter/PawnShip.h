@@ -89,9 +89,14 @@ protected:
 	virtual void BeginPlay() override;
 	
 
-// Public commands
+// Public events
 public:
 
+	virtual void TickActor(float DeltaTime, enum ELevelTick TickType, FActorTickFunction& ThisTickFunction) override;
+
+// Public commands
+public:
+	
 	/** Called to cast the spell that should be associated to the X button */
 	void CastSpellX();
 

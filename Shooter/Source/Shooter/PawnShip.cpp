@@ -133,6 +133,18 @@ void APawnShip::BeginPlay()
 	this->MovementComponent->MaxSpeed		= this->BaseMaxSpeed;
 }
 
+void APawnShip::TickActor(float DeltaTime, enum ELevelTick TickType, FActorTickFunction& ThisTickFunction)
+{
+	Super::Tick(DeltaTime, TickType, ThisTickFunction);
+
+	FVector Location = this->GetActorLocation();
+	if (Location.Z != 500)
+	{
+		Location.Z = 500;
+		this->SetActorLocation(Location, false, nullptr, ETeleportType::TeleportPhysics);
+	}
+}
+
 // ___________________________________________________ //
 //        ___                              _           //
 //       / __|___ _ __  _ __  __ _ _ _  __| |___       //

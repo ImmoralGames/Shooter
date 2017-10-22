@@ -38,6 +38,8 @@ APawnShooter::APawnShooter()
 	PrimaryActorTick.bCanEverTick = true;
 
 	UBoxComponent* baseCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("ShipBaseCollision"));
+	baseCollision->SetConstraintMode(EDOFMode::XYPlane);
+
 	this->BaseCollision = baseCollision;
 	this->RootComponent = baseCollision;
 
