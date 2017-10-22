@@ -135,7 +135,7 @@ void APawnShip::BeginPlay()
 
 void APawnShip::TickActor(float DeltaTime, enum ELevelTick TickType, FActorTickFunction& ThisTickFunction)
 {
-	Super::Tick(DeltaTime, TickType, ThisTickFunction);
+	Super::TickActor(DeltaTime, TickType, ThisTickFunction);
 
 	FVector Location = this->GetActorLocation();
 	if (Location.Z != 500)
