@@ -1,10 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "PawnRotation.h"
+#include "PCompPawnRotation.h"
 
 
 // Sets default values for this component's properties
-UPawnRotation::UPawnRotation() : 
+UPCompPawnRotation::UPCompPawnRotation() : 
 	inputRotation(FVector2D()),
 	currentRotation(FRotator())
 {
@@ -13,7 +13,7 @@ UPawnRotation::UPawnRotation() :
 }
 
 // Called every frame
-void UPawnRotation::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+void UPCompPawnRotation::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
@@ -58,7 +58,7 @@ void UPawnRotation::TickComponent(float DeltaTime, ELevelTick TickType, FActorCo
 		this->UpdatedComponent->SetRelativeRotation(currentRotation);
 }
 
-bool UPawnRotation::ConsumateInputRotationVector(FVector2D& rotation)
+bool UPCompPawnRotation::ConsumateInputRotationVector(FVector2D& rotation)
 {
 	if (this->inputRotation == FVector2D::ZeroVector)
 		return false;
@@ -70,7 +70,7 @@ bool UPawnRotation::ConsumateInputRotationVector(FVector2D& rotation)
 	return true;
 }
 
-bool UPawnRotation::ConsumateInputForwardVector(FVector2D& rotation)
+bool UPCompPawnRotation::ConsumateInputForwardVector(FVector2D& rotation)
 {
 	if (this->inputForward == FVector2D::ZeroVector)
 		return false;
@@ -82,12 +82,12 @@ bool UPawnRotation::ConsumateInputForwardVector(FVector2D& rotation)
 	return true;
 }
 
-void UPawnRotation::AddInputRotationVector(const FVector2D & axis)
+void UPCompPawnRotation::AddInputRotationVector(const FVector2D & axis)
 {
 	this->inputRotation += axis;
 }
 
-void UPawnRotation::AddInputForwardVector(const FVector2D & axis)
+void UPCompPawnRotation::AddInputForwardVector(const FVector2D & axis)
 {
 	this->inputForward += axis;
 }

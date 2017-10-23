@@ -11,7 +11,7 @@ APawnBuildingSpawner::APawnBuildingSpawner()
 		(UObject*)GetTransientPackage(), 
 		USpellSpawn::StaticClass());
 
-	USpellCaster* spawnCaster = CreateDefaultSubobject<USpellCaster>(TEXT("SpawnCaster"));
+	UPCompSpellCaster* spawnCaster = CreateDefaultSubobject<UPCompSpellCaster>(TEXT("SpawnCaster"));
 	spawnCaster->SetupAttachment(RootComponent);
 	spawnCaster->SetSpell(this->SpawningSpell);
 	this->SpawnCaster = spawnCaster;

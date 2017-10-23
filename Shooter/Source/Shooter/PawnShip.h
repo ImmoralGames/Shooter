@@ -6,10 +6,10 @@
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/FloatingPawnMovement.h"
 #include "GameFramework/SpringArmComponent.h"
-#include "SpellCaster.h"
-#include "WeaponShooter.h"
 #include "PawnShooter.h"
-#include "PawnRotation.h"
+#include "PCompSpellCaster.h"
+#include "PCompWeaponShooter.h"
+#include "PCompPawnRotation.h"
 #include "PawnShip.generated.h"
 
 /** PawnShip is the base class of all ship pawns in a Shooter game */
@@ -32,6 +32,10 @@ private:
 	/** The ship's base deceleration */
 	UPROPERTY(Category = "Ship", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	float BaseDeceleration;
+	
+	/** The ship's base deceleration */
+	UPROPERTY(Category = "Movement", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	bool bIsAutomaticallyLookingAtMovementDirection;
 
 
 // Private reference properties
@@ -48,7 +52,7 @@ private:
 
 	/** The component that makes the ship rotate */
 	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UPawnRotation* RotationComponent;
+	UPCompPawnRotation* RotationComponent;
 	
 	/** The component that handles the camera movement */
 	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
@@ -56,23 +60,23 @@ private:
 
 	/** Spell caster (should be associated with the Y button) */
 	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USpellCaster* SpellCasterY;
+	UPCompSpellCaster* SpellCasterY;
 
 	/** Spell caster (should be associated with the X button) */
 	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USpellCaster* SpellCasterX;
+	UPCompSpellCaster* SpellCasterX;
 
 	/** Spell caster (should be associated with the A button) */
 	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USpellCaster* SpellCasterA;
+	UPCompSpellCaster* SpellCasterA;
 
 	/** Spell caster (should be associated with the B button) */
 	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	USpellCaster* SpellCasterB;
+	UPCompSpellCaster* SpellCasterB;
 
 	/** Spell caster (should be associated with the B button) */
 	UPROPERTY(Category = "Ship", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	UWeaponShooter* BasicWeaponShooter;
+	UPCompWeaponShooter* BasicWeaponShooter;
 
 // Constructors
 public:
@@ -85,6 +89,13 @@ protected:
 
 	UFUNCTION(Category = "Ship|Construction", BlueprintCallable, meta = (DefaultToSelf))
 	void InitShipCollision();
+	
+// Public setters
+public:
+
+	/** Add a rotation command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	void SetIsAutomaticallyLookingAtDirection(bool enable);
 
 // Protected events
 protected:
@@ -98,6 +109,13 @@ public:
 
 	virtual void TickActor(float DeltaTime, enum ELevelTick TickType, FActorTickFunction& ThisTickFunction) override;
 
+// Protected commands
+protected:
+
+	/** Add a rotation command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	virtual void LookAtDirectionNormalized(const FVector& direction);
+	
 // Public commands
 public:
 	
@@ -144,11 +162,18 @@ public:
 	/** Stops shooting normal bullets */
 	UFUNCTION(Category = "Weapon", BlueprintCallable)
 	virtual void StopShootingBasicWeapon();
-	
-	
+		
 	/** Add a rotation command to the Movement component */
 	UFUNCTION(Category = "Movement", BlueprintCallable)
 	virtual void LookAt(const FVector& position);	
+	
+	/** Add a rotation command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	virtual void LookAtDirection(FVector direction);	
+	
+	/** Add a directional command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	virtual void GoFromPosition(const FVector& position);
 	
 	/** Add a directional command to the Movement component */
 	UFUNCTION(Category = "Movement", BlueprintCallable)

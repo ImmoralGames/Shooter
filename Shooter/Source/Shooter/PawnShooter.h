@@ -7,6 +7,7 @@
 #include "Components/BoxComponent.h"
 #include "UserWidgetHealthBar.h"
 #include "WidgetComponent.h"
+#include "PCompAutoExploder.h"
 #include "PawnShooter.generated.h"
 
 UCLASS(abstract, BlueprintType, Blueprintable)
@@ -33,27 +34,21 @@ private:
 	UPROPERTY(Category = "PawnShooter", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	int32 MaxHealth;
 
-	/** Can the pawn explode? */
-	UPROPERTY(Category = "PawnShooter", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
-	bool bCanExplode;
-
-	/** Explosion's damages */
-	UPROPERTY(Category = "PawnShooter", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
-	float ExplosionDamage;
-
-	/** Explosion's range */
-	UPROPERTY(Category = "PawnShooter", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
-	float ExplosionRange;
-
 	/** The pawn's team id */
 	UPROPERTY(Category = "PawnShooter", VisibleAnywhere, Transient, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	int32 TeamID;
-
-// Protected references
+	
+// Private reference properties
 private:
+
+	/** The component that makes the ship move */
+	UPROPERTY(Category = "PawnShooter", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UPCompAutoExploder* AutoExploder;
+
 	UPROPERTY(Category = "PawnShooter", VisibleAnywhere, Transient, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UUserWidgetHealthBar* HealthBar;
 
+// Protected references
 protected:
 	UPROPERTY(Category = "PawnShooter", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UWidgetComponent* HealthbarWidgetComponent;
@@ -70,7 +65,6 @@ public:
 // Protected events
 protected:
 
-	virtual void Dead();
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -87,6 +81,9 @@ public:
 // Public commands
 public:
 
+
+	virtual void Dead();
+
 	/** Add a directional command to the Movement component */
 	UFUNCTION(Category = "Movement", BlueprintCallable)
 	virtual void AddInputVector(const FVector& input) PURE_VIRTUAL(APawnShooter::AddInputVector, );
@@ -102,28 +99,28 @@ public:
 // Public getters
 public:
 
-	UFUNCTION(BlueprintCallable, Category = "Team")
+	UFUNCTION(BlueprintCallable, Category = "PawnShooter")
 	int32 GetTeamID() const;
 
 	UFUNCTION(Category = "PawnShooter", BlueprintCallable, meta = (DefaultToSelf))
 	TArray<APawnShooter*> GetPlayerPawnsInRange(float range) const;
 
 	/** Returns the pawn's current health */
-	UFUNCTION(Category = "Ship", BlueprintPure, meta = (DefaultToSelf))
+	UFUNCTION(Category = "PawnShooter", BlueprintPure, meta = (DefaultToSelf))
 	int32 GetCurrentHealth() const;
 
 	/** Returns the pawn's max health */
-	UFUNCTION(Category = "Ship", BlueprintPure, meta = (DefaultToSelf))
+	UFUNCTION(Category = "PawnShooter", BlueprintPure, meta = (DefaultToSelf))
 	int32 GetMaxHealth() const;
 
 	/** Returns the pawn's current health (in percent of its max health) */
-	UFUNCTION(Category = "Ship", BlueprintPure, meta = (DefaultToSelf))
+	UFUNCTION(Category = "PawnShooter", BlueprintPure, meta = (DefaultToSelf))
 	float GetPercentHealth() const;
 
 // Public setters
 public:
 
-	UFUNCTION(BlueprintCallable, Category = "Team")
+	UFUNCTION(BlueprintCallable, Category = "PawnShooter")
 	void SetTeamID(int32 newTeamID);
 
 // Commands

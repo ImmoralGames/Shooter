@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "PawnBuilding.h"
-#include "SpellCaster.h"
+#include "PCompSpellCaster.h"
 #include "SpellSpawn.h"
 #include "Components/ArrowComponent.h"
 #include "PawnBuildingSpawner.generated.h"
@@ -16,7 +16,7 @@ class SHOOTER_API APawnBuildingSpawner : public APawnBuilding
 	GENERATED_BODY()
 
 private:
-	USpellCaster* SpawnCaster;
+	UPCompSpellCaster* SpawnCaster;
 
 	UPROPERTY(Category = "Building", VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	UArrowComponent* SpawnPlace;

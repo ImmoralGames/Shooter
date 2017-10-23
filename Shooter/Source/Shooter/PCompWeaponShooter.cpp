@@ -1,11 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "WeaponShooter.h"
+#include "PCompWeaponShooter.h"
 #include "Weapon.h"
 
 
 // Sets default values for this component's properties
-UWeaponShooter::UWeaponShooter()
+UPCompWeaponShooter::UPCompWeaponShooter()
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
@@ -15,7 +15,7 @@ UWeaponShooter::UWeaponShooter()
 }
 
 // Called every frame
-void UWeaponShooter::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+void UPCompWeaponShooter::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
@@ -52,7 +52,7 @@ void UWeaponShooter::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 	}
 }
 
-void UWeaponShooter::GetNewCharge() 
+void UPCompWeaponShooter::GetNewCharge() 
 {
 	if (this->LoadedWeapon != NULL)
 	{
@@ -68,7 +68,7 @@ void UWeaponShooter::GetNewCharge()
 	}
 }
 
-void UWeaponShooter::OnShotFinished()
+void UPCompWeaponShooter::OnShotFinished()
 {
 	this->ChargesCount -= 1;
 	this->ShootingTimer = 0;
@@ -79,7 +79,7 @@ void UWeaponShooter::OnShotFinished()
 		this->ShootAsap();
 }	
 
-void UWeaponShooter::StartShooting() 
+void UPCompWeaponShooter::StartShooting() 
 {
 	if(!this->bIsShooting)
 	{
@@ -88,7 +88,7 @@ void UWeaponShooter::StartShooting()
 	}
 }
 
-void UWeaponShooter::StopShooting() 
+void UPCompWeaponShooter::StopShooting() 
 {
 	if(this->bIsShooting)
 	{
@@ -97,25 +97,25 @@ void UWeaponShooter::StopShooting()
 	}
 }
 
-void UWeaponShooter::ShootAsap()
+void UPCompWeaponShooter::ShootAsap()
 {
 	if(this->ShootingTimer == 0)
 		this->ShootingTimer = this->LoadedWeapon->ShootTime;
 }
 
-bool UWeaponShooter::HasWeaponLoaded()
+bool UPCompWeaponShooter::HasWeaponLoaded()
 {
 	return this->LoadedWeapon != NULL;
 }
 
-void UWeaponShooter::SetWeapon(TSubclassOf<UWeapon> weaponType) 
+void UPCompWeaponShooter::SetWeapon(TSubclassOf<UWeapon> weaponType) 
 {
 	UWeapon* weapon = NewObject<UWeapon>((UObject*)GetTransientPackage(), weaponType);
 	if (weapon)
 		this->SetWeapon(weapon);
 }
 
-void UWeaponShooter::SetWeapon(UWeapon* weapon) 
+void UPCompWeaponShooter::SetWeapon(UWeapon* weapon) 
 {
 	this->LoadedWeapon = weapon;
 

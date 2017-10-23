@@ -5,11 +5,11 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "Spell.h"
-#include "SpellCaster.generated.h"
+#include "PCompSpellCaster.generated.h"
 
 
 UCLASS(BlueprintType, ClassGroup=(Spells))
-class SHOOTER_API USpellCaster : public USceneComponent
+class SHOOTER_API UPCompSpellCaster : public USceneComponent
 {
 	GENERATED_BODY()
 
@@ -37,7 +37,7 @@ private:
 
 public:	
 	// Sets default values for this component's properties
-	USpellCaster();
+	UPCompSpellCaster();
 
 private:
 	void GetFullCharge();

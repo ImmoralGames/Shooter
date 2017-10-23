@@ -8,12 +8,11 @@
 // ___________________________________________________ //
 
 #include "PawnShooter.h"
-#include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 #include "GameFramework/Pawn.h"
 #include "Engine.h"
 #include "Engine/World.h"
 #include "UserWidgetHealthBar.h"
-#include "DamageTypeExplosion.h"
+#include "PCompAutoExploder.h"
 #include "Shooter.h"
 #include "PawnGhost.h"
 
@@ -28,9 +27,6 @@
 APawnShooter::APawnShooter()
 {
 	this->MaxHealth = this->Health = 100;
-	this->ExplosionDamage = 100;
-	this->ExplosionRange = 1000;
-	this->bCanExplode = false;
 	this->TeamID = MONSTER_TEAM;
 	this->bIsGodMode = false;
 
@@ -40,6 +36,7 @@ APawnShooter::APawnShooter()
 	UBoxComponent* baseCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("ShipBaseCollision"));
 	baseCollision->SetConstraintMode(EDOFMode::XYPlane);
 
+	this->AutoExploder = CreateDefaultSubobject<UPCompAutoExploder>(TEXT("AutoExploder"));
 	this->BaseCollision = baseCollision;
 	this->RootComponent = baseCollision;
 
@@ -202,18 +199,6 @@ void APawnShooter::SetGodMode(bool enabled)
 
 void APawnShooter::Explode()
 {
-	if (this->bCanExplode)
-	{
-		TArray<AActor*> actorsToIgnore = TArray<AActor*>();
-		actorsToIgnore.Add(this);
-
-		bool hasDamagedSomeone = UGameplayStatics::ApplyRadialDamage(this,
-			this->ExplosionDamage, this->GetActorLocation(), this->ExplosionRange,
-			TSubclassOf<UDamageType>(UDamageTypeExplosion::StaticClass()),
-			actorsToIgnore, this, NULL,
-			false, ECollisionChannel::ECC_Visibility);
-
-		this->Dead();
-	}
+	this->AutoExploder->Explode();
 }
 

@@ -5,11 +5,11 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "Weapon.h"
-#include "WeaponShooter.generated.h"
+#include "PCompWeaponShooter.generated.h"
 
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
-class SHOOTER_API UWeaponShooter : public USceneComponent
+class SHOOTER_API UPCompWeaponShooter : public USceneComponent
 {
 	GENERATED_BODY()
 	
@@ -38,7 +38,7 @@ private:
 	UWeapon* LoadedWeapon;
 
 public:	
-	UWeaponShooter();	
+	UPCompWeaponShooter();	
 	
 private:
 	void GetNewCharge();

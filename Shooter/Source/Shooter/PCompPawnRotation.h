@@ -5,17 +5,17 @@
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
 #include "Components/SceneComponent.h"
-#include "PawnRotation.generated.h"
+#include "PCompPawnRotation.generated.h"
 
 
 UCLASS(Blueprintable, BlueprintType)
-class SHOOTER_API UPawnRotation : public UActorComponent
+class SHOOTER_API UPCompPawnRotation : public UActorComponent
 {
 	GENERATED_BODY()
 
 public:	
 	// Sets default values for this component's properties
-	UPawnRotation();
+	UPCompPawnRotation();
 
 private:
 

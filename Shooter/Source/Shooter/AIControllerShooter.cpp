@@ -11,6 +11,33 @@ AAIControllerShooter::AAIControllerShooter()
 	PrimaryActorTick.bCanEverTick = true;
 }
 
+void AAIControllerShooter::Possess(APawn* aPawn)
+{
+	Super::Possess(aPawn);
+
+	auto pawn = Cast<APawnShooter>(aPawn);
+	if (pawn)
+	{
+		pawn->SetTeamID(MONSTER_TEAM);
+
+		auto ship = Cast<APawnShip>(pawn);
+		if (ship)
+		{
+			this->OnPossessShip(ship);
+			return;
+		}
+
+		auto building = Cast<APawnBuilding>(pawn);
+		if (building)
+		{
+			this->OnPossessBuilding(building);
+			return;
+		}
+
+	}
+}
+
+
 APawnShip* AAIControllerShooter::GetShip() const 
 {
 	APawn* const pawn = this->GetPawn();

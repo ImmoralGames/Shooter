@@ -1,11 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "SpellCaster.h"
+#include "PCompSpellCaster.h"
 #include "Spell.h"
 
 
 // Sets default values for this component's properties
-USpellCaster::USpellCaster()
+UPCompSpellCaster::UPCompSpellCaster()
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
@@ -14,13 +14,13 @@ USpellCaster::USpellCaster()
 
 }
 
-void USpellCaster::BeginPlay()
+void UPCompSpellCaster::BeginPlay()
 {
 	Super::BeginPlay();
 	this->InitStats();
 }
 
-void USpellCaster::InitStats()
+void UPCompSpellCaster::InitStats()
 {
 	if (this->Spell != nullptr)
 	{
@@ -31,14 +31,14 @@ void USpellCaster::InitStats()
 	}
 }
 
-void USpellCaster::SetSpell(USpell* spell)
+void UPCompSpellCaster::SetSpell(USpell* spell)
 {
 	this->Spell = spell;
 	this->InitStats();
 }
 
 
-void USpellCaster::SetSpellType(TSubclassOf<USpell> spellType)
+void UPCompSpellCaster::SetSpellType(TSubclassOf<USpell> spellType)
 {
 	USpell* spell = NewObject<USpell>((UObject*)GetTransientPackage(), spellType);
 	if(spell)
@@ -46,7 +46,7 @@ void USpellCaster::SetSpellType(TSubclassOf<USpell> spellType)
 }
 
 // Called every frame
-void USpellCaster::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+void UPCompSpellCaster::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
@@ -97,12 +97,12 @@ void USpellCaster::TickComponent(float DeltaTime, ELevelTick TickType, FActorCom
 	}
 }
 
-bool USpellCaster::HasSpellSetted() const
+bool UPCompSpellCaster::HasSpellSetted() const
 {
 	return this->Spell != nullptr;
 }
 
-void USpellCaster::OnCastFinished()
+void UPCompSpellCaster::OnCastFinished()
 {
 	this->ChargesCount -= 1;
 	this->CastingTimer = 0;
@@ -110,7 +110,7 @@ void USpellCaster::OnCastFinished()
 	this->Spell->Casted((APawn*)this->GetOwner(), this);
 }
 
-bool USpellCaster::CanCast() const
+bool UPCompSpellCaster::CanCast() const
 {
 	if (this->Spell == NULL)
 		return false;
@@ -127,7 +127,7 @@ bool USpellCaster::CanCast() const
 	return true;
 }
 
-void USpellCaster::CastSpell()
+void UPCompSpellCaster::CastSpell()
 {
 	if (this->CanCast())
 	{
@@ -142,12 +142,12 @@ void USpellCaster::CastSpell()
 	}
 }
 
-void USpellCaster::CancelCasting() 
+void UPCompSpellCaster::CancelCasting() 
 {
 	this->CastingTimer = 0;
 }
 
-void USpellCaster::GetFullCharge()
+void UPCompSpellCaster::GetFullCharge()
 {
 	if (this->Spell != NULL)
 	{
@@ -156,7 +156,7 @@ void USpellCaster::GetFullCharge()
 	}
 }
 
-void USpellCaster::GetNewCharge()
+void UPCompSpellCaster::GetNewCharge()
 {
 	if (this->Spell != NULL)
 	{

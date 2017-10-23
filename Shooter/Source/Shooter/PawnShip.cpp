@@ -24,6 +24,7 @@ APawnShip::APawnShip()
 	this->BaseMaxSpeed = 4000;
 	this->BaseAcceleration = 8000;
 	this->BaseDeceleration = 8000;
+	this->bIsAutomaticallyLookingAtMovementDirection = false;
 	
 	USpringArmComponent* SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraAttachmentArm"));
 	SpringArm->SetupAttachment(this->RootComponent);
@@ -46,22 +47,22 @@ APawnShip::APawnShip()
 	UFloatingPawnMovement* FloatingPawnMovementShip = CreateDefaultSubobject<UFloatingPawnMovement>(TEXT("ShipMovement"));
 	FloatingPawnMovementShip->UpdatedComponent = this->RootComponent;
 
-	UPawnRotation* rotationComponent = CreateDefaultSubobject<UPawnRotation>(TEXT("ShipRotation"));
+	UPCompPawnRotation* rotationComponent = CreateDefaultSubobject<UPCompPawnRotation>(TEXT("ShipRotation"));
 	rotationComponent->UpdatedComponent = pivot;
 	
-	USpellCaster* spellCasterY		= CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterY"));
+	UPCompSpellCaster* spellCasterY		= CreateDefaultSubobject<UPCompSpellCaster>(TEXT("SpellCasterY"));
 	spellCasterY->SetupAttachment(pivot);
 
-	USpellCaster* spellCasterX		= CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterX"));
+	UPCompSpellCaster* spellCasterX		= CreateDefaultSubobject<UPCompSpellCaster>(TEXT("SpellCasterX"));
 	spellCasterX->SetupAttachment(pivot);
 
-	USpellCaster* spellCasterA		= CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterA"));
+	UPCompSpellCaster* spellCasterA		= CreateDefaultSubobject<UPCompSpellCaster>(TEXT("SpellCasterA"));
 	spellCasterA->SetupAttachment(pivot);
 
-	USpellCaster* spellCasterB		= CreateDefaultSubobject<USpellCaster>(TEXT("SpellCasterB"));
+	UPCompSpellCaster* spellCasterB		= CreateDefaultSubobject<UPCompSpellCaster>(TEXT("SpellCasterB"));
 	spellCasterB->SetupAttachment(pivot);
 
-	UWeaponShooter* basicWeaponShooter	= CreateDefaultSubobject<UWeaponShooter>(TEXT("WeaponShooterBasic"));
+	UPCompWeaponShooter* basicWeaponShooter	= CreateDefaultSubobject<UPCompWeaponShooter>(TEXT("WeaponShooterBasic"));
 	basicWeaponShooter->SetupAttachment(pivot);
 	basicWeaponShooter->SetWeapon(UWeaponMiniShootingGun::StaticClass());
 
@@ -115,6 +116,17 @@ void APawnShip::InitShipCollision()
 	this->ModelComponent->CanCharacterStepUpOn = ECB_No;
 }
 
+// ___________________________________________________ //
+//             ___      _   _                          //
+//            / __| ___| |_| |_ ___ _ _ ___            //
+//            \__ \/ -_)  _|  _/ -_) '_(_-<            //
+//            |___/\___|\__|\__\___|_| /__/            //
+// ___________________________________________________ //
+
+void APawnShip::SetIsAutomaticallyLookingAtDirection(bool enable)
+{
+	this->bIsAutomaticallyLookingAtMovementDirection = enable;
+}
 
 // ___________________________________________________ //
 //              ___             _                      //
@@ -219,16 +231,36 @@ void APawnShip::AddInputForwardVector(const FVector2D & axis)
 
 void APawnShip::LookAt(const FVector& position)
 {
-	FVector p = this->GetActorLocation() - position;
-	p.Normalize();
+	this->LookAtDirection(this->GetActorLocation() - position);
+}
 
-	this->RotationComponent->AddInputForwardVector(FVector2D(p.X, p.Y));
+void APawnShip::LookAtDirection(FVector direction)
+{
+	direction.Normalize();
+	this->LookAtDirectionNormalized(direction);
+}
+
+void APawnShip::LookAtDirectionNormalized(const FVector& direction)
+{
+	this->RotationComponent->AddInputForwardVector(FVector2D(direction.X, direction.Y));
 }
 
 void APawnShip::GoTowardPosition(const FVector& position)
 {
 	FVector direction = position - this->GetActorLocation();
 	direction.Normalize();
-
 	this->MovementComponent->AddInputVector(direction);
+	
+	if(this->bIsAutomaticallyLookingAtMovementDirection)
+		this->LookAtDirectionNormalized(-direction);
+}
+
+void APawnShip::GoFromPosition(const FVector& position)
+{
+	FVector direction = this->GetActorLocation() - position;
+	direction.Normalize();
+	this->MovementComponent->AddInputVector(direction);
+	
+	if(this->bIsAutomaticallyLookingAtMovementDirection)
+		this->LookAtDirectionNormalized(-direction);
 }

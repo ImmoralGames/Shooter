@@ -37,4 +37,12 @@ public:
 	UFUNCTION(Category = "AI Tools", BlueprintCallable, meta = (DefaultToSelf))
 	void GoTowardPosition(AActor* actor);
 	
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void OnPossessBuilding(APawnBuilding* building);
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
+	void OnPossessShip(APawnShip* ship);
+	
+	virtual void Possess(APawn* pawn) override;
+	
 };
