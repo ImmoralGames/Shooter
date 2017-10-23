@@ -47,10 +47,15 @@ void APlayerControllerShooter::SetupInputComponent()
 
 }
 
+
 void APlayerControllerShooter::PostProcessInput(const float DeltaTime, const bool bGamePaused)
 {
 	Super::PostProcessInput(DeltaTime, bGamePaused);
+	this->ManageMouse();
+}
 
+void APlayerControllerShooter::ManageMouse()
+{
 	float MouseX, MouseY;
 	this->GetMousePosition(MouseX, MouseY);
 
@@ -59,30 +64,34 @@ void APlayerControllerShooter::PostProcessInput(const float DeltaTime, const boo
 	LastMousePosition = MousePosition;
 	
 	bIsMouseLastDetected = (bIsMouseLastDetected || MouseDeltaPosition.SizeSquared() >= 0.01f);
-	if(!bIsMouseLastDetected)
-		return;
-	
-	APawn* pawn = this->GetPawn();
-	if (pawn == nullptr)
-		return;
+	if(bIsMouseLastDetected)
+	{		
+		APawn* pawn = this->GetPawn();
+		if (pawn != nullptr)
+		{
+			APawnShip* pawnShip = Cast<APawnShip>(pawn);
+			if (pawnShip != nullptr)
+			{
+				this->ManageShipMouseRotation(pawnShip);
+			}	
+		}
+	}
+}
 
-	APawnShooter* pawnShooter = Cast<APawnShooter>(pawn);
-	if (pawnShooter == nullptr)
-		return;
-
+void APlayerControllerShooter::ManageShipMouseRotation(APawnShip* ownedShip)
+{
 	FVector location, direction;
 	if (!this->DeprojectMousePositionToWorld(location, direction))
 		return;
 
-	FVector pawnLocation = pawn->GetActorLocation();
+	FVector pawnLocation = ownedShip->GetActorLocation();
 
 	// how many times shall we add 'direction' to 'location' 
 	// in order to 'location.Z' and 'pawnLocation.Z' to be equals?
 	float ratio = (pawnLocation.Z - location.Z) / direction.Z;
 
 	location += direction * ratio;
-	pawnShooter->LookAt(location);
-
+	ownedShip->LookAt(location);
 }
 
 void APlayerControllerShooter::Possess(APawn* aPawn)

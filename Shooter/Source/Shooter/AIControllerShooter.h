@@ -34,4 +34,7 @@ public:
 	UFUNCTION(Category = "AI Tools", BlueprintCallable, meta = (DefaultToSelf))
 	void LookAt(AActor* actor);
 	
+	UFUNCTION(Category = "AI Tools", BlueprintCallable, meta = (DefaultToSelf))
+	void GoTowardPosition(AActor* actor);
+	
 };

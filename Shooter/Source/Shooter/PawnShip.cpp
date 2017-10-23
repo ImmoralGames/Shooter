@@ -23,6 +23,7 @@ APawnShip::APawnShip()
 {
 	this->BaseMaxSpeed = 4000;
 	this->BaseAcceleration = 8000;
+	this->BaseDeceleration = 8000;
 	
 	USpringArmComponent* SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraAttachmentArm"));
 	SpringArm->SetupAttachment(this->RootComponent);
@@ -129,6 +130,7 @@ void APawnShip::BeginPlay()
 	if(!this->BasicWeaponShooter->HasWeaponLoaded())
 		this->BasicWeaponShooter->SetWeapon(UWeaponMiniShootingGun::StaticClass());
 
+	this->MovementComponent->Deceleration	= this->BaseDeceleration;
 	this->MovementComponent->Acceleration	= this->BaseAcceleration;
 	this->MovementComponent->MaxSpeed		= this->BaseMaxSpeed;
 }
@@ -221,4 +223,12 @@ void APawnShip::LookAt(const FVector& position)
 	p.Normalize();
 
 	this->RotationComponent->AddInputForwardVector(FVector2D(p.X, p.Y));
+}
+
+void APawnShip::GoTowardPosition(const FVector& position)
+{
+	FVector direction = position - this->GetActorLocation();
+	direction.Normalize();
+
+	this->MovementComponent->AddInputVector(direction);
 }

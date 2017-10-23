@@ -29,6 +29,10 @@ private:
 	UPROPERTY(Category = "Ship", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	float BaseAcceleration;
 
+	/** The ship's base deceleration */
+	UPROPERTY(Category = "Ship", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	float BaseDeceleration;
+
 
 // Private reference properties
 private:
@@ -141,6 +145,15 @@ public:
 	UFUNCTION(Category = "Weapon", BlueprintCallable)
 	virtual void StopShootingBasicWeapon();
 	
+	
+	/** Add a rotation command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	virtual void LookAt(const FVector& position);	
+	
+	/** Add a directional command to the Movement component */
+	UFUNCTION(Category = "Movement", BlueprintCallable)
+	virtual void GoTowardPosition(const FVector& position);
+	
 	/** Add a directional command to the Movement component */
 	UFUNCTION(Category = "Movement", BlueprintCallable)
 	virtual void AddInputVector(const FVector& input) override;
@@ -152,9 +165,5 @@ public:
 	/** Add a rotation command to the Movement component */
 	UFUNCTION(Category = "Movement", BlueprintCallable)
 	virtual void AddInputForwardVector(const FVector2D& input) override;
-
-	/** Add a rotation command to the Movement component */
-	UFUNCTION(Category = "Movement", BlueprintCallable)
-	virtual void LookAt(const FVector& position) override;
 	
 };

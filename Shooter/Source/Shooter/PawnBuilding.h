@@ -26,10 +26,6 @@ protected:
 
 	/** Add a rotation command to the Movement component */
 	UFUNCTION(Category = "Movement", BlueprintCallable)
-	virtual void LookAt(const FVector& position) override;
-
-	/** Add a rotation command to the Movement component */
-	UFUNCTION(Category = "Movement", BlueprintCallable)
 	virtual void AddInputRotationVector(const FVector2D& input) override;
 
 	/** Add a rotation command to the Movement component */

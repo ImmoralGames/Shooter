@@ -50,6 +50,11 @@ void AWeaponProjectile::Tick(float DeltaTime)
 		location += this->GetActorForwardVector() * distance;
 
 		APawn* instigator = this->GetInstigator();
+		if(instigator == nullptr)
+		{
+			this->Destroy();
+			return;
+		}
 
 		int32 teamID = MONSTER_TEAM;
 		if (instigator->GetClass()->IsChildOf(APawnShooter::StaticClass()))

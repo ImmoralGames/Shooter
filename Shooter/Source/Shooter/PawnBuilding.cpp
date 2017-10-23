@@ -29,11 +29,6 @@ void APawnBuilding::AddInputVector(const FVector& input)
 
 }
 
-void APawnBuilding::LookAt(const FVector& position)
-{
-
-}
-
 void APawnBuilding::AddInputRotationVector(const FVector2D& input)
 {
 

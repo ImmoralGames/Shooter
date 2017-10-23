@@ -37,6 +37,10 @@ public:
 	virtual void PostProcessInput(const float DeltaTime, const bool bGamePaused) override;
 	virtual void Possess(APawn* pawn) override;
 	virtual void UnPossess() override;
+	
+private:
+	void ManageMouse();
+	void ManageShipMouseRotation(APawnShip* ownedShip);
 
 protected:
 	void SetupInputComponent() override;
