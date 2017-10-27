@@ -31,7 +31,7 @@ void UGameInstanceShooter::Init()
 
 		unit = Cast<APawnShooter>(pawn);
 		if (unit == nullptr)
-			continue; // Let's damage
+			continue;
 
 		this->AddTeamUnit(unit);
 	}
