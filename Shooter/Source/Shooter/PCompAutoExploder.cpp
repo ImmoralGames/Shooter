@@ -3,6 +3,10 @@
 #include "PCompAutoExploder.h"
 #include "DamageTypeExplosion.h"
 #include "PawnShooter.h"
+#include "PawnShip.h"
+#include "PawnBuilding.h"
+#include "Shooter.h"
+#include "GameInstanceShooter.h"
 #include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 
 
@@ -14,18 +18,70 @@ UPCompAutoExploder::UPCompAutoExploder()
 	this->ExplosionDamage = 100;
 	this->ExplosionRange = 1000;
 	this->bCanExplode = false;
+	
+	this->bFriendlyFireShips = false;
+	this->bFriendlyFireBuilding = false;
+	this->bFriendlyFireShipsMonster = false;
+	this->bFriendlyFireBuildingMonster = false;
 }
 
 
 void UPCompAutoExploder::Explode()
 {
-	if (this->bCanExplode)
+	const UWorld* const world = this->GetWorld();
+	if (world == nullptr)
 	{
-		APawnShooter* owner = (APawnShooter*)this->GetOwner();
-		
-		TArray<AActor*> actorsToIgnore = TArray<AActor*>();
-		actorsToIgnore.Add(owner);
+		return;
+	}
+	
+	APawnShooter* const owner = Cast<APawnShooter>(this->GetOwner());
+	if (owner == nullptr)
+	{
+		return;
+	}
 
+	UGameInstanceShooter* gameInstance = Cast<UGameInstanceShooter>(owner->GetGameInstance());
+	if (!gameInstance)
+		return;
+	
+	if (this->bCanExplode)
+	{		
+		TArray<AActor*> actorsToIgnore = TArray<AActor*>();
+		
+		UClass* pawnClass;
+		APawnShooter* shooter;
+		bool isShip, isBuilding, isTeamMonster;
+		
+		int32 teamID = owner->GetTeamID();		
+		isTeamMonster = IS_MONSTER_TEAM(teamID);
+		
+		TArray<APawnShooter*> teammates = gameInstance->GetAllies(teamID);
+		for (auto It = teammates.CreateIterator(); It; ++It)
+		{
+			shooter = *It;
+			if (shooter == owner)
+				continue; // Will be ignored (see doc)
+
+			pawnClass	= shooter->GetClass();
+			isShip		= pawnClass->IsChildOf(APawnShip::StaticClass());
+			isBuilding	= pawnClass->IsChildOf(APawnBuilding::StaticClass());
+			
+			if (isShip && isTeamMonster && this->bFriendlyFireShipsMonster)
+				continue; // Let's damage
+
+			if (isShip && !isTeamMonster && this->bFriendlyFireShips)
+				continue; // Let's damage
+
+			if (isBuilding && isTeamMonster && this->bFriendlyFireBuildingMonster)
+				continue; // Let's damage
+
+			if (isBuilding && !isTeamMonster && this->bFriendlyFireBuilding)
+				continue; // Let's damage
+			
+			// Let's spare.
+			actorsToIgnore.Add(shooter);
+		}
+				
 		bool hasDamagedSomeone = UGameplayStatics::ApplyRadialDamage(this,
 			this->ExplosionDamage, owner->GetActorLocation(), this->ExplosionRange,
 			TSubclassOf<UDamageType>(UDamageTypeExplosion::StaticClass()),

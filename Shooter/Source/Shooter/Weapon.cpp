@@ -17,6 +17,10 @@ UWeapon::UWeapon()
 	this->ProjectileSpeed = 10000;
 	this->ProjectileRange = 100000;
 	this->ProjectileDamage = 10;
+	this->bFriendlyFireShips = false;
+	this->bFriendlyFireBuilding = false;
+	this->bFriendlyFireShipsMonster = false;
+	this->bFriendlyFireBuildingMonster = false;
 }
 
 AWeaponProjectile* UWeapon::MakeProjectile_Implementation(APawn* shooter, USceneComponent* shootingComponent)

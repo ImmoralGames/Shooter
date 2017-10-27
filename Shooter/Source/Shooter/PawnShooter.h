@@ -74,6 +74,8 @@ protected:
 // Public events
 public:	
 
+	virtual void Destroyed() override;
+
 #if WITH_EDITOR
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;
 #endif

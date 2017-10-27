@@ -15,6 +15,7 @@
 #include "PCompAutoExploder.h"
 #include "Shooter.h"
 #include "PawnGhost.h"
+#include "GameInstanceShooter.h"
 
 // ___________________________________________________ //
 //   ___             _               _                 //
@@ -76,6 +77,10 @@ void APawnShooter::BeginPlay()
 	}
 
 	this->HealthbarWidgetComponent->SetWidget(this->HealthBar);
+
+	UGameInstanceShooter* gameInstance = Cast<UGameInstanceShooter>(this->GetGameInstance());
+	if (gameInstance)
+		gameInstance->AddTeamUnit(this);
 }
 
 float APawnShooter::TakeDamage(float Damage, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
@@ -109,6 +114,15 @@ void APawnShooter::Dead()
 	}
 
 	this->Destroy();
+}
+
+void APawnShooter::Destroyed()
+{
+	UGameInstanceShooter* gameInstance = Cast<UGameInstanceShooter>(this->GetGameInstance());
+	if (gameInstance)
+		gameInstance->RemoveTeamUnit(this);
+
+	Super::Destroyed();
 }
 
 // ___________________________________________________ //
@@ -182,7 +196,14 @@ float APawnShooter::GetPercentHealth() const
 
 void APawnShooter::SetTeamID(int32 teamID)
 {
+	UGameInstanceShooter* gameInstance = Cast<UGameInstanceShooter>(this->GetGameInstance());
+	if (gameInstance)
+		gameInstance->RemoveTeamUnit(this);
+
 	this->TeamID = teamID;
+
+	if (gameInstance)
+		gameInstance->AddTeamUnit(this);
 }
 
 // ___________________________________________________ //

@@ -5,6 +5,7 @@
 #include "PawnBuilding.h"
 #include "Engine/World.h"
 #include "Shooter.h"
+#include "GameInstanceShooter.h"
 
 AAIControllerShooter::AAIControllerShooter()
 {
@@ -80,26 +81,31 @@ APawnShip* AAIControllerShooter::GetNearestPlayerShipWithDistance(float& distanc
 		return nullptr;
 	}
 	
-	APawn* pawn;
+	APawnShooter* shooter;
 	APawnShip* ship;
 	APawnShip* nearest = nullptr;
 	float nearestDistance = 0;
-	
-	for(FConstPawnIterator itPawn = world->GetPawnIterator(); itPawn; ++itPawn)
-	{
-		pawn = itPawn->Get();
-		if (pawn != nullptr)
-		{
-			ship = Cast<APawnShip>(pawn);
-			if (ship != nullptr && !IS_MONSTER_TEAM(ship->GetTeamID()))
-			{
-				distance = possessedShip->GetDistanceTo(ship);
 
-				if (nearest == nullptr || nearestDistance > distance)
-				{
-					nearestDistance = distance;
-					nearest = ship;
-				}
+	UGameInstanceShooter* gameInstance = Cast<UGameInstanceShooter>(this->GetGameInstance());
+	if (gameInstance == nullptr)
+		return nullptr;
+
+	TArray<APawnShooter*> players = gameInstance->GetPlayers();
+	for (auto It = players.CreateIterator(); It; ++It)
+	{
+		shooter = *It;
+		if (shooter == nullptr)
+			continue;
+
+		ship = Cast<APawnShip>(shooter);
+		if (ship != nullptr)
+		{
+			distance = possessedShip->GetDistanceTo(ship);
+
+			if (nearest == nullptr || nearestDistance > distance)
+			{
+				nearestDistance = distance;
+				nearest = ship;
 			}
 		}
 	}

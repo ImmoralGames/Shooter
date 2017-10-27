@@ -24,6 +24,22 @@ private:
 	/** Explosion's range */
 	UPROPERTY(Category = "AutoExplosion", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
 	float ExplosionRange;
+	
+	/** Tells whether the projectile can damage allies */
+	UPROPERTY(Category = "AutoExplosion", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	bool bFriendlyFireShips;
+
+	/** Tells whether the projectile can damage allied buildings */
+	UPROPERTY(Category = "AutoExplosion", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	bool bFriendlyFireBuilding;
+
+	/** Tells whether the projectile can damage allies IF in monster team */
+	UPROPERTY(Category = "AutoExplosion", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	bool bFriendlyFireShipsMonster;
+
+	/** Tells whether the projectile can damage allied buildings IF in monster team*/
+	UPROPERTY(Category = "AutoExplosion", EditAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))
+	bool bFriendlyFireBuildingMonster;
 
 public:	
 	// Sets default values for this component's properties
