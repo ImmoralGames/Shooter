@@ -1,11 +1,23 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Ascii banners made with Bagill's ASCII Signature Generator using the Font: "Small" (width:53)
+
+// ___________________________________________________ //
+//           ___         _         _                   //
+//          |_ _|_ _  __| |_  _ __| |___ ___           //
+//           | || ' \/ _| | || / _` / -_|_-<           //
+//          |___|_||_\__|_|\_,_\__,_\___/__/           //
+// ___________________________________________________ //
 
 #include "AIControllerShooter.h"
-#include "PawnShip.h"
-#include "PawnBuilding.h"
 #include "Engine/World.h"
 #include "Shooter.h"
 #include "GameInstanceShooter.h"
+
+// ___________________________________________________ //
+//    ___             _               _                //
+//   / __|___ _ _  __| |_ _ _ _  _ __| |_ ___ _ _ ___  //
+//  | (__/ _ \ ' \(_-<  _| '_| || / _|  _/ _ \ '_(_-<  //
+//   \___\___/_||_/__/\__|_|  \_,_\__|\__\___/_| /__/  //
+// ___________________________________________________ //
 
 AAIControllerShooter::AAIControllerShooter()
 {
@@ -38,6 +50,13 @@ void AAIControllerShooter::Possess(APawn* aPawn)
 	}
 }
 
+
+// ___________________________________________________ //
+//              ___     _   _                          //
+//             / __|___| |_| |_ ___ _ _ ___            //
+//            | (_ / -_)  _|  _/ -_) '_(_-<            //
+//             \___\___|\__|\__\___|_| /__/            //
+// ___________________________________________________ //
 
 APawnShip* AAIControllerShooter::GetShip() const 
 {
@@ -113,11 +132,18 @@ APawnShip* AAIControllerShooter::GetNearestPlayerShipWithDistance(float& distanc
 	return nearest;
 }
 
+// ___________________________________________________ //
+//        ___                              _           //
+//       / __|___ _ __  _ __  __ _ _ _  __| |___       //
+//      | (__/ _ \ '  \| '  \/ _` | ' \/ _` (_-<       //
+//       \___\___/_|_|_|_|_|_\__,_|_||_\__,_/__/       //
+// ___________________________________________________ //
+
 void AAIControllerShooter::LookAt(AActor* actor)
 {
-	if(actor == nullptr)
+	if (actor == nullptr)
 		return;
-	
+
 	APawnShip* const possessedShip = GetShip();
 	if (possessedShip != nullptr)
 		possessedShip->LookAt(actor->GetActorLocation());
@@ -126,9 +152,9 @@ void AAIControllerShooter::LookAt(AActor* actor)
 
 void AAIControllerShooter::GoTowardPosition(AActor* actor)
 {
-	if(actor == nullptr)
+	if (actor == nullptr)
 		return;
-	
+
 	APawnShip* const possessedShip = GetShip();
 	if (possessedShip != nullptr)
 		possessedShip->GoTowardPosition(actor->GetActorLocation());
