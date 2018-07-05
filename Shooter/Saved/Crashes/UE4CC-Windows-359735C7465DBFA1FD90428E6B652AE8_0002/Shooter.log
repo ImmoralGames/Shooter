@@ -1,0 +1,378 @@
+﻿Log file open, 11/29/17 18:48:59
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine for game: Shooter
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: RandInit(-825236517) SRandInit(-825236517).
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.160174
+LogD3D11RHI: Aftermath initialized
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin DatasmithCADImporter
+LogPluginManager: Mounting plugin DatasmithImporter
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin HoudiniEngine
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.17-CL-3658906
+LogInit: Engine Version: 4.17.2-3658906+++UE4+Release-4.17
+LogInit: Compatible Engine Version: 4.17.0-3573198+++UE4+Release-4.17
+LogInit: Net CL: 3573198
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 20
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 28
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 19
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 7
+LogInit: Compiled (64-bit): Sep 22 2017 13:47:16
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.17
+LogInit: Command line:  
+LogInit: Base directory: E:/Unreal/VersionMoteur/UE_4.17/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.11.29-17.49.00:838][  0]LogInit: Selected Device Profile: [Windows]
+[2017.11.29-17.49.00:838][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.11.29-17.49.00:867][  0]LogInit: Computer: MANZAVISION05
+[2017.11.29-17.49.00:867][  0]LogInit: User: user
+[2017.11.29-17.49.00:867][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.11.29-17.49.00:867][  0]LogInit: High frequency timer resolution =3.328128 MHz
+[2017.11.29-17.49.00:867][  0]LogMemory: Memory total: Physical=12.0GB (12GB approx)
+[2017.11.29-17.49.00:867][  0]LogMemory: Platform Memory Stats for Windows
+[2017.11.29-17.49.00:867][  0]LogMemory: Process Physical Memory: 278.77 MB used, 278.77 MB peak
+[2017.11.29-17.49.00:867][  0]LogMemory: Process Virtual Memory: 274.23 MB used, 274.23 MB peak
+[2017.11.29-17.49.00:867][  0]LogMemory: Physical Memory: 10327.23 MB used,  1912.17 MB free, 12239.39 MB total
+[2017.11.29-17.49.00:867][  0]LogMemory: Virtual Memory: 669.23 MB used,  1912.17 MB free, 134217728.00 MB total
+[2017.11.29-17.49.00:983][  0]LogInit: Using OS detected language (fr-FR).
+[2017.11.29-17.49.00:983][  0]LogInit: Using OS detected locale (fr-FR).
+[2017.11.29-17.49.00:986][  0]LogTextLocalizationManager: No localization for 'fr-FR' exists, so 'en' will be used for the language.
+[2017.11.29-17.49.00:986][  0]LogTextLocalizationManager: No localization for 'fr-FR' exists, so 'en' will be used for the locale.
+[2017.11.29-17.49.01:697][  0]LogD3D11RHI: D3D11 adapters:
+[2017.11.29-17.49.02:291][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2017.11.29-17.49.02:292][  0]LogD3D11RHI:       4059/0/6119 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.11.29-17.49.02:293][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.11.29-17.49.02:293][  0]LogD3D11RHI:       0/0/6119 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.11.29-17.49.02:293][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.11.29-17.49.02:307][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.11.29-17.49.02:307][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2017.11.29-17.49.02:307][  0]LogWindows: EnumDisplayDevices:
+[2017.11.29-17.49.02:307][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2017.11.29-17.49.02:307][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
+[2017.11.29-17.49.02:307][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.11.29-17.49.02:307][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.11.29-17.49.02:307][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.11.29-17.49.02:307][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2017.11.29-17.49.02:307][  0]LogD3D11RHI:   Driver Version: 382.05 (internal:22.21.13.8205, unified:382.05)
+[2017.11.29-17.49.02:307][  0]LogD3D11RHI:      Driver Date: 5-1-2017
+[2017.11.29-17.49.02:307][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.11.29-17.49.02:874][  0]LogD3D11RHI: Async texture creation enabled
+[2017.11.29-17.49.02:962][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.11.29-17.49.03:015][  0]LogShaderCompilers: Guid format shader working directory is -26 characters bigger than the processId version (../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Intermediate/Shaders/WorkingDirectory/94348/).
+[2017.11.29-17.49.03:016][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/user/AppData/Local/Temp/UnrealShaderWorkingDir/80ACB4E24642A6C4F3D8AA9881074A5B/'.
+[2017.11.29-17.49.03:016][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2017.11.29-17.49.03:842][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2017.11.29-17.49.03:881][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2017.11.29-17.49.03:920][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2017.11.29-17.49.03:960][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2017.11.29-17.49.03:999][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2017.11.29-17.49.04:039][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2017.11.29-17.49.04:078][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.11.29-17.49.04:118][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2017.11.29-17.49.04:154][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2017.11.29-17.49.04:193][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2017.11.29-17.49.04:232][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2017.11.29-17.49.04:272][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2017.11.29-17.49.04:317][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2017.11.29-17.49.04:358][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2017.11.29-17.49.04:396][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2017.11.29-17.49.04:474][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2017.11.29-17.49.04:474][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.11.29-17.49.04:504][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2017.11.29-17.49.04:577][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2017.11.29-17.49.04:599][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2017.11.29-17.49.04:637][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2017.11.29-17.49.04:676][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.11.29-17.49.04:715][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2017.11.29-17.49.04:755][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2017.11.29-17.49.04:755][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2017.11.29-17.49.05:099][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2017.11.29-17.49.05:193][  0]LogDerivedDataCache: Loaded boot cache 0.09s 94MB C:/Users/user/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2017.11.29-17.49.05:193][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/user/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc
+[2017.11.29-17.49.05:194][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.11.29-17.49.05:194][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.11.29-17.49.05:194][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.11.29-17.49.05:194][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.11.29-17.49.05:208][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.11.29-17.49.05:221][  0]LogDerivedDataCache: Using Local data cache path C:/Users/user/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.11.29-17.49.05:239][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.11.29-17.49.05:239][  0]LogSlate: Using Freetype 2.6.0
+[2017.11.29-17.49.05:240][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.11.29-17.49.05:240][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.11.29-17.49.05:485][  0]LogAssetRegistry: FAssetRegistry took 0.0254 seconds to start up
+[2017.11.29-17.49.05:581][  0]LogInit: Selected Device Profile: [Windows]
+[2017.11.29-17.49.05:891][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.11.29-17.49.05:921][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.11.29-17.49.05:921][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.11.29-17.49.05:921][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2017.11.29-17.49.05:921][  0]LogMeshReduction: No automatic mesh merging module available
+[2017.11.29-17.49.05:921][  0]LogMeshMerging: No automatic mesh merging module available
+[2017.11.29-17.49.05:922][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.11.29-17.49.06:381][  0]LogNetVersion: Shooter , NetCL: 3573198, EngineNetVer: 2, GameNetVer: 0 (Checksum: 272747623)
+[2017.11.29-17.49.06:650][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 1 prioritized culture(s) in 0.104913 seconds
+[2017.11.29-17.49.06:655][  0]LogUObjectArray: 35825 objects as part of root set at end of initial load.
+[2017.11.29-17.49.06:655][  0]LogUObjectAllocator: 7529104 out of 0 bytes used by permanent object pool.
+[2017.11.29-17.49.06:655][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.11.29-17.49.06:696][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.11.29-17.49.12:468][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.11.29-17.49.12:554][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.11.29-17.49.14:369][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.11.29-17.49.15:431][  0]SourceControl: Source control is disabled
+[2017.11.29-17.49.18:186][  0]LogMaterial: Missing cached shader map for material CE_OpaqueMaster, compiling. 
+[2017.11.29-17.49.18:389][  0]LogMaterial: Missing cached shader map for material CE_OpacityMaster, compiling. 
+[2017.11.29-17.49.18:431][  0]LogMaterial: Missing cached shader map for material CE_OpacitySimpleMaster, compiling. 
+[2017.11.29-17.49.18:509][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMaster'
+[2017.11.29-17.49.18:515][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMaster'
+[2017.11.29-17.49.18:515][  0]LogUObjectGlobals: Warning: Failed to find object 'Object /DatasmithImporter/Materials/DeltaGenMaster.DeltaGenMaster'
+[2017.11.29-17.49.18:515][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMasterTransparent'
+[2017.11.29-17.49.18:515][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMasterTransparent'
+[2017.11.29-17.49.18:515][  0]LogUObjectGlobals: Warning: Failed to find object 'Object /DatasmithImporter/Materials/DeltaGenMasterTransparent.DeltaGenMasterTransparent'
+[2017.11.29-17.49.18:515][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMasterAbsorb'
+[2017.11.29-17.49.18:515][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMasterAbsorb'
+[2017.11.29-17.49.18:515][  0]LogUObjectGlobals: Warning: Failed to find object 'Object /DatasmithImporter/Materials/DeltaGenMasterAbsorb.DeltaGenMasterAbsorb'
+[2017.11.29-17.49.18:515][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMasterClearCoat'
+[2017.11.29-17.49.18:515][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMasterClearCoat'
+[2017.11.29-17.49.18:515][  0]LogUObjectGlobals: Warning: Failed to find object 'Object /DatasmithImporter/Materials/DeltaGenMasterClearCoat.DeltaGenMasterClearCoat'
+[2017.11.29-17.49.18:643][  0]LogWindows: LaunchFileInExternalEditor E:/Unreal/VersionMoteur/UE_4.17/Engine/Plugins/Marketplace/DatasmithImporter/Binaries/Win64/UnrealDatasmithMaxExporter.msi 
+[2017.11.29-17.49.18:644][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2017.11.29-17.49.18:801][  0]LogWindows: Launch application code for E:/Unreal/VersionMoteur/UE_4.17/Engine/Plugins/Marketplace/DatasmithImporter/Binaries/Win64/UnrealDatasmithMaxExporter.msi : 42
+[2017.11.29-17.49.18:810][  0]LogMaterial: Missing cached shader map for material CI_OpaqueMaster, compiling. 
+[2017.11.29-17.49.18:849][  0]LogMaterial: Missing cached shader map for material CI_TransparentMaster, compiling. 
+[2017.11.29-17.49.20:825][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.11.29-17.49.21:241][  0]LogHoudiniEngine: Starting the Houdini Engine module.
+[2017.11.29-17.49.21:323][  0]LogHoudiniEngine: Loaded libHAPIL.dll from Registry path E:\Program Files\Side Effects Software\Houdini 16.0.736/bin
+[2017.11.29-17.49.21:390][  0]LogLinker: Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_logo.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.11.29-17.49.21:410][  0]LogLinker: Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_default_material.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.11.29-17.49.21:553][  0]LogLinker: Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_bgeo_import.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2017.11.29-17.49.42:839][  0]LogHoudiniEngine: Successfully intialized the Houdini Engine API module.
+[2017.11.29-17.49.43:079][  0]LogOcInput: OculusInput pre-init called
+[2017.11.29-17.49.44:101][  0]LogEngine: Initializing Engine...
+[2017.11.29-17.49.44:138][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.11.29-17.49.45:441][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.11.29-17.49.45:441][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.11.29-17.49.47:753][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.11.29-17.49.49:380][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.11.29-17.49.49:460][  0]LogInit: FAudioDevice initialized.
+[2017.11.29-17.49.49:592][  0]LogDerivedDataCache: Saved boot cache 0.11s 106MB C:/Users/user/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2017.11.29-17.49.49:618][  0]LogInit: Texture streaming: Enabled
+[2017.11.29-17.49.49:940][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.11.29-17.49.51:233][  0]LogInit: Transaction tracking system initialized
+[2017.11.29-17.49.52:426][  0]BlueprintLog: New page: Editor Load
+[2017.11.29-17.49.56:240][  0]LocalizationService: Localization service is disabled
+[2017.11.29-17.49.59:682][  0]LogConsoleResponse: Display: 
+[2017.11.29-17.50.01:630][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.11.29-17.50.01:630][  0]LogCook: Display: Mobile HDR setting 1
+[2017.11.29-17.50.01:630][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2017.11.29-17.50.01:861][  0]LogFileCache: Scanning file cache for directory 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/' took 0.27s
+[2017.11.29-17.50.03:867][  0]LogHoudiniEngineEditor: Starting the Houdini Engine Editor module.
+[2017.11.29-17.50.04:109][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/Icons/icon_houdini_logo_40.png' error.
+[2017.11.29-17.50.04:109][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Plugins/Runtime/HoudiniEngine/Content/Icons/icon_houdini_logo_40.png
+[2017.11.29-17.50.06:521][  0]LogSlate: Took 0.048885 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.11.29-17.50.36:499][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2017.11.29-17.50.36:530][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2017.11.29-17.50.36:532][  0]Cmd: MAP LOAD FILE="../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Prototype/Levels/Game/Arena/PrototypeScene.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.11.29-17.50.37:188][  0]LightingResults: New page: Lighting Build
+[2017.11.29-17.50.37:231][  0]MapCheck: New page: Map Check
+[2017.11.29-17.50.37:231][  0]LightingResults: New page: Lighting Build
+[2017.11.29-17.50.38:256][  0]LogMaterial: Missing cached shader map for material Test, compiling. 
+[2017.11.29-17.50.38:277][  0]LogAIModule: Creating AISystem for world PrototypeScene
+[2017.11.29-17.50.39:304][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.816 s
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: === Handled ensure: ===
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: 
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: Ensure condition failed: NewTransform.IsValid() [File:D:\Build\++UE4+Release-4.17+Compile\Sync\Engine\Source\Runtime\Engine\Private\Components\SceneComponent.cpp] [Line: 538]
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: 
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: Stack: 
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x00000000DC663E36
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x00000000DC3EC2D2
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x00000000DC404746
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D7029BC
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D1424C1
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D6C3A63
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D6E81A2
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D6E801E
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D5FD9F3
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D62A85F
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D1FDDE2
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009DA716CE
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009E3B3837
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A0A062C5
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A09F7395
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A09DCC72
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A1255309
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A0CDE77B
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A0CDE3CF
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A120D9CB
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A11D208F
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor.exe!0x00000000D5123866
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor.exe!0x00000000D51239EA
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor.exe!0x00000000D51302D9
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: UE4Editor.exe!0x00000000D5131C47
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: KERNEL32.DLL!0x0000000037652774
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: ntdll.dll!0x00000000396D0D51
+[2017.11.29-17.50.39:304][  0]LogOutputDevice: Error: 
+[2017.11.29-17.50.39:305][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2017.11.29-17.50.44:463][  0]LogStats:                    SendNewReport -  5.158 s
+[2017.11.29-17.50.44:463][  0]LogStats:             FDebug::EnsureFailed -  5.988 s
+[2017.11.29-17.50.44:506][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.043 s
+[2017.11.29-17.50.44:506][  0]LogOutputDevice: Error: === Handled ensure: ===
+[2017.11.29-17.50.44:506][  0]LogOutputDevice: Error: 
+[2017.11.29-17.50.44:506][  0]LogOutputDevice: Error: Ensure condition failed: !Primitive->Bounds.BoxExtent.ContainsNaN() && !Primitive->Bounds.Origin.ContainsNaN() && !FMath::IsNaN(Primitive->Bounds.SphereRadius) && FMath::IsFinite(Primitive->Bounds.SphereRadius) [File:D:\Build\++UE4+Release-4.17+Compile\Sync\Engine\Source\Runtime\Renderer\Private\RendererScene.cpp] [Line: 759]
+[2017.11.29-17.50.44:506][  0]LogOutputDevice: Error: Nans found on Bounds for Primitive CaptureOffset: Origin X=-nan(ind) Y=-nan(ind) Z=-nan(ind), BoxExtent X=51.200 Y=51.200 Z=51.200, SphereRadius 88.681000
+[2017.11.29-17.50.44:506][  0]LogOutputDevice: Error: Stack: 
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x00000000DC663E36
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x00000000DC3EC2D2
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x00000000DC404746
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-Renderer.dll!0x00000000A93D7D29
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D6CD7A4
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D5FDE2C
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D62A85F
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D1FDDE2
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009DA716CE
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009E3B3837
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A0A062C5
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A09F7395
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A09DCC72
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A1255309
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A0CDE77B
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A0CDE3CF
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A120D9CB
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A11D208F
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor.exe!0x00000000D5123866
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor.exe!0x00000000D51239EA
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor.exe!0x00000000D51302D9
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: UE4Editor.exe!0x00000000D5131C47
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: KERNEL32.DLL!0x0000000037652774
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: ntdll.dll!0x00000000396D0D51
+[2017.11.29-17.50.44:507][  0]LogOutputDevice: Error: 
+[2017.11.29-17.50.44:508][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2017.11.29-17.50.44:885][  0]LogStats:                    SendNewReport -  0.376 s
+[2017.11.29-17.50.44:885][  0]LogStats:             FDebug::EnsureFailed -  0.421 s
+[2017.11.29-17.50.44:890][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.11.29-17.50.44:945][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.054 s
+[2017.11.29-17.50.44:945][  0]LogOutputDevice: Error: === Handled ensure: ===
+[2017.11.29-17.50.44:945][  0]LogOutputDevice: Error: 
+[2017.11.29-17.50.44:945][  0]LogOutputDevice: Error: Ensure condition failed: !Primitive->Bounds.BoxExtent.ContainsNaN() && !Primitive->Bounds.Origin.ContainsNaN() && !FMath::IsNaN(Primitive->Bounds.SphereRadius) && FMath::IsFinite(Primitive->Bounds.SphereRadius) [File:D:\Build\++UE4+Release-4.17+Compile\Sync\Engine\Source\Runtime\Renderer\Private\RendererScene.cpp] [Line: 877]
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: Nans found on Bounds for Primitive CaptureOffset: Origin X=-nan(ind) Y=-nan(ind) Z=-nan(ind), BoxExtent X=51.200 Y=51.200 Z=51.200, SphereRadius 88.681000
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: Stack: 
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x00000000DC663E36
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x00000000DC3EC2D2
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x00000000DC404746
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-Renderer.dll!0x00000000A94655B7
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D6F40EC
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D5FAD19
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009DAD6C07
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009DB18DAD
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009DB3028C
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009E2B566E
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000009D459DC7
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-CoreUObject.dll!0x00000000DE4E2EA5
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-CoreUObject.dll!0x00000000DE6621AA
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-CoreUObject.dll!0x00000000DE661C55
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A0A075CD
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A09F7395
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A09DCC72
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A1255309
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A0CDE77B
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A0CDE3CF
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A120D9CB
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x00000000A11D208F
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor.exe!0x00000000D5123866
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor.exe!0x00000000D51239EA
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor.exe!0x00000000D51302D9
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: UE4Editor.exe!0x00000000D5131C47
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: KERNEL32.DLL!0x0000000037652774
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: ntdll.dll!0x00000000396D0D51
+[2017.11.29-17.50.44:946][  0]LogOutputDevice: Error: 
+[2017.11.29-17.50.44:948][  0]LogStats:                SubmitErrorReport -  0.000 s

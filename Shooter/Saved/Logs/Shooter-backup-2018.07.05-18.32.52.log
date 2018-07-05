@@ -1,0 +1,1349 @@
+﻿Log file open, 06/25/18 18:54:47
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogInit: Display: Running engine for game: Shooter
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: RandInit(1577621298) SRandInit(1577621298).
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 2.997931
+LogD3D11RHI: Aftermath initialized
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin DatasmithCADImporter
+LogPluginManager: Mounting plugin DatasmithImporter
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin HoudiniEngine
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.17-CL-3658906
+LogInit: Engine Version: 4.17.2-3658906+++UE4+Release-4.17
+LogInit: Compatible Engine Version: 4.17.0-3573198+++UE4+Release-4.17
+LogInit: Net CL: 3573198
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 20
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 28
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 19
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 7
+LogInit: Compiled (64-bit): Sep 22 2017 13:47:16
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.17
+LogInit: Command line:  
+LogInit: Base directory: E:/Unreal/VersionMoteur/UE_4.17/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.06.25-16.54.49:541][  0]LogInit: Selected Device Profile: [Windows]
+[2018.06.25-16.54.49:541][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.06.25-16.54.49:641][  0]LogInit: Computer: MANZAVISION05
+[2018.06.25-16.54.49:641][  0]LogInit: User: user
+[2018.06.25-16.54.49:641][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.06.25-16.54.49:641][  0]LogInit: High frequency timer resolution =3.328121 MHz
+[2018.06.25-16.54.49:641][  0]LogMemory: Memory total: Physical=12.0GB (12GB approx)
+[2018.06.25-16.54.49:641][  0]LogMemory: Platform Memory Stats for Windows
+[2018.06.25-16.54.49:641][  0]LogMemory: Process Physical Memory: 280.65 MB used, 280.65 MB peak
+[2018.06.25-16.54.49:641][  0]LogMemory: Process Virtual Memory: 274.36 MB used, 274.36 MB peak
+[2018.06.25-16.54.49:641][  0]LogMemory: Physical Memory: 6209.57 MB used,  6029.82 MB free, 12239.39 MB total
+[2018.06.25-16.54.49:641][  0]LogMemory: Virtual Memory: 4799.69 MB used,  6029.82 MB free, 134217728.00 MB total
+[2018.06.25-16.54.50:780][  0]LogInit: Using OS detected language (fr-FR).
+[2018.06.25-16.54.50:780][  0]LogInit: Using OS detected locale (fr-FR).
+[2018.06.25-16.54.51:061][  0]LogTextLocalizationManager: No localization for 'fr-FR' exists, so 'en' will be used for the language.
+[2018.06.25-16.54.51:061][  0]LogTextLocalizationManager: No localization for 'fr-FR' exists, so 'en' will be used for the locale.
+[2018.06.25-16.54.55:760][  0]LogD3D11RHI: D3D11 adapters:
+[2018.06.25-16.54.55:809][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2018.06.25-16.54.55:809][  0]LogD3D11RHI:       4058/0/6119 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2018.06.25-16.54.55:811][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.06.25-16.54.55:811][  0]LogD3D11RHI:       0/0/6119 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.06.25-16.54.55:811][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.06.25-16.54.55:822][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.06.25-16.54.55:822][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2018.06.25-16.54.55:822][  0]LogWindows: EnumDisplayDevices:
+[2018.06.25-16.54.55:834][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2018.06.25-16.54.55:835][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
+[2018.06.25-16.54.55:835][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2018.06.25-16.54.55:836][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2018.06.25-16.54.55:836][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.06.25-16.54.55:836][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2018.06.25-16.54.55:836][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.06.25-16.54.55:836][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.06.25-16.54.55:836][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2018.06.25-16.54.55:872][  0]LogD3D11RHI: Async texture creation enabled
+[2018.06.25-16.54.55:907][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2018.06.25-16.54.55:960][  0]LogShaderCompilers: Guid format shader working directory is -26 characters bigger than the processId version (../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Intermediate/Shaders/WorkingDirectory/13176/).
+[2018.06.25-16.54.55:960][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/user/AppData/Local/Temp/UnrealShaderWorkingDir/D8790BBC4B5FF11923B0CD9BF91BDE48/'.
+[2018.06.25-16.54.55:960][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.06.25-16.54.59:783][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.06.25-16.54.59:829][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.06.25-16.54.59:871][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.06.25-16.54.59:912][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.06.25-16.54.59:987][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.06.25-16.55.00:028][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.06.25-16.55.00:083][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.06.25-16.55.00:125][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.06.25-16.55.00:159][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.06.25-16.55.00:220][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.06.25-16.55.00:259][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2018.06.25-16.55.00:299][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2018.06.25-16.55.00:338][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2018.06.25-16.55.00:378][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2018.06.25-16.55.00:418][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2018.06.25-16.55.00:497][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2018.06.25-16.55.00:497][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.06.25-16.55.00:539][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.06.25-16.55.00:718][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.06.25-16.55.00:773][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.06.25-16.55.00:824][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.06.25-16.55.00:869][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.06.25-16.55.00:912][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.06.25-16.55.01:022][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.06.25-16.55.01:022][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.06.25-16.55.02:563][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.06.25-16.55.02:931][  0]LogDerivedDataCache: Loaded boot cache 0.37s 93MB C:/Users/user/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2018.06.25-16.55.02:931][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/user/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc
+[2018.06.25-16.55.02:931][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.06.25-16.55.02:931][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.06.25-16.55.02:931][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.06.25-16.55.02:931][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.06.25-16.55.02:999][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.06.25-16.55.03:012][  0]LogDerivedDataCache: Using Local data cache path C:/Users/user/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.06.25-16.55.03:023][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.06.25-16.55.03:023][  0]LogSlate: Using Freetype 2.6.0
+[2018.06.25-16.55.03:082][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.06.25-16.55.03:082][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.06.25-16.55.08:922][  0]LogAssetRegistry: FAssetRegistry took 0.0256 seconds to start up
+[2018.06.25-16.55.09:281][  0]LogInit: Selected Device Profile: [Windows]
+[2018.06.25-16.55.11:385][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2018.06.25-16.55.12:630][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.06.25-16.55.12:712][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.06.25-16.55.12:721][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.06.25-16.55.12:722][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.06.25-16.55.12:722][  0]LogMeshReduction: No automatic mesh merging module available
+[2018.06.25-16.55.12:722][  0]LogMeshMerging: No automatic mesh merging module available
+[2018.06.25-16.55.14:606][  0]LogNetVersion: Shooter , NetCL: 3573198, EngineNetVer: 2, GameNetVer: 0 (Checksum: 272747623)
+[2018.06.25-16.55.15:371][  0]LogPackageLocalizationCache: Processed 7 localized package path(s) for 1 prioritized culture(s) in 0.116373 seconds
+[2018.06.25-16.55.15:377][  0]LogUObjectArray: 35827 objects as part of root set at end of initial load.
+[2018.06.25-16.55.15:377][  0]LogUObjectAllocator: 7529552 out of 0 bytes used by permanent object pool.
+[2018.06.25-16.55.15:377][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.06.25-16.55.15:423][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.06.25-16.55.28:144][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.06.25-16.55.28:181][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.06.25-16.55.29:749][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.06.25-16.55.30:336][  0]SourceControl: Source control is disabled
+[2018.06.25-16.55.34:354][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMaster'
+[2018.06.25-16.55.34:355][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMaster'
+[2018.06.25-16.55.34:355][  0]LogUObjectGlobals: Warning: Failed to find object 'Object /DatasmithImporter/Materials/DeltaGenMaster.DeltaGenMaster'
+[2018.06.25-16.55.34:355][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMasterTransparent'
+[2018.06.25-16.55.34:355][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMasterTransparent'
+[2018.06.25-16.55.34:355][  0]LogUObjectGlobals: Warning: Failed to find object 'Object /DatasmithImporter/Materials/DeltaGenMasterTransparent.DeltaGenMasterTransparent'
+[2018.06.25-16.55.34:355][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMasterAbsorb'
+[2018.06.25-16.55.34:355][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMasterAbsorb'
+[2018.06.25-16.55.34:355][  0]LogUObjectGlobals: Warning: Failed to find object 'Object /DatasmithImporter/Materials/DeltaGenMasterAbsorb.DeltaGenMasterAbsorb'
+[2018.06.25-16.55.34:355][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMasterClearCoat'
+[2018.06.25-16.55.34:355][  0]LogLinker: Warning: Can't find file '/DatasmithImporter/Materials/DeltaGenMasterClearCoat'
+[2018.06.25-16.55.34:355][  0]LogUObjectGlobals: Warning: Failed to find object 'Object /DatasmithImporter/Materials/DeltaGenMasterClearCoat.DeltaGenMasterClearCoat'
+[2018.06.25-16.55.35:057][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.06.25-16.55.35:273][  0]LogHoudiniEngine: Starting the Houdini Engine module.
+[2018.06.25-16.55.35:273][  0]LogHoudiniEngine: Failed locating or loading libHAPIL.dll
+[2018.06.25-16.55.35:287][  0]LogLinker: Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_logo.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2018.06.25-16.55.35:299][  0]LogLinker: Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_default_material.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2018.06.25-16.55.35:321][  0]LogLinker: Warning: Asset '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/houdini_bgeo_import.uasset' has been saved with empty engine version. The asset will be loaded but may be incompatible.
+[2018.06.25-16.55.35:437][  0]LogOcInput: OculusInput pre-init called
+[2018.06.25-16.55.35:836][  0]LogEngine: Initializing Engine...
+[2018.06.25-16.55.36:032][  0]LogHMD: Failed to initialize OpenVR with code 126
+[2018.06.25-16.55.37:071][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.06.25-16.55.37:071][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.06.25-16.55.37:237][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.06.25-16.55.37:255][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.06.25-16.55.37:294][  0]LogInit: FAudioDevice initialized.
+[2018.06.25-16.55.37:418][  0]LogDerivedDataCache: Saved boot cache 0.12s 93MB C:/Users/user/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2018.06.25-16.55.37:437][  0]LogInit: Texture streaming: Enabled
+[2018.06.25-16.55.37:588][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.06.25-16.55.38:058][  0]LogInit: Transaction tracking system initialized
+[2018.06.25-16.55.38:428][  0]BlueprintLog: New page: Editor Load
+[2018.06.25-16.55.39:528][  0]LocalizationService: Localization service is disabled
+[2018.06.25-16.55.41:073][  0]LogLinker: Warning: Can't find file '/Game/01_test'
+[2018.06.25-16.55.41:073][  0]LogLinker: Warning: Can't find file '/Game/01_test'
+[2018.06.25-16.55.41:073][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/01_test.01_test_C'
+[2018.06.25-16.55.41:074][  0]LogLinker: Warning: Can't find file '/Game/02_tutoforpezito'
+[2018.06.25-16.55.41:074][  0]LogLinker: Warning: Can't find file '/Game/02_tutoforpezito'
+[2018.06.25-16.55.41:074][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/02_tutoforpezito.02_tutoforpezito_C'
+[2018.06.25-16.55.41:827][  0]LogConsoleResponse: Display: 
+[2018.06.25-16.55.45:244][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.06.25-16.55.45:244][  0]LogCook: Display: Mobile HDR setting 1
+[2018.06.25-16.55.45:244][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.06.25-16.55.45:340][  0]LogFileCache: Scanning file cache for directory 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/' took 0.02s
+[2018.06.25-16.55.46:524][  0]LogHoudiniEngineEditor: Starting the Houdini Engine Editor module.
+[2018.06.25-16.55.46:543][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/Icons/icon_houdini_logo_40.png' error.
+[2018.06.25-16.55.46:543][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Plugins/Runtime/HoudiniEngine/Content/Icons/icon_houdini_logo_40.png
+[2018.06.25-16.55.47:230][  0]Cmd: MAP LOAD FILE="../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Prototype/Levels/Game/Arena/PrototypeScene.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.06.25-16.55.47:277][  0]LightingResults: New page: Lighting Build
+[2018.06.25-16.55.47:313][  0]MapCheck: New page: Map Check
+[2018.06.25-16.55.47:313][  0]LightingResults: New page: Lighting Build
+[2018.06.25-16.55.48:182][  0]LogStaticMesh: Building static mesh L_Arm...
+[2018.06.25-16.55.48:205][  0]LogStaticMesh: Built static mesh [0.02s] /Game/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/L_Arm.L_Arm
+[2018.06.25-16.55.48:212][  0]LogStaticMesh: Building static mesh L_DownArm...
+[2018.06.25-16.55.48:235][  0]LogStaticMesh: Built static mesh [0.02s] /Game/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/L_DownArm.L_DownArm
+[2018.06.25-16.55.48:241][  0]LogStaticMesh: Building static mesh L_ForeArm...
+[2018.06.25-16.55.48:282][  0]LogStaticMesh: Built static mesh [0.04s] /Game/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/L_ForeArm.L_ForeArm
+[2018.06.25-16.55.48:290][  0]LogStaticMesh: Building static mesh L_Helice...
+[2018.06.25-16.55.48:324][  0]LogStaticMesh: Built static mesh [0.03s] /Game/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/L_Helice.L_Helice
+[2018.06.25-16.55.48:329][  0]LogStaticMesh: Building static mesh TEstLame_R_Lames_grp2...
+[2018.06.25-16.55.48:350][  0]LogStaticMesh: Built static mesh [0.02s] /Game/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/Materials/TEstLame_R_Lames_grp2.TEstLame_R_Lames_grp2
+[2018.06.25-16.55.48:354][  0]LogStaticMesh: Building static mesh L_Thruster...
+[2018.06.25-16.55.48:478][  0]LogStaticMesh: Built static mesh [0.13s] /Game/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/L_Thruster.L_Thruster
+[2018.06.25-16.55.48:493][  0]LogStaticMesh: Building static mesh L_UpArm...
+[2018.06.25-16.55.48:521][  0]LogStaticMesh: Built static mesh [0.03s] /Game/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/L_UpArm.L_UpArm
+[2018.06.25-16.55.48:527][  0]LogStaticMesh: Building static mesh R_Arm...
+[2018.06.25-16.55.48:554][  0]LogTexture: Display: Building textures: Proto_Minion_BaseColor (AutoDXT, 2048X2048)
+[2018.06.25-16.55.48:554][  0]LogStaticMesh: Built static mesh [0.03s] /Game/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/R_Arm.R_Arm
+[2018.06.25-16.55.48:560][  0]LogStaticMesh: Building static mesh R_DownArm...
+[2018.06.25-16.55.48:585][  0]LogStaticMesh: Built static mesh [0.03s] /Game/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/R_DownArm.R_DownArm
+[2018.06.25-16.55.48:592][  0]LogStaticMesh: Building static mesh R_ForeArm...
+[2018.06.25-16.55.48:641][  0]LogStaticMesh: Built static mesh [0.05s] /Game/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/R_ForeArm.R_ForeArm
+[2018.06.25-16.55.48:649][  0]LogStaticMesh: Building static mesh R_Thruster...
+[2018.06.25-16.55.48:809][  0]LogTexture: Display: Building textures: Proto_Minion_Normal (BC5, 2048X2048)
+[2018.06.25-16.55.48:809][  0]LogStaticMesh: Built static mesh [0.16s] /Game/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/R_Thruster.R_Thruster
+[2018.06.25-16.55.48:827][  0]LogStaticMesh: Building static mesh R_UpArm...
+[2018.06.25-16.55.48:861][  0]LogStaticMesh: Built static mesh [0.03s] /Game/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/R_UpArm.R_UpArm
+[2018.06.25-16.55.48:866][  0]LogStaticMesh: Building static mesh RHelice...
+[2018.06.25-16.55.48:909][  0]LogTexture: Display: Building textures: Proto_Minion_OcclusionRoughnessMetallic (AutoDXT, 2048X2048)
+[2018.06.25-16.55.48:909][  0]LogStaticMesh: Built static mesh [0.04s] /Game/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/RHelice.RHelice
+[2018.06.25-16.55.48:915][  0]LogStaticMesh: Building static mesh RobotBody...
+[2018.06.25-16.55.48:977][  0]LogStaticMesh: Built static mesh [0.06s] /Game/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/RobotBody.RobotBody
+[2018.06.25-16.55.49:011][  0]LogStaticMesh: Building static mesh ProtoMinion_RobotBackPack...
+[2018.06.25-16.55.49:049][  0]LogTexture: Display: Building textures: Proto_Minion_BaseColor (AutoDXT, 2048X2048)
+[2018.06.25-16.55.49:049][  0]LogStaticMesh: Built static mesh [0.04s] /Game/Prototype/Ships/Pieces/Assets/Proto_Minion/ProtoMinion_RobotBackPack.ProtoMinion_RobotBackPack
+[2018.06.25-16.55.49:058][  0]LogStaticMesh: Building static mesh ProtoMinion_RobotBody...
+[2018.06.25-16.55.49:062][  0]LogStaticMesh: Built static mesh [0.01s] /Game/Prototype/Ships/Pieces/Assets/Proto_Minion/ProtoMinion_RobotBody.ProtoMinion_RobotBody
+[2018.06.25-16.55.49:066][  0]LogStaticMesh: Building static mesh ProtoMinion_Thruster_Base...
+[2018.06.25-16.55.49:697][  0]LogTexture: Display: Building textures: Proto_Minion_Normal (BC5, 2048X2048)
+[2018.06.25-16.55.49:697][  0]LogTexture: Display: Building textures: Proto_Minion_OcclusionRoughnessMetallic (AutoDXT, 2048X2048)
+[2018.06.25-16.55.49:697][  0]LogStaticMesh: Built static mesh [0.63s] /Game/Prototype/Ships/Pieces/Assets/Proto_Minion/ProtoMinion_Thruster_Base.ProtoMinion_Thruster_Base
+[2018.06.25-16.55.49:754][  0]LogStaticMesh: Building static mesh ProtoMinion_Thruster_Base1...
+[2018.06.25-16.55.50:393][  0]LogStaticMesh: Built static mesh [0.64s] /Game/Prototype/Ships/Pieces/Assets/Proto_Minion/ProtoMinion_Thruster_Base1.ProtoMinion_Thruster_Base1
+[2018.06.25-16.55.52:054][  0]LogMaterial: Missing cached shader map for material BaseMaterial_PBR, compiling. 
+[2018.06.25-16.55.52:105][  0]LogMaterial: Missing cached shader map for material PP1_Lame, compiling. 
+[2018.06.25-16.55.52:196][  0]LogMaterial: Missing cached shader map for material Test, compiling. 
+[2018.06.25-16.55.52:851][  0]LogMaterial: Missing cached shader map for material BaseMaterial_PBR, compiling. 
+[2018.06.25-16.55.52:868][  0]LogAIModule: Creating AISystem for world PrototypeScene
+[2018.06.25-16.55.53:452][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.400 s
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: === Handled ensure: ===
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: 
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: Ensure condition failed: NewTransform.IsValid() [File:D:\Build\++UE4+Release-4.17+Compile\Sync\Engine\Source\Runtime\Engine\Private\Components\SceneComponent.cpp] [Line: 538]
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: 
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: Stack: 
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB43E36
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007B8CC2D2
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007B8E4746
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x00000000203829BC
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000001FDC24C1
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x0000000020343A63
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x00000000203681A2
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000002036801E
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000002027D9F3
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x00000000202AA85F
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000001FE7DDE2
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x00000000206F16CE
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x0000000021033837
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x0000000079DE62C5
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x0000000079DD7395
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x0000000079DBCC72
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A635309
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A0BE77B
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A0BE3CF
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A5ED9CB
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A5B208F
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D13866
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D139EA
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D202D9
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D21C47
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: KERNEL32.DLL!0x00000000F91A3034
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: ntdll.dll!0x00000000F9A81431
+[2018.06.25-16.55.53:452][  0]LogOutputDevice: Error: 
+[2018.06.25-16.55.53:462][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2018.06.25-16.55.54:404][  0]LogStats:                    SendNewReport -  0.943 s
+[2018.06.25-16.55.54:404][  0]LogStats:             FDebug::EnsureFailed -  1.353 s
+[2018.06.25-16.55.54:405][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.001 s
+[2018.06.25-16.55.54:405][  0]LogOutputDevice: Error: === Handled ensure: ===
+[2018.06.25-16.55.54:405][  0]LogOutputDevice: Error: 
+[2018.06.25-16.55.54:405][  0]LogOutputDevice: Error: Ensure condition failed: !Primitive->Bounds.BoxExtent.ContainsNaN() && !Primitive->Bounds.Origin.ContainsNaN() && !FMath::IsNaN(Primitive->Bounds.SphereRadius) && FMath::IsFinite(Primitive->Bounds.SphereRadius) [File:D:\Build\++UE4+Release-4.17+Compile\Sync\Engine\Source\Runtime\Renderer\Private\RendererScene.cpp] [Line: 759]
+[2018.06.25-16.55.54:405][  0]LogOutputDevice: Error: Nans found on Bounds for Primitive CaptureOffset: Origin X=-nan(ind) Y=-nan(ind) Z=-nan(ind), BoxExtent X=51.200 Y=51.200 Z=51.200, SphereRadius 88.681000
+[2018.06.25-16.55.54:405][  0]LogOutputDevice: Error: Stack: 
+[2018.06.25-16.55.54:405][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB43E36
+[2018.06.25-16.55.54:405][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007B8CC2D2
+[2018.06.25-16.55.54:405][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007B8E4746
+[2018.06.25-16.55.54:406][  0]LogOutputDevice: Error: UE4Editor-Renderer.dll!0x000000001DA57D29
+[2018.06.25-16.55.54:406][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000002034D7A4
+[2018.06.25-16.55.54:406][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000002027DE2C
+[2018.06.25-16.55.54:406][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x00000000202AA85F
+[2018.06.25-16.55.54:406][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000001FE7DDE2
+[2018.06.25-16.55.54:406][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x00000000206F16CE
+[2018.06.25-16.55.54:406][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x0000000021033837
+[2018.06.25-16.55.54:406][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x0000000079DE62C5
+[2018.06.25-16.55.54:406][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x0000000079DD7395
+[2018.06.25-16.55.54:406][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x0000000079DBCC72
+[2018.06.25-16.55.54:406][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A635309
+[2018.06.25-16.55.54:406][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A0BE77B
+[2018.06.25-16.55.54:406][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A0BE3CF
+[2018.06.25-16.55.54:407][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A5ED9CB
+[2018.06.25-16.55.54:407][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A5B208F
+[2018.06.25-16.55.54:407][  0]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D13866
+[2018.06.25-16.55.54:407][  0]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D139EA
+[2018.06.25-16.55.54:407][  0]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D202D9
+[2018.06.25-16.55.54:407][  0]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D21C47
+[2018.06.25-16.55.54:407][  0]LogOutputDevice: Error: KERNEL32.DLL!0x00000000F91A3034
+[2018.06.25-16.55.54:407][  0]LogOutputDevice: Error: ntdll.dll!0x00000000F9A81431
+[2018.06.25-16.55.54:407][  0]LogOutputDevice: Error: 
+[2018.06.25-16.55.54:408][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2018.06.25-16.55.55:052][  0]LogStats:                    SendNewReport -  0.644 s
+[2018.06.25-16.55.55:052][  0]LogStats:             FDebug::EnsureFailed -  0.648 s
+[2018.06.25-16.55.55:064][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.06.25-16.55.55:067][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.001 s
+[2018.06.25-16.55.55:067][  0]LogOutputDevice: Error: === Handled ensure: ===
+[2018.06.25-16.55.55:067][  0]LogOutputDevice: Error: 
+[2018.06.25-16.55.55:067][  0]LogOutputDevice: Error: Ensure condition failed: !Primitive->Bounds.BoxExtent.ContainsNaN() && !Primitive->Bounds.Origin.ContainsNaN() && !FMath::IsNaN(Primitive->Bounds.SphereRadius) && FMath::IsFinite(Primitive->Bounds.SphereRadius) [File:D:\Build\++UE4+Release-4.17+Compile\Sync\Engine\Source\Runtime\Renderer\Private\RendererScene.cpp] [Line: 877]
+[2018.06.25-16.55.55:067][  0]LogOutputDevice: Error: Nans found on Bounds for Primitive CaptureOffset: Origin X=-nan(ind) Y=-nan(ind) Z=-nan(ind), BoxExtent X=51.200 Y=51.200 Z=51.200, SphereRadius 88.681000
+[2018.06.25-16.55.55:067][  0]LogOutputDevice: Error: Stack: 
+[2018.06.25-16.55.55:067][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB43E36
+[2018.06.25-16.55.55:067][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007B8CC2D2
+[2018.06.25-16.55.55:067][  0]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007B8E4746
+[2018.06.25-16.55.55:067][  0]LogOutputDevice: Error: UE4Editor-Renderer.dll!0x000000001DAE55B7
+[2018.06.25-16.55.55:067][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x00000000203740EC
+[2018.06.25-16.55.55:067][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x000000002027AD19
+[2018.06.25-16.55.55:067][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x0000000020756C07
+[2018.06.25-16.55.55:067][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x0000000020798DAD
+[2018.06.25-16.55.55:067][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x00000000207B028C
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x0000000020F3566E
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor-Engine.dll!0x00000000200D9DC7
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor-CoreUObject.dll!0x000000007CC82EA5
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor-CoreUObject.dll!0x000000007CE021AA
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor-CoreUObject.dll!0x000000007CE01C55
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x0000000079DE75CD
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x0000000079DD7395
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x0000000079DBCC72
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A635309
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A0BE77B
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A0BE3CF
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A5ED9CB
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A5B208F
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D13866
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D139EA
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D202D9
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D21C47
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: KERNEL32.DLL!0x00000000F91A3034
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: ntdll.dll!0x00000000F9A81431
+[2018.06.25-16.55.55:068][  0]LogOutputDevice: Error: 
+[2018.06.25-16.55.55:069][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2018.06.25-16.55.55:600][  0]LogStats:                    SendNewReport -  0.531 s
+[2018.06.25-16.55.55:600][  0]LogStats:             FDebug::EnsureFailed -  0.534 s
+[2018.06.25-16.55.55:631][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.06.25-16.55.55:690][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 58.508ms to complete.
+[2018.06.25-16.55.55:690][  0]LogFileHelpers: Loading map 'PrototypeScene' took 8.460
+[2018.06.25-16.55.56:126][  0]LogCollectionManager: Loaded 0 collections in 0.001399 seconds
+[2018.06.25-16.55.56:246][  0]LogFileCache: Scanning file cache for directory 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Collections/' took 0.01s
+[2018.06.25-16.55.56:246][  0]LogFileCache: Scanning file cache for directory 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/user/Collections/' took 0.01s
+[2018.06.25-16.55.56:246][  0]LogFileCache: Scanning file cache for directory 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Collections/' took 0.01s
+[2018.06.25-16.55.56:246][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2018.06.25-16.55.56:263][  0]LogContentBrowser: Native class hierarchy populated in 0.0168 seconds. Added 2431 classes and 518 folders.
+[2018.06.25-16.55.56:357][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0028 seconds. Added 0 classes and 0 folders.
+[2018.06.25-16.55.58:063][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0024 seconds. Added 0 classes and 0 folders.
+[2018.06.25-16.55.58:151][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0027 seconds. Added 1 classes and 2 folders.
+[2018.06.25-16.55.58:438][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0026 seconds. Added 2 classes and 3 folders.
+[2018.06.25-16.55.58:515][  0]LogSlate: Took 0.041503 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.06.25-16.55.58:530][  0]LogSlate: Took 0.012935 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.06.25-16.55.58:553][  0]LogSlate: Took 0.017185 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.06.25-16.55.58:862][  0]LogRenderer: Reallocating scene render targets to support 1016x328 Format 10 NumSamples 1 (Frame:1).
+[2018.06.25-16.55.59:484][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0024 seconds. Added 1 classes and 2 folders.
+[2018.06.25-16.55.59:484][  0]LogLoad: (Engine Initialization) Total time: 83.93 seconds
+[2018.06.25-16.55.59:484][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.06.25-16.55.59:484][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2018.06.25-16.55.59:484][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2018.06.25-16.55.59:845][  0]SourceControl: On branch Graphics_Prototype
+[2018.06.25-16.55.59:845][  0]SourceControl: Changes to be committed:
+[2018.06.25-16.55.59:846][  0]SourceControl:   (use "git reset HEAD <file>..." to unstage)
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/FbxScene_ProtoMinion.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/FbxScene_ProtoMinion_1.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/L_Arm.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/L_DownArm.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/L_lames.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/ProtoMinion.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/ProtoMinion1.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/R_Arm.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/R_DownArm.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/R_Lames.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/RobotBody.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion03/FbxScene_ProtoMinion.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion03/ProtoMinion.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion03/ProtoMinion1.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion03/ProtoMinion2.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion03/RobotBody.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion03/RobotBody_Anim.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion03/RobotBody_Skeleton.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	deleted:    Shooter/Content/Prototype/Assets/Proto_Minion/BaseMaterial_PBR.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	deleted:    Shooter/Content/Prototype/Assets/Proto_Minion/Minion_Mat.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	deleted:    Shooter/Content/Prototype/Assets/Proto_Minion/Proto_Minion_BaseColor.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	deleted:    Shooter/Content/Prototype/Assets/Proto_Minion/Proto_Minion_Normal.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	deleted:    Shooter/Content/Prototype/Assets/Proto_Minion/Proto_Minion_OcclusionRoughnessMetallic.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Proto_Minion/RobotBody_Anim_Blueprint.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	deleted:    Shooter/Content/Prototype/Assets/Proto_Minion/ShipMesh.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/NewBlueprint.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/ProtoMinion.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/ProtoMinion1.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/ProtoMinion2.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/ProtoMinion3.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/ProtoMinion4.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/ProtoMinion5.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/RobotBody.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/RobotBody_Anim.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/RobotBody_Skeleton.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: Changes not staged for commit:
+[2018.06.25-16.55.59:846][  0]SourceControl:   (use "git add <file>..." to update what will be committed)
+[2018.06.25-16.55.59:846][  0]SourceControl:   (use "git checkout -- <file>..." to discard changes in working directory)
+[2018.06.25-16.55.59:846][  0]SourceControl: 	modified:   Shooter/Content/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/Materials/PP1_Lame_Inst.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	modified:   Shooter/Content/Prototype/Assets/ProtoMinion02/FbxScene_ProtoMinion.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	modified:   Shooter/Content/Prototype/Assets/Protomimi/RobotBody_Anim.uasset
+[2018.06.25-16.55.59:846][  0]SourceControl: 	modified:   Shooter/Content/Prototype/Ships/Pieces/Assets/Proto_Minion/Minion_Mat.uasset
+[2018.06.25-16.55.59:847][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.06.25-16.56.00:499][  2]LogAssetRegistry: Asset discovery search completed in 51.6002 seconds
+[2018.06.25-16.56.00:501][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.06.25-16.56.00:501][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000047 seconds (updated 0 objects)
+[2018.06.25-16.56.00:932][  3]LogSlate: Took 0.084974 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.06.25-16.56.04:194][ 13]LogSlate: Took 0.000143 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.06.25-16.56.33:530][413]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (TEstLame_R_Lames_grp3)
+[2018.06.25-16.56.34:667][529]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.06.25-16.56.42:769][458]LogTemp: Repeating last play command: Selected Viewport
+[2018.06.25-16.56.42:993][458]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel' has LevelScriptBlueprint '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene' with GeneratedClass '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene_C' with ClassGeneratedBy '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene'
+[2018.06.25-16.56.42:993][458]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.06.25-16.56.42:993][458]PIE: New page: PIE session: PrototypeScene (Jun 25, 2018, 8:56:42 PM)
+[2018.06.25-16.56.42:993][458]LogUObjectGlobals: Warning: Failed to find object 'Class /Script/Shooter.GameInstanceShooter'
+[2018.06.25-16.56.42:993][458]LogPlayLevel: Creating play world package: /Game/Prototype/Levels/Game/Arena/UEDPIE_0_PrototypeScene
+[2018.06.25-16.56.42:998][458]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004116s)
+[2018.06.25-16.56.42:998][458]LogAIModule: Creating AISystem for world PrototypeScene
+[2018.06.25-16.56.42:998][458]LogPlayLevel: PIE: World Init took: (0.000666s)
+[2018.06.25-16.56.42:999][458]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene to /Game/Prototype/Levels/Game/Arena/UEDPIE_0_PrototypeScene.PrototypeScene (0.005066s)
+[2018.06.25-16.56.43:014][458]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.06.25-16.56.43:027][458]LogInit: FAudioDevice initialized.
+[2018.06.25-16.56.43:240][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.43:240][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.43:241][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.43:241][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.43:241][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.43:241][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.43:241][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.43:274][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.43:345][458]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.06.25-16.56.43:345][458]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.06.25-16.56.43:345][458]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.06.25-16.56.43:346][458]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.06.25-16.56.43:346][458]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.06.25-16.56.43:346][458]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.06.25-16.56.43:346][458]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.06.25-16.56.43:659][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:659][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:659][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:660][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:660][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:660][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:660][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:660][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:660][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:660][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:660][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:661][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:661][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:662][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.43:662][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.43:662][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.43:662][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.43:663][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.43:663][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.43:663][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.43:663][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.43:663][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.43:664][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.43:664][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.43:759][458]LogBlueprint: Warning: [PlayerGhostHUD] 'ResurrectionTimer' variable not found. Base class was probably changed.
+[2018.06.25-16.56.43:760][458]LogBlueprint: Warning: [Compiler PlayerGhostHUD] Could not find a variable named "ResurrectionTimer" in 'PlayerGhostHUD'.
+Make sure 'PlayerGhostHUD' has been compiled for  Get ResurrectionTimer
+[2018.06.25-16.56.43:760][458]LogBlueprint: Error: [Compiler PlayerGhostHUD] In use pin  Observed Ghost  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:761][458]LogBlueprint: Error: [Compiler PlayerGhostHUD] The property associated with  Resurrection Timer  could not be found
+[2018.06.25-16.56.43:761][458]LogBlueprint: Warning: [Compiler PlayerGhostHUD] [0128.21] Compile of PlayerGhostHUD failed. 2 Fatal Issue(s) 1 Warning(s) [in 3 ms] (/Game/Prototype/UI/PlayerGhostHUD.PlayerGhostHUD)
+[2018.06.25-16.56.43:854][458]LogBlueprint: Warning: [SpellCasterWidget] 'CooldownTimer' variable not found. Base class was probably changed.
+[2018.06.25-16.56.43:854][458]LogBlueprint: Warning: [SpellCasterWidget] 'ReloadTimer' variable not found. Base class was probably changed.
+[2018.06.25-16.56.43:854][458]LogBlueprint: Warning: [SpellCasterWidget] 'ChargesCountMax' variable not found. Base class was probably changed.
+[2018.06.25-16.56.43:854][458]LogBlueprint: Warning: [SpellCasterWidget] 'Spell' variable not found. Base class was probably changed.
+[2018.06.25-16.56.43:854][458]LogBlueprint: Warning: [SpellCasterWidget] 'ChargesCount' variable not found. Base class was probably changed.
+[2018.06.25-16.56.43:854][458]LogBlueprint: Warning: [SpellCasterWidget] 'SpellImage' variable not found. Base class was probably changed.
+[2018.06.25-16.56.43:854][458]LogBlueprint: Warning: [SpellCasterWidget] 'Spell' variable not found. Base class was probably changed.
+[2018.06.25-16.56.43:856][458]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Target  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:856][458]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Return Value  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:856][458]LogBlueprint: Error: [Compiler SpellCasterWidget] Could not find a function named "HasSpellSetted" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Has Spell Setted
+[2018.06.25-16.56.43:857][458]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Observed Spell Caster  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:857][458]LogBlueprint: Warning: [Compiler SpellCasterWidget] Could not find a variable named "Spell" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Get Spell
+[2018.06.25-16.56.43:857][458]LogBlueprint: Warning: [Compiler SpellCasterWidget] Could not find a variable named "SpellImage" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Get SpellImage
+[2018.06.25-16.56.43:857][458]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Observed Spell Caster  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:858][458]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Observed Spell Caster  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:858][458]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Target  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:858][458]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Return Value  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:858][458]LogBlueprint: Error: [Compiler SpellCasterWidget] Could not find a function named "CanCast" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Can Cast
+[2018.06.25-16.56.43:858][458]LogBlueprint: Warning: [Compiler SpellCasterWidget] Could not find a variable named "ReloadTimer" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Get ReloadTimer
+[2018.06.25-16.56.43:858][458]LogBlueprint: Warning: [Compiler SpellCasterWidget] Could not find a variable named "CooldownTimer" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Get CooldownTimer
+[2018.06.25-16.56.43:858][458]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Observed Spell Caster  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:859][458]LogBlueprint: Warning: [Compiler SpellCasterWidget] Could not find a variable named "Spell" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Get Spell
+[2018.06.25-16.56.43:859][458]LogBlueprint: Warning: [Compiler SpellCasterWidget] Could not find a variable named "ChargesCountMax" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Get ChargesCountMax
+[2018.06.25-16.56.43:859][458]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Observed Spell Caster  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:859][458]LogBlueprint: Warning: [Compiler SpellCasterWidget] Could not find a variable named "ChargesCount" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Get ChargesCount
+[2018.06.25-16.56.43:859][458]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Observed Spell Caster  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:859][458]LogBlueprint: Error: [Compiler SpellCasterWidget] The property associated with  Spell  could not be found
+[2018.06.25-16.56.43:860][458]LogBlueprint: Error: [Compiler SpellCasterWidget] The property associated with  Spell Image  could not be found
+[2018.06.25-16.56.43:860][458]LogBlueprint: Warning: [Compiler SpellCasterWidget] [0128.31] Compile of SpellCasterWidget failed. 14 Fatal Issue(s) 7 Warning(s) [in 8 ms] (/Game/Prototype/UI/SpellCasterWidget.SpellCasterWidget)
+[2018.06.25-16.56.43:868][458]LogBlueprint: Warning: [PlayerShipHUD] 'SpellCasterA' variable not found. Base class was probably changed.
+[2018.06.25-16.56.43:868][458]LogBlueprint: Warning: [PlayerShipHUD] 'SpellCasterX' variable not found. Base class was probably changed.
+[2018.06.25-16.56.43:868][458]LogBlueprint: Warning: [PlayerShipHUD] 'SpellCasterY' variable not found. Base class was probably changed.
+[2018.06.25-16.56.43:868][458]LogBlueprint: Warning: [PlayerShipHUD] 'SpellCasterB' variable not found. Base class was probably changed.
+[2018.06.25-16.56.43:869][458]LogBlueprint: Warning: [PlayerShipHUD] 'bIsGodMode' variable not found. Base class was probably changed.
+[2018.06.25-16.56.43:871][458]LogBlueprint: Warning: [Compiler PlayerShipHUD] Could not find a variable named "bIsGodMode" in 'PlayerShipHUD'.
+Make sure 'PlayerShipHUD' has been compiled for  Get bIsGodMode
+[2018.06.25-16.56.43:871][458]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Target  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:871][458]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Return Value  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:871][458]LogBlueprint: Error: [Compiler PlayerShipHUD] Could not find a function named "GetPercentHealth" in 'PlayerShipHUD'.
+Make sure 'PlayerShipHUD' has been compiled for  Get Percent Health
+[2018.06.25-16.56.43:871][458]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Observed Ship  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:872][458]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Spell Caster Y  and  Observed Spell Caster : Object Reference is not compatible with Object Object Reference.
+[2018.06.25-16.56.43:872][458]LogBlueprint: Warning: [Compiler PlayerShipHUD] Could not find a variable named "SpellCasterY" in 'PlayerShipHUD'.
+Make sure 'PlayerShipHUD' has been compiled for  Get SpellCasterY
+[2018.06.25-16.56.43:872][458]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Spell Caster X  and  Observed Spell Caster : Object Reference is not compatible with Object Object Reference.
+[2018.06.25-16.56.43:872][458]LogBlueprint: Warning: [Compiler PlayerShipHUD] Could not find a variable named "SpellCasterX" in 'PlayerShipHUD'.
+Make sure 'PlayerShipHUD' has been compiled for  Get SpellCasterX
+[2018.06.25-16.56.43:873][458]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Spell Caster B  and  Observed Spell Caster : Object Reference is not compatible with Object Object Reference.
+[2018.06.25-16.56.43:873][458]LogBlueprint: Warning: [Compiler PlayerShipHUD] Could not find a variable named "SpellCasterB" in 'PlayerShipHUD'.
+Make sure 'PlayerShipHUD' has been compiled for  Get SpellCasterB
+[2018.06.25-16.56.43:873][458]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Observed Ship  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:873][458]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Observed Ship  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:873][458]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Observed Ship  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:873][458]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Observed Spell Caster  and  Spell Caster Y : Object Object Reference is not compatible with Object Reference.
+[2018.06.25-16.56.43:873][458]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Observed Spell Caster  and  Spell Caster X : Object Object Reference is not compatible with Object Reference.
+[2018.06.25-16.56.43:873][458]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Observed Spell Caster  and  Spell Caster B : Object Object Reference is not compatible with Object Reference.
+[2018.06.25-16.56.43:873][458]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Observed Spell Caster  and  Spell Caster A : Object Object Reference is not compatible with Object Reference.
+[2018.06.25-16.56.43:873][458]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Observed Ship  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:873][458]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Spell Caster A  and  Observed Spell Caster : Object Reference is not compatible with Object Object Reference.
+[2018.06.25-16.56.43:873][458]LogBlueprint: Warning: [Compiler PlayerShipHUD] Could not find a variable named "SpellCasterA" in 'PlayerShipHUD'.
+Make sure 'PlayerShipHUD' has been compiled for  Get SpellCasterA
+[2018.06.25-16.56.43:873][458]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Observed Ship  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.06.25-16.56.43:874][458]LogBlueprint: Error: [Compiler PlayerShipHUD] The property associated with  Spell Caster A  could not be found
+[2018.06.25-16.56.43:874][458]LogBlueprint: Error: [Compiler PlayerShipHUD] The property associated with  Spell Caster B  could not be found
+[2018.06.25-16.56.43:874][458]LogBlueprint: Error: [Compiler PlayerShipHUD] The property associated with  Spell Caster X  could not be found
+[2018.06.25-16.56.43:874][458]LogBlueprint: Error: [Compiler PlayerShipHUD] The property associated with  Spell Caster Y  could not be found
+[2018.06.25-16.56.43:874][458]LogBlueprint: Error: [Compiler PlayerShipHUD] The property associated with  Is God Mode  could not be found
+[2018.06.25-16.56.43:876][458]LogBlueprint: Warning: [Compiler PlayerShipHUD] [0128.32] Compile of PlayerShipHUD failed. 22 Fatal Issue(s) 5 Warning(s) [in 8 ms] (/Game/Prototype/UI/PlayerShipHUD.PlayerShipHUD)
+[2018.06.25-16.56.43:876][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:877][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:877][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:877][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:877][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:877][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:877][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:877][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:877][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:877][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:878][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:878][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:878][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:878][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:878][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:880][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.06.25-16.56.43:880][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.06.25-16.56.43:880][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.06.25-16.56.43:880][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.06.25-16.56.43:880][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.06.25-16.56.43:880][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.06.25-16.56.43:881][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.43:881][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.43:882][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.43:882][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.43:882][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.43:883][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.06.25-16.56.43:884][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.06.25-16.56.43:884][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:884][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.43:906][458]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.06.25-16.56.43:907][458]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.06.25-16.56.43:907][458]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.06.25-16.56.43:909][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:909][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:909][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:910][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:910][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.43:910][458]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.44:092][458]LogMaterial: Missing cached shader map for material M_smoke_subUV, compiling. 
+[2018.06.25-16.56.44:163][458]LogMaterial: Missing cached shader map for material BulletRibbonMat, compiling. 
+[2018.06.25-16.56.44:194][458]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2018.06.25-16.56.44:215][458]LogStaticMesh: Building static mesh SpaceShipProtype...
+[2018.06.25-16.56.44:247][458]LogStaticMesh: Built static mesh [0.03s] /Game/Prototype/Ships/SpaceShip1/SpaceShipProtype.SpaceShipProtype
+[2018.06.25-16.56.44:255][458]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C'
+[2018.06.25-16.56.44:256][458]LogLoad: Game class is 'GameModeBase'
+[2018.06.25-16.56.44:259][458]LogWorld: Bringing World /Game/Prototype/Levels/Game/Arena/UEDPIE_0_PrototypeScene.PrototypeScene up for play (max tick rate 0) at 2018.06.25-18.56.44
+[2018.06.25-16.56.44:260][458]LogWorld: Bringing up level for play took: 0.002376
+[2018.06.25-16.56.44:300][458]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0016 seconds. Added 11 classes and 0 folders.
+[2018.06.25-16.56.44:302][458]PIE: Play in editor start time for /Game/Prototype/Levels/Game/Arena/UEDPIE_0_PrototypeScene 1.795
+[2018.06.25-16.56.44:302][458]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel' has LevelScriptBlueprint '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene' with GeneratedClass '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene_C' with ClassGeneratedBy '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene'
+[2018.06.25-16.56.44:351][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'BlinkDistance': BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.44:351][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ExecuteUbergraph_BlinkSpell': BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.44:351][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_SetActorLocation_ReturnValue': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.06.25-16.56.44:351][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_SetActorLocation_SweepHitResult': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.06.25-16.56.44:351][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Add_VectorVector_ReturnValue': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Multiply_VectorFloat_ReturnValue': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Normal_ReturnValue': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_GetLastInputVector_ReturnValue': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_GetComponentByClass_ReturnValue': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetActorLocation_ReturnValue': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_Event_castingComponent': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_Event_caster': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'EntryPoint': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Casted': BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'castingComponent': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:Casted
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'caster': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:Casted
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UberGraphFrame': BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ProgressBar_29': WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ExecuteUbergraph_HealthBarSpaceShip': WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_LinearColorLerp_ReturnValue': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:ExecuteUbergraph_HealthBarSpaceShip
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Divide_FloatFloat_ReturnValue': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:ExecuteUbergraph_HealthBarSpaceShip
+[2018.06.25-16.56.44:352][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Conv_IntToFloat_ReturnValue2': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:ExecuteUbergraph_HealthBarSpaceShip
+[2018.06.25-16.56.44:353][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Conv_IntToFloat_ReturnValue': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:ExecuteUbergraph_HealthBarSpaceShip
+[2018.06.25-16.56.44:353][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_Event_max': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:ExecuteUbergraph_HealthBarSpaceShip
+[2018.06.25-16.56.44:353][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_Event_current': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:ExecuteUbergraph_HealthBarSpaceShip
+[2018.06.25-16.56.44:353][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'EntryPoint': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:ExecuteUbergraph_HealthBarSpaceShip
+[2018.06.25-16.56.44:353][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UpdateHealth': WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.06.25-16.56.44:353][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'max': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:UpdateHealth
+[2018.06.25-16.56.44:353][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'current': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:UpdateHealth
+[2018.06.25-16.56.44:353][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UberGraphFrame': WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.06.25-16.56.44:353][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Sphere': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.44:353][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Trail': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.44:353][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ExecuteUbergraph_WeaponProjectileBulletGunModelized': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.44:353][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_SpawnEmitterAtLocation_ReturnValue': Function /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C:ExecuteUbergraph_WeaponProjectileBulletGunModelized
+[2018.06.25-16.56.44:354][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetActorLocation_ReturnValue': Function /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C:ExecuteUbergraph_WeaponProjectileBulletGunModelized
+[2018.06.25-16.56.44:354][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'EntryPoint': Function /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C:ExecuteUbergraph_WeaponProjectileBulletGunModelized
+[2018.06.25-16.56.44:354][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ReceiveDestroyed': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.44:354][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UserConstructionScript': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.44:354][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UberGraphFrame': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.44:354][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Trail_GEN_VARIABLE': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.44:354][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DefaultSceneRoot_GEN_VARIABLE': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.44:354][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SimpleConstructionScript_0': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.44:355][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_0': SimpleConstructionScript /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C:SimpleConstructionScript_0
+[2018.06.25-16.56.44:355][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_1': SimpleConstructionScript /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C:SimpleConstructionScript_0
+[2018.06.25-16.56.44:355][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_2': SimpleConstructionScript /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C:SimpleConstructionScript_0
+[2018.06.25-16.56.44:355][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ProjectileBaseCollision': WeaponProjectileBulletGunModelized_C /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.Default__WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.44:355][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Sphere_GEN_VARIABLE': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.06.25-16.56.44:355][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UserConstructionScript': BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.44:355][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ShipBaseCollision': PawnShipDPS_C /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.Default__PawnShipDPS_C
+[2018.06.25-16.56.44:355][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ShipMovement': PawnShipDPS_C /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.Default__PawnShipDPS_C
+[2018.06.25-16.56.44:356][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'RotationPivot': PawnShipDPS_C /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.Default__PawnShipDPS_C
+[2018.06.25-16.56.44:356][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DefaultSceneRoot_GEN_VARIABLE': BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.44:356][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SimpleConstructionScript_0': BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.06.25-16.56.44:356][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_0': SimpleConstructionScript /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C:SimpleConstructionScript_0
+[2018.06.25-16.56.44:356][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CameraAttachmentArm': PawnShipDPS_C /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.Default__PawnShipDPS_C
+[2018.06.25-16.56.44:356][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Model': PawnShipDPS_C /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.Default__PawnShipDPS_C
+[2018.06.25-16.56.44:356][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'HealthBarWidget': PawnShipDPS_C /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.Default__PawnShipDPS_C
+[2018.06.25-16.56.44:356][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'HUD': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.44:356][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ExecuteUbergraph_PlayerControllerShooterUI': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.44:357][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_IsValid_ReturnValue': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:ExecuteUbergraph_PlayerControllerShooterUI
+[2018.06.25-16.56.44:357][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Create_ReturnValue2': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:ExecuteUbergraph_PlayerControllerShooterUI
+[2018.06.25-16.56.44:357][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_Event_ghost': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:ExecuteUbergraph_PlayerControllerShooterUI
+[2018.06.25-16.56.44:357][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Create_ReturnValue': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:ExecuteUbergraph_PlayerControllerShooterUI
+[2018.06.25-16.56.44:357][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_Event_ship': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:ExecuteUbergraph_PlayerControllerShooterUI
+[2018.06.25-16.56.44:357][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'EntryPoint': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:ExecuteUbergraph_PlayerControllerShooterUI
+[2018.06.25-16.56.44:357][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OnPossessGhost': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.44:357][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ghost': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:OnPossessGhost
+[2018.06.25-16.56.44:357][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OnUnPossess': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.44:358][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OnPossessShip': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.44:358][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ship': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:OnPossessShip
+[2018.06.25-16.56.44:358][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UserConstructionScript': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.44:358][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UberGraphFrame': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.44:358][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'TransformComponent0': PlayerControllerShooterUI_C /Game/Prototype/UI/PlayerControllerShooterUI.Default__PlayerControllerShooterUI_C
+[2018.06.25-16.56.44:358][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DefaultSceneRoot_GEN_VARIABLE': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.44:359][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SimpleConstructionScript_0': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.06.25-16.56.44:359][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_0': SimpleConstructionScript /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:SimpleConstructionScript_0
+[2018.06.25-16.56.44:359][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DefaultSceneRoot': BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.06.25-16.56.44:359][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UserConstructionScript': BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.06.25-16.56.44:359][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DefaultSceneRoot_GEN_VARIABLE': BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.06.25-16.56.44:359][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SimpleConstructionScript_0': BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.06.25-16.56.44:359][459]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_0': SimpleConstructionScript /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C:SimpleConstructionScript_0
+[2018.06.25-16.56.51:008][ 64]LogEditorViewport: Clicking on Actor (LMB): ShipMesh_C (ShipMesh2)
+[2018.06.25-16.56.51:387][ 87]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.06.25-16.56.55:016][302]LogEditorViewport: Clicking on Actor (LMB): ShipMesh_C (ShipMesh2)
+[2018.06.25-16.56.56:062][364]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel' has LevelScriptBlueprint '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene' with GeneratedClass '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene_C' with ClassGeneratedBy '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene'
+[2018.06.25-16.56.56:102][364]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel' has LevelScriptBlueprint '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene' with GeneratedClass '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene_C' with ClassGeneratedBy '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene'
+[2018.06.25-16.56.56:671][411]LogEditorViewport: Clicking on Actor (LMB): ShipMesh_C (ShipMesh2)
+[2018.06.25-16.56.59:507][732]LogEditorViewport: Clicking on Actor (LMB): FbxScene_Proto_Minion-29-11-2017_C (FbxScene_Proto_Minion-29-11-2017)
+[2018.06.25-16.56.59:896][775]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.06.25-16.57.04:436][309]LogEditorViewport: Clicking on Actor (LMB): FbxScene_Proto_Minion-29-11-2017_C (FbxScene_Proto_Minion-29-11-2017)
+[2018.06.25-16.57.04:935][367]LogEditorViewport: Clicking on Actor (LMB): FbxScene_Proto_Minion-29-11-2017_C (FbxScene_Proto_Minion-29-11-2017)
+[2018.06.25-16.57.14:437][461]LogSlate: Took 0.000134 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.06.25-16.57.14:960][461]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0019 seconds. Added 113 classes and 0 folders.
+[2018.06.25-16.57.15:886][461]LogSlate: Took 0.019435 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.06.25-16.57.20:538][798]LogEditorViewport: Clicking on Actor (LMB): FbxScene_Proto_Minion-29-11-2017_C (FbxScene_Proto_Minion-29-11-2017)
+[2018.06.25-16.57.23:468][ 56]LogEditorViewport: Clicking on Actor (LMB): FbxScene_Proto_Minion-29-11-2017_C (FbxScene_Proto_Minion-29-11-2017)
+[2018.06.25-16.57.26:606][329]LogSlate: Took 0.021070 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.06.25-16.57.39:419][402]LogContentBrowser: Native class hierarchy updated for 'MaterialEditor' in 0.0016 seconds. Added 1 classes and 0 folders.
+[2018.06.25-16.57.39:555][402]LogRenderer: Reallocating scene render targets to support 1172x924 Format 10 NumSamples 1 (Frame:1).
+[2018.06.25-16.57.58:057][339]LogEditorViewport: Clicking on Actor (LMB): ShipMesh_C (ShipMesh)
+[2018.06.25-16.57.58:508][385]LogEditorViewport: Clicking on Actor (LMB): ShipMesh_C (ShipMesh)
+[2018.06.25-16.58.05:858][180]LogEditorViewport: Clicking on Actor (LMB): ShipMesh_C (ShipMesh)
+[2018.06.25-16.58.18:034][419]LogEditorViewport: Clicking on Actor (LMB): ShipMesh_C (ShipMesh2)
+[2018.06.25-16.58.21:623][804]LogEditorViewport: Clicking on Actor (LMB): FbxScene_Proto_Minion-29-11-2017_C (FbxScene_Proto_Minion-29-11-2017)
+[2018.06.25-16.58.25:123][143]LogMaterial: Missing cached shader map for material PP1_Lame, compiling. 
+[2018.06.25-16.58.25:222][143]LogMaterial: Missing cached shader map for material PP1_Lame, compiling. 
+[2018.06.25-16.58.25:247][143]LogMaterial: Missing cached shader map for material PP1_Lame, compiling. 
+[2018.06.25-16.58.25:296][143]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionObjectOrientation_0, compiling. 
+[2018.06.25-16.58.25:300][143]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSampleParameter2D_2, compiling. 
+[2018.06.25-16.58.25:307][143]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSampleParameter2D_1, compiling. 
+[2018.06.25-16.58.25:314][143]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureCoordinate_4, compiling. 
+[2018.06.25-16.58.25:321][143]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionAppendVector_3, compiling. 
+[2018.06.25-16.58.25:326][143]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureCoordinate_5, compiling. 
+[2018.06.25-16.58.25:332][143]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionAppendVector_0, compiling. 
+[2018.06.25-16.58.25:338][143]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionTextureSampleParameter2D_0, compiling. 
+[2018.06.25-16.58.27:763][259]MaterialEditorStats: Base pass shader: 93 instructions
+[2018.06.25-16.58.27:763][259]MaterialEditorStats: Vertex shader: 61 instructions
+[2018.06.25-16.58.27:763][259]MaterialEditorStats: Texture samplers: 3/16
+[2018.06.25-16.58.27:763][259]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2018.06.25-17.00.23:649][  1]LogMaterial: Missing cached shader map for material Material_0, compiling. 
+[2018.06.25-17.00.24:839][ 87]LogMaterial: Missing cached shader map for material Material_1, compiling. 
+[2018.06.25-17.00.46:321][914]LogMaterial: Missing cached shader map for material PP1_Lame, compiling. 
+[2018.06.25-17.00.46:373][914]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionObjectOrientation_0, compiling. 
+[2018.06.25-17.00.46:571][915]LogMaterial: Missing cached shader map for material Material_2, compiling. 
+[2018.06.25-17.00.47:504][957]LogMaterial: Missing cached shader map for material Material_3, compiling. 
+[2018.06.25-17.00.47:513][957]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2018.06.25-17.00.47:520][957]LogMaterial: Missing cached shader map for material Material_3, compiling. 
+[2018.06.25-17.00.47:530][957]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2018.06.25-17.00.47:537][957]LogMaterial: Missing cached shader map for material Material_3, compiling. 
+[2018.06.25-17.00.47:547][957]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2018.06.25-17.00.47:554][957]LogMaterial: Missing cached shader map for material Material_3, compiling. 
+[2018.06.25-17.00.47:563][957]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2018.06.25-17.00.47:570][957]LogMaterial: Missing cached shader map for material Material_3, compiling. 
+[2018.06.25-17.00.47:580][957]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2018.06.25-17.00.47:587][957]LogMaterial: Missing cached shader map for material Material_3, compiling. 
+[2018.06.25-17.00.47:597][957]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2018.06.25-17.00.47:604][957]LogMaterial: Missing cached shader map for material Material_3, compiling. 
+[2018.06.25-17.00.47:615][957]LogMaterial: Missing cached shader map for material PreviewMaterial_0, compiling. 
+[2018.06.25-17.00.47:623][957]LogMaterial: Missing cached shader map for material Material_3, compiling. 
+[2018.06.25-17.00.47:663][957]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionFunctionOutput_3, compiling. 
+[2018.06.25-17.00.47:668][957]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionFunctionOutput_17, compiling. 
+[2018.06.25-17.00.47:674][957]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionFunctionOutput_20, compiling. 
+[2018.06.25-17.00.47:681][957]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionFunctionOutput_22, compiling. 
+[2018.06.25-17.00.47:688][957]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionFunctionOutput_6, compiling. 
+[2018.06.25-17.00.47:695][957]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionConstant3Vector_1, compiling. 
+[2018.06.25-17.00.47:702][957]LogMaterial: Missing cached shader map for material FMatExpressionPreview MaterialExpressionFunctionOutput_4, compiling. 
+[2018.06.25-17.00.48:810][ 18]MaterialEditorStats: Base pass shader: 93 instructions
+[2018.06.25-17.00.48:810][ 18]MaterialEditorStats: Vertex shader: 61 instructions
+[2018.06.25-17.00.48:810][ 18]MaterialEditorStats: Texture samplers: 3/16
+[2018.06.25-17.00.48:810][ 18]MaterialEditorStats: User interpolators: 2/4 Scalars (1/4 Vectors) (TexCoords: 2, Custom: 0)
+[2018.06.25-17.01.57:487][664]Cmd: MAP LOAD FILE="../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Prototype/Levels/Game/Arena/PrototypeScene.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.06.25-17.01.57:517][664]LightingResults: New page: Lighting Build
+[2018.06.25-17.01.57:519][664]LoadErrors: New page: Loading map: PrototypeScene.umap
+[2018.06.25-17.01.57:520][664]MapCheck: New page: Map Check
+[2018.06.25-17.01.57:520][664]LightingResults: New page: Lighting Build
+[2018.06.25-17.01.57:560][664]LogAIModule: Creating AISystem for world PrototypeScene
+[2018.06.25-17.01.57:625][664]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.06.25-17.01.57:686][664]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.06.25-17.01.57:738][664]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 51.896ms to complete.
+[2018.06.25-17.01.57:738][664]LogFileHelpers: Loading map 'PrototypeScene' took 0.252
+[2018.06.25-17.02.00:796][962]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (TEstLame_R_Lames_grp3)
+[2018.06.25-17.02.01:391][ 13]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.06.25-17.02.24:543][979]Cmd: MAP LOAD FILE="../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Prototype/Levels/Game/Arena/PrototypeScene.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.06.25-17.02.24:546][979]LightingResults: New page: Lighting Build
+[2018.06.25-17.02.24:547][979]LoadErrors: New page: Loading map: PrototypeScene.umap
+[2018.06.25-17.02.24:548][979]MapCheck: New page: Map Check
+[2018.06.25-17.02.24:548][979]LightingResults: New page: Lighting Build
+[2018.06.25-17.02.24:585][979]LogAIModule: Creating AISystem for world PrototypeScene
+[2018.06.25-17.02.24:660][979]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.06.25-17.02.24:712][979]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.06.25-17.02.24:763][979]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 51.333ms to complete.
+[2018.06.25-17.02.24:764][979]LogSlate: Took 0.000127 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.06.25-17.02.24:770][979]LogFileHelpers: Loading map 'PrototypeScene' took 0.228
+[2018.06.25-17.03.54:562][361]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.111 s
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: === Handled ensure: ===
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: 
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: Ensure condition failed: BpClass != nullptr [File:D:\Build\++UE4+Release-4.17+Compile\Sync\Engine\Source\Editor\BlueprintGraph\Private\BlueprintActionFilter.cpp] [Line: 631]
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: Unable to resolve IsEventUnimplementable() - Blueprint (GameModeShooterOverride) missing an authoratative class (skel: [NULL], generated: [NULL], parent: [NULL])
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: Stack: 
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB43E36
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007B8CC2D2
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007B8E4746
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: UE4Editor-BlueprintGraph.dll!0x00000000357D18ED
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: UE4Editor-BlueprintGraph.dll!0x00000000357D271D
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: UE4Editor-BlueprintGraph.dll!0x00000000357D23F9
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F13E945
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F17D0F1
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F13F2AA
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F34F617
+[2018.06.25-17.03.54:562][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F48FE3C
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F49440C
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-GraphEditor.dll!0x0000000034EE5D58
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-GraphEditor.dll!0x0000000034E0C4AB
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F33C13A
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F46D76D
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F35E3E9
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F33B68E
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F35E9B6
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F07D97E
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F0B971C
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F0A77F9
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F12B02F
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F24456D
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-AssetTools.dll!0x0000000014757F6E
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A5FEB4D
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-AssetTools.dll!0x00000000146F2875
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136A14C8
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x0000000013653DA7
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x000000001365B637
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136AB669
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136522F1
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x000000001365A43F
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x0000000013658148
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136B8150
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136AB8CA
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B1D5F9E
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B1A6D9E
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B23F7C4
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B229092
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B21AC40
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB1B707
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB03EE1
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB1D5BB
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BAFF042
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: USER32.dll!0x00000000F8F46CC1
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: USER32.dll!0x00000000F8F46693
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB1DCC6
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D04BE2
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D13970
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D139EA
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D202D9
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D21C47
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: KERNEL32.DLL!0x00000000F91A3034
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: ntdll.dll!0x00000000F9A81431
+[2018.06.25-17.03.54:563][361]LogOutputDevice: Error: 
+[2018.06.25-17.03.54:569][361]LogStats:                SubmitErrorReport -  0.000 s
+[2018.06.25-17.03.54:839][361]LogStats:                    SendNewReport -  0.270 s
+[2018.06.25-17.03.54:839][361]LogStats:             FDebug::EnsureFailed -  0.387 s
+[2018.06.25-17.03.54:847][361]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.002 s
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: === Handled ensure: ===
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: 
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: Ensure condition failed: BpClass != nullptr [File:D:\Build\++UE4+Release-4.17+Compile\Sync\Engine\Source\Editor\BlueprintGraph\Private\BlueprintActionFilter.cpp] [Line: 730]
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: Unable to resolve IsFieldInaccessible() - Blueprint (GameModeShooterOverride) missing an authoratative class (skel: [NULL], generated: [NULL], parent: [NULL])
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: Stack: 
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB43E36
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007B8CC2D2
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007B8E4746
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-BlueprintGraph.dll!0x00000000357D228C
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-BlueprintGraph.dll!0x00000000357D271D
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-BlueprintGraph.dll!0x00000000357D23F9
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F13E945
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F17D0F1
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F13F2AA
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F34F617
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F48FE3C
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F49440C
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-GraphEditor.dll!0x0000000034EE5D58
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-GraphEditor.dll!0x0000000034E0C4AB
+[2018.06.25-17.03.54:847][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F33C13A
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F46D76D
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F35E3E9
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F33B68E
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F35E9B6
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F07D97E
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F0B971C
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F0A77F9
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F12B02F
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F24456D
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-AssetTools.dll!0x0000000014757F6E
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A5FEB4D
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-AssetTools.dll!0x00000000146F2875
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136A14C8
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x0000000013653DA7
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x000000001365B637
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136AB669
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136522F1
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x000000001365A43F
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x0000000013658148
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136B8150
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136AB8CA
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B1D5F9E
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B1A6D9E
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B23F7C4
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B229092
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B21AC40
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB1B707
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB03EE1
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB1D5BB
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BAFF042
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: USER32.dll!0x00000000F8F46CC1
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: USER32.dll!0x00000000F8F46693
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB1DCC6
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D04BE2
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D13970
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D139EA
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D202D9
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D21C47
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: KERNEL32.DLL!0x00000000F91A3034
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: ntdll.dll!0x00000000F9A81431
+[2018.06.25-17.03.54:848][361]LogOutputDevice: Error: 
+[2018.06.25-17.03.54:855][361]LogStats:             FDebug::EnsureFailed -  0.010 s
+[2018.06.25-17.03.54:955][361]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.002 s
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: === Handled ensure: ===
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: 
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: Ensure condition failed: Blueprint != nullptr && Blueprint->ParentClass != nullptr [File:D:\Build\++UE4+Release-4.17+Compile\Sync\Engine\Source\Editor\BlueprintGraph\Private\BlueprintActionFilter.cpp] [Line: 1693]
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: 
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: Stack: 
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB43E36
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007B8CC2D2
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007B8E4746
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-BlueprintGraph.dll!0x00000000357D3747
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-BlueprintGraph.dll!0x00000000357D271D
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-BlueprintGraph.dll!0x00000000357D23F9
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F13E945
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F17D0F1
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F13F2AA
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F34F617
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F48FE3C
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F49440C
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-GraphEditor.dll!0x0000000034EE5D58
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-GraphEditor.dll!0x0000000034E0C4AB
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F33C13A
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F46D76D
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F35E3E9
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F33B68E
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F35E9B6
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F07D97E
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F0B971C
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F0A77F9
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F12B02F
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Kismet.dll!0x000000001F24456D
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-AssetTools.dll!0x0000000014757F6E
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000007A5FEB4D
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-AssetTools.dll!0x00000000146F2875
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136A14C8
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x0000000013653DA7
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x000000001365B637
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136AB669
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136522F1
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x000000001365A43F
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x0000000013658148
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136B8150
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000136AB8CA
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B1D5F9E
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B1A6D9E
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B23F7C4
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B229092
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000007B21AC40
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB1B707
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB03EE1
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB1D5BB
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BAFF042
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: USER32.dll!0x00000000F8F46CC1
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: USER32.dll!0x00000000F8F46693
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000007BB1DCC6
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D04BE2
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D13970
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D139EA
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D202D9
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: UE4Editor.exe!0x0000000074D21C47
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: KERNEL32.DLL!0x00000000F91A3034
+[2018.06.25-17.03.54:955][361]LogOutputDevice: Error: ntdll.dll!0x00000000F9A81431
+[2018.06.25-17.03.54:956][361]LogOutputDevice: Error: 
+[2018.06.25-17.03.54:965][361]LogStats:             FDebug::EnsureFailed -  0.011 s
+[2018.06.25-17.05.03:994][605]LogTemp: Repeating last play command: Selected Viewport
+[2018.06.25-17.05.04:024][605]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel' has LevelScriptBlueprint '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene' with GeneratedClass '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene_C' with ClassGeneratedBy '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene'
+[2018.06.25-17.05.04:024][605]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.06.25-17.06.33:076][  5]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy PP1_Lame_Inst, compiling. 
+[2018.06.25-17.06.33:446][  5]TextureStreamingBuild: Display: Compiling optional shaders took 0.376 seconds.
+[2018.06.25-17.06.33:713][  5]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.06.25-17.06.33:915][  6]Cmd: QUIT_EDITOR
+[2018.06.25-17.06.33:951][  6]LogExit: Preparing to exit.
+[2018.06.25-17.06.34:947][  6]LogDirectoryWatcher: A directory notification for 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/' was aborted.
+[2018.06.25-17.06.35:005][  6]LogExit: Editor shut down
+[2018.06.25-17.06.35:008][  6]LogExit: Transaction tracking system shut down
+[2018.06.25-17.06.35:212][  6]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2018.06.25-17.06.35:212][  6]LogDirectoryWatcher: A directory notification for '../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/' was aborted.
+[2018.06.25-17.06.35:212][  6]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2018.06.25-17.06.35:212][  6]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Marketplace/DatasmithImporter/Content/' was aborted.
+[2018.06.25-17.06.35:213][  6]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/HoudiniEngine/Content/' was aborted.
+[2018.06.25-17.06.35:213][  6]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Oculus/OculusVR/Content/' was aborted.
+[2018.06.25-17.06.35:213][  6]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/Steam/SteamVR/Content/' was aborted.
+[2018.06.25-17.06.35:296][  6]LogExit: Object subsystem successfully closed.
+[2018.06.25-17.06.35:308][  6]LogD3D11RHI: Shutdown
+[2018.06.25-17.06.35:308][  6]LogD3D11RHI: CleanupD3DDevice
+[2018.06.25-17.06.35:311][  6]LogD3D11RHI: ~FD3D11DynamicRHI
+[2018.06.25-17.06.35:320][  6]LogModuleManager: Shutting down and abandoning module MaterialEditor (552)
+[2018.06.25-17.06.35:320][  6]LogModuleManager: Shutting down and abandoning module BlueprintGraph (550)
+[2018.06.25-17.06.35:320][  6]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (548)
+[2018.06.25-17.06.35:320][  6]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (546)
+[2018.06.25-17.06.35:320][  6]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (544)
+[2018.06.25-17.06.35:320][  6]LogModuleManager: Shutting down and abandoning module WorldBrowser (542)
+[2018.06.25-17.06.35:320][  6]LogModuleManager: Shutting down and abandoning module SceneOutliner (540)
+[2018.06.25-17.06.35:320][  6]LogModuleManager: Shutting down and abandoning module AddContentDialog (538)
+[2018.06.25-17.06.35:320][  6]LogDirectoryWatcher: A directory notification for 'E:/Unreal/VersionMoteur/UE_4.17/FeaturePacks/' was aborted.
+[2018.06.25-17.06.35:321][  6]LogModuleManager: Shutting down and abandoning module WidgetCarousel (537)
+[2018.06.25-17.06.35:321][  6]LogModuleManager: Shutting down and abandoning module EditorWidgets (534)
+[2018.06.25-17.06.35:321][  6]LogModuleManager: Shutting down and abandoning module CollectionManager (532)
+[2018.06.25-17.06.35:321][  6]LogDirectoryWatcher: A directory notification for 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Collections/' was aborted.
+[2018.06.25-17.06.35:321][  6]LogDirectoryWatcher: A directory notification for 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/user/Collections/' was aborted.
+[2018.06.25-17.06.35:321][  6]LogDirectoryWatcher: A directory notification for 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Collections/' was aborted.
+[2018.06.25-17.06.35:321][  6]LogModuleManager: Shutting down and abandoning module StatsViewer (530)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module FoliageEdit (528)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module LandscapeEditor (526)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module MeshPaintMode (524)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (522)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module ActorPickerMode (520)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module GeometryMode (518)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module TextureAlignMode (516)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module BspMode (514)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (512)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module HardwareSurvey (510)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (508)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module AutomationWorker (506)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module HoudiniEngineEditor (504)
+[2018.06.25-17.06.35:322][  6]LogHoudiniEngineEditor: Shutting down the Houdini Engine Editor module.
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (502)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (500)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module PlacementMode (499)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (496)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (494)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (492)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (490)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (488)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module Media (487)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (484)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module CharacterAI (482)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module AudioCapture (480)
+[2018.06.25-17.06.35:322][  6]LogModuleManager: Shutting down and abandoning module SequenceRecorder (479)
+[2018.06.25-17.06.35:323][  6]LogModuleManager: Shutting down and abandoning module SmartSnapping (476)
+[2018.06.25-17.06.35:323][  6]LogModuleManager: Shutting down and abandoning module SessionServices (474)
+[2018.06.25-17.06.35:323][  6]LogModuleManager: Shutting down and abandoning module ViewportSnapping (472)
+[2018.06.25-17.06.35:323][  6]LogModuleManager: Shutting down and abandoning module ViewportInteraction (470)
+[2018.06.25-17.06.35:323][  6]LogModuleManager: Shutting down and abandoning module ClothPainter (468)
+[2018.06.25-17.06.35:323][  6]LogModuleManager: Shutting down and abandoning module LogVisualizer (466)
+[2018.06.25-17.06.35:323][  6]LogModuleManager: Shutting down and abandoning module IntroTutorials (464)
+[2018.06.25-17.06.35:323][  6]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (463)
+[2018.06.25-17.06.35:323][  6]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (460)
+[2018.06.25-17.06.35:323][  6]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (458)
+[2018.06.25-17.06.35:323][  6]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (456)
+[2018.06.25-17.06.35:323][  6]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (455)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (452)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (450)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (448)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module InputBindingEditor (446)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module MergeActors (444)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module SizeMap (442)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module TreeMap (440)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module ReferenceViewer (438)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (436)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module LocalizationService (435)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module HardwareTargeting (432)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (430)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module UndoHistory (428)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module XmlParser (426)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module Blutility (424)
+[2018.06.25-17.06.36:162][  6]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (422)
+[2018.06.25-17.06.36:163][  6]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (421)
+[2018.06.25-17.06.36:163][  6]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (418)
+[2018.06.25-17.06.36:163][  6]LogModuleManager: Shutting down and abandoning module SettingsEditor (416)
+[2018.06.25-17.06.36:163][  6]LogModuleManager: Shutting down and abandoning module ProjectLauncher (414)
+[2018.06.25-17.06.36:163][  6]LogModuleManager: Shutting down and abandoning module SessionFrontend (412)
+[2018.06.25-17.06.36:163][  6]LogModuleManager: Shutting down and abandoning module ProfilerClient (410)
+[2018.06.25-17.06.36:163][  6]LogModuleManager: Shutting down and abandoning module DeviceManager (408)
+[2018.06.25-17.06.36:163][  6]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (407)
+[2018.06.25-17.06.36:240][  6]LogModuleManager: Shutting down and abandoning module AutomationController (404)
+[2018.06.25-17.06.36:240][  6]LogModuleManager: Shutting down and abandoning module AutomationWindow (402)
+[2018.06.25-17.06.36:240][  6]LogModuleManager: Shutting down and abandoning module Layers (400)
+[2018.06.25-17.06.36:240][  6]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (398)
+[2018.06.25-17.06.36:240][  6]LogModuleManager: Shutting down and abandoning module DetailCustomizations (396)
+[2018.06.25-17.06.36:240][  6]LogModuleManager: Shutting down and abandoning module PackagesDialog (394)
+[2018.06.25-17.06.36:240][  6]LogModuleManager: Shutting down and abandoning module Persona (392)
+[2018.06.25-17.06.36:240][  6]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (391)
+[2018.06.25-17.06.36:240][  6]LogModuleManager: Shutting down and abandoning module AnimGraph (389)
+[2018.06.25-17.06.36:240][  6]LogModuleManager: Shutting down and abandoning module Kismet (386)
+[2018.06.25-17.06.36:246][  6]LogModuleManager: Shutting down and abandoning module ClassViewer (384)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module Toolbox (382)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module ModuleUI (380)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module MovieSceneTools (378)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module OutputLog (376)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module GammaUI (374)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module Documentation (372)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (370)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module MovieScene (368)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module Niagara (366)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module NiagaraEditor (365)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (362)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module LauncherPlatform (360)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module AnalyticsET (358)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module PortalServices (356)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module PortalRpc (354)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module MessagingRpc (352)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module AIModule (350)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module GameplayDebugger (349)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module AITestSuite (347)
+[2018.06.25-17.06.36:248][  6]LogModuleManager: Shutting down and abandoning module ProfilerService (344)
+[2018.06.25-17.06.36:397][  6]LogModuleManager: Shutting down and abandoning module TaskGraph (342)
+[2018.06.25-17.06.36:397][  6]LogModuleManager: Shutting down and abandoning module SteamVRController (340)
+[2018.06.25-17.06.36:397][  6]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (338)
+[2018.06.25-17.06.36:397][  6]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (336)
+[2018.06.25-17.06.36:397][  6]LogModuleManager: Shutting down and abandoning module OculusInput (334)
+[2018.06.25-17.06.36:397][  6]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (332)
+[2018.06.25-17.06.36:397][  6]LogModuleManager: Shutting down and abandoning module HoudiniEngineRuntime (330)
+[2018.06.25-17.06.36:397][  6]LogHoudiniEngine: Shutting down the Houdini Engine module.
+[2018.06.25-17.06.36:398][  6]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (328)
+[2018.06.25-17.06.36:398][  6]LogModuleManager: Shutting down and abandoning module CableComponent (326)
+[2018.06.25-17.06.36:398][  6]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (324)
+[2018.06.25-17.06.36:398][  6]LogModuleManager: Shutting down and abandoning module AndroidPermission (322)
+[2018.06.25-17.06.36:398][  6]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (318)
+[2018.06.25-17.06.36:398][  6]LogModuleManager: Shutting down and abandoning module DatasmithCore (316)
+[2018.06.25-17.06.36:398][  6]LogModuleManager: Shutting down and abandoning module DatasmithCADImporter (314)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module DatasmithImporter (313)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module HTML5Networking (310)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module AlembicImporter (308)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module AlembicLibrary (307)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module GeometryCache (306)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (305)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (300)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module PluginBrowser (298)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (296)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (294)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module DesktopPlatform (293)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module UObjectPlugin (290)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (288)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (286)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module GitSourceControl (284)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module SourceControl (283)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (280)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (278)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (276)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module Paper2DEditor (274)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module MeshPaint (273)
+[2018.06.25-17.06.36:399][  6]LogModuleManager: Shutting down and abandoning module LevelEditor (271)
+[2018.06.25-17.06.36:400][  6]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (270)
+[2018.06.25-17.06.36:400][  6]LogModuleManager: Shutting down and abandoning module MainFrame (268)
+[2018.06.25-17.06.36:400][  6]LogModuleManager: Shutting down and abandoning module HotReload (267)
+[2018.06.25-17.06.36:400][  6]LogDirectoryWatcher: A directory notification for 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Binaries/Win64' was aborted.
+[2018.06.25-17.06.36:400][  6]LogModuleManager: Shutting down and abandoning module Shooter (262)
+[2018.06.25-17.06.36:400][  6]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (260)
+[2018.06.25-17.06.36:400][  6]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (258)
+[2018.06.25-17.06.36:400][  6]LogModuleManager: Shutting down and abandoning module PhysXVehicles (256)
+[2018.06.25-17.06.36:400][  6]LogModuleManager: Shutting down and abandoning module OculusEditor (254)
+[2018.06.25-17.06.36:400][  6]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (252)
+[2018.06.25-17.06.36:400][  6]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (250)
+[2018.06.25-17.06.36:400][  6]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (248)
+[2018.06.25-17.06.36:400][  6]LogModuleManager: Shutting down and abandoning module UdpMessaging (246)
+[2018.06.25-17.06.36:502][  6]LogModuleManager: Shutting down and abandoning module TcpMessaging (244)
+[2018.06.25-17.06.36:603][  6]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (242)
+[2018.06.25-17.06.36:603][  6]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (240)
+[2018.06.25-17.06.36:603][  6]LogModuleManager: Shutting down and abandoning module FacialAnimation (238)
+[2018.06.25-17.06.36:603][  6]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (236)
+[2018.06.25-17.06.36:603][  6]LogModuleManager: Shutting down and abandoning module GraphEditor (235)
+[2018.06.25-17.06.36:603][  6]LogModuleManager: Shutting down and abandoning module ContentBrowser (233)
+[2018.06.25-17.06.36:604][  6]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (230)
+[2018.06.25-17.06.36:604][  6]LogModuleManager: Shutting down and abandoning module Paper2D (228)
+[2018.06.25-17.06.36:604][  6]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (226)
+[2018.06.25-17.06.36:604][  6]LogModuleManager: Shutting down and abandoning module WmfMedia (224)
+[2018.06.25-17.06.36:606][  6]LogModuleManager: Shutting down and abandoning module PacketHandler (222)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (220)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (218)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module Overlay (216)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module OverlayEditor (215)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module MediaAssets (212)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module VREditor (210)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module StringTableEditor (208)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (206)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (204)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module FunctionalTesting (202)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (200)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (199)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module UMG (196)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module UMGEditor (195)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module Sequencer (194)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module MessageLog (191)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module SlateReflector (186)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module Slate (184)
+[2018.06.25-17.06.36:607][  6]LogModuleManager: Shutting down and abandoning module EditorStyle (182)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module MRMesh (180)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (178)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (176)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module XAudio2 (174)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module Networking (172)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module Core (168)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module KismetCompiler (164)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module LevelSequence (162)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module MeshUtilities (160)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (159)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (158)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (157)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (155)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (153)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module MaterialBaking (149)
+[2018.06.25-17.06.36:609][  6]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (146)
+[2018.06.25-17.06.36:610][  6]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2018.06.25-17.06.36:635][  6]LogDerivedDataCache: Shutdown
+[2018.06.25-17.06.36:635][  6]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2018.06.25-17.06.36:635][  6]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2018.06.25-17.06.36:635][  6]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2018.06.25-17.06.36:635][  6]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2018.06.25-17.06.36:635][  6]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2018.06.25-17.06.36:635][  6]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2018.06.25-17.06.36:635][  6]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2018.06.25-17.06.36:635][  6]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2018.06.25-17.06.36:635][  6]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2018.06.25-17.06.36:635][  6]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2018.06.25-17.06.36:635][  6]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2018.06.25-17.06.36:635][  6]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2018.06.25-17.06.36:635][  6]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module PhysXCooking (56)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module SteamVR (54)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module OculusHMD (52)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2018.06.25-17.06.36:636][  6]LogOnline: Display: Unloading online subsystem: NULL
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2018.06.25-17.06.36:636][  6]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2018.06.25-17.06.36:636][  6]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.06.25-17.06.36:636][  6]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B52D50E9E-4149-0A7F-E572-E5ACEF7CE1B5%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.17.2-3658906%2B%2B%2BUE4%2BRelease-4.17&UserID=9cd4830543d039662548b2ad1a3cfbe0%7C6f7cdd314764452d94868365e94d90c0%7C178ad127-eafd-4239-9a21-bd5586da3d04&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2018.06.25-17.06.36:665][  6]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2018.06.25-17.06.36:666][  6]LogModuleManager: Shutting down and abandoning module AnimationModifiers (36)
+[2018.06.25-17.06.36:666][  6]LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+[2018.06.25-17.06.36:666][  6]LogModuleManager: Shutting down and abandoning module AudioEditor (32)
+[2018.06.25-17.06.36:666][  6]LogModuleManager: Shutting down and abandoning module TextureCompressor (30)
+[2018.06.25-17.06.36:666][  6]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2018.06.25-17.06.36:666][  6]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2018.06.25-17.06.36:666][  6]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2018.06.25-17.06.36:667][  6]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2018.06.25-17.06.36:667][  6]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2018.06.25-17.06.36:667][  6]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2018.06.25-17.06.36:668][  6]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2018.06.25-17.06.36:668][  6]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2018.06.25-17.06.36:668][  6]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2018.06.25-17.06.36:668][  6]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2018.06.25-17.06.36:668][  6]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2018.06.25-17.06.36:668][  6]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.06.25-17.06.36:668][  6]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.06.25-17.06.36:668][  6]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.06.25-17.06.36:671][  6]LogExit: Exiting.
+[2018.06.25-17.06.36:713][  6]Log file closed, 06/25/18 19:06:36

@@ -1,0 +1,806 @@
+﻿Log file open, 09/23/17 18:02:40
+LogWindows: LoadLibraryWithSearchPaths failed for file aqProf.dll. GetLastError=0
+LogWindows: LoadLibraryWithSearchPaths failed for file VtuneApi.dll. GetLastError=0
+LogWindows: LoadLibraryWithSearchPaths failed for file VtuneApi32e.dll. GetLastError=0
+LogInit: Display: Running engine for game: Shooter
+LogPlatformFile: Not using cached read wrapper
+LogInit: Display: RandInit(797724372) SRandInit(797724372).
+LogTaskGraph: Started task graph with 5 named threads and 14 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.166033
+LogD3D11RHI: Aftermath initialized
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.17-CL-3586342
+LogInit: Engine Version: 4.17.1-3586342+++UE4+Release-4.17
+LogInit: Compatible Engine Version: 4.17.0-3573198+++UE4+Release-4.17
+LogInit: Net CL: 3573198
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 20
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 28
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 19
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 7
+LogInit: Compiled (64-bit): Aug 15 2017 02:05:26
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.17
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.17/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.09.23-16.02.42:063][  0]LogInit: Selected Device Profile: [Windows]
+[2017.09.23-16.02.42:063][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.09.23-16.02.42:074][  0]LogInit: Computer: MANZAVISION05
+[2017.09.23-16.02.42:074][  0]LogInit: User: user
+[2017.09.23-16.02.42:074][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.09.23-16.02.42:074][  0]LogInit: High frequency timer resolution =3.328125 MHz
+[2017.09.23-16.02.42:074][  0]LogMemory: Memory total: Physical=12.0GB (12GB approx)
+[2017.09.23-16.02.42:074][  0]LogMemory: Platform Memory Stats for Windows
+[2017.09.23-16.02.42:074][  0]LogMemory: Process Physical Memory: 278.51 MB used, 278.51 MB peak
+[2017.09.23-16.02.42:074][  0]LogMemory: Process Virtual Memory: 274.21 MB used, 274.21 MB peak
+[2017.09.23-16.02.42:074][  0]LogMemory: Physical Memory: 8421.34 MB used,  3818.06 MB free, 12239.39 MB total
+[2017.09.23-16.02.42:074][  0]LogMemory: Virtual Memory: 669.23 MB used,  3818.06 MB free, 134217728.00 MB total
+[2017.09.23-16.02.42:253][  0]LogInit: Using OS detected language (fr-FR).
+[2017.09.23-16.02.42:254][  0]LogInit: Using OS detected locale (fr-FR).
+[2017.09.23-16.02.42:258][  0]LogTextLocalizationManager: No localization for 'fr-FR' exists, so 'en' will be used for the language.
+[2017.09.23-16.02.42:258][  0]LogTextLocalizationManager: No localization for 'fr-FR' exists, so 'en' will be used for the locale.
+[2017.09.23-16.02.42:906][  0]LogD3D11RHI: D3D11 adapters:
+[2017.09.23-16.02.42:943][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2017.09.23-16.02.42:943][  0]LogD3D11RHI:       4059/0/6119 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.09.23-16.02.42:944][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.09.23-16.02.42:944][  0]LogD3D11RHI:       0/0/6119 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.09.23-16.02.42:944][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.09.23-16.02.42:951][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.09.23-16.02.42:951][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2017.09.23-16.02.42:951][  0]LogWindows: EnumDisplayDevices:
+[2017.09.23-16.02.42:951][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2017.09.23-16.02.42:952][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
+[2017.09.23-16.02.42:952][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.09.23-16.02.42:952][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2017.09.23-16.02.42:952][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.09.23-16.02.42:952][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2017.09.23-16.02.42:952][  0]LogD3D11RHI:   Driver Version: 382.05 (internal:22.21.13.8205, unified:382.05)
+[2017.09.23-16.02.42:952][  0]LogD3D11RHI:      Driver Date: 5-1-2017
+[2017.09.23-16.02.42:952][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.09.23-16.02.42:981][  0]LogD3D11RHI: Async texture creation enabled
+[2017.09.23-16.02.42:992][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.09.23-16.02.43:042][  0]LogShaderCompilers: Guid format shader working directory is -11 characters bigger than the processId version (E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Intermediate/Shaders/WorkingDirectory/13212/).
+[2017.09.23-16.02.43:042][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/user/AppData/Local/Temp/UnrealShaderWorkingDir/6A0F9245428DB141FA9621BF46BABC99/'.
+[2017.09.23-16.02.43:042][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2017.09.23-16.02.43:873][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2017.09.23-16.02.43:922][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2017.09.23-16.02.43:971][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2017.09.23-16.02.44:018][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2017.09.23-16.02.44:067][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2017.09.23-16.02.44:114][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2017.09.23-16.02.44:161][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.09.23-16.02.44:207][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2017.09.23-16.02.44:249][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2017.09.23-16.02.44:297][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2017.09.23-16.02.44:343][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2017.09.23-16.02.44:389][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2017.09.23-16.02.44:435][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2017.09.23-16.02.44:481][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2017.09.23-16.02.44:529][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2017.09.23-16.02.44:623][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2017.09.23-16.02.44:623][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.09.23-16.02.44:661][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2017.09.23-16.02.44:747][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2017.09.23-16.02.44:773][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2017.09.23-16.02.44:820][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2017.09.23-16.02.44:866][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.09.23-16.02.44:912][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2017.09.23-16.02.44:961][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2017.09.23-16.02.44:961][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2017.09.23-16.02.45:390][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2017.09.23-16.02.45:476][  0]LogDerivedDataCache: Loaded boot cache 0.09s 93MB C:/Users/user/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2017.09.23-16.02.45:476][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/user/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc
+[2017.09.23-16.02.45:476][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.09.23-16.02.45:476][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.09.23-16.02.45:476][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.09.23-16.02.45:476][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.09.23-16.02.45:491][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.09.23-16.02.45:504][  0]LogDerivedDataCache: Using Local data cache path C:/Users/user/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.09.23-16.02.45:513][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.09.23-16.02.45:514][  0]LogSlate: Using Freetype 2.6.0
+[2017.09.23-16.02.45:514][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.09.23-16.02.45:514][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.09.23-16.02.45:758][  0]LogAssetRegistry: FAssetRegistry took 0.0251 seconds to start up
+[2017.09.23-16.02.45:858][  0]LogInit: Selected Device Profile: [Windows]
+[2017.09.23-16.02.46:008][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.09.23-16.02.46:291][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.09.23-16.02.46:329][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.09.23-16.02.46:329][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.09.23-16.02.46:329][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2017.09.23-16.02.46:329][  0]LogMeshReduction: No automatic mesh merging module available
+[2017.09.23-16.02.46:329][  0]LogMeshMerging: No automatic mesh merging module available
+[2017.09.23-16.02.46:670][  0]LogNetVersion: Shooter , NetCL: 3573198, EngineNetVer: 2, GameNetVer: 0 (Checksum: 272747623)
+[2017.09.23-16.02.46:860][  0]LogPackageLocalizationCache: Processed 5 localized package path(s) for 1 prioritized culture(s) in 0.024317 seconds
+[2017.09.23-16.02.46:866][  0]LogUObjectArray: 35825 objects as part of root set at end of initial load.
+[2017.09.23-16.02.46:866][  0]LogUObjectAllocator: 7529112 out of 0 bytes used by permanent object pool.
+[2017.09.23-16.02.46:866][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.09.23-16.02.46:920][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.09.23-16.02.49:550][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.09.23-16.02.49:601][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.09.23-16.02.50:385][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.09.23-16.02.50:814][  0]SourceControl: Source control is disabled
+[2017.09.23-16.02.50:814][  0]SourceControl: Source control is disabled
+[2017.09.23-16.02.50:865][  0]SourceControl: Source control is disabled
+[2017.09.23-16.02.50:916][  0]SourceControl: Source control is disabled
+[2017.09.23-16.02.51:562][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.09.23-16.02.51:833][  0]LogOcInput: OculusInput pre-init called
+[2017.09.23-16.02.52:103][  0]LogEngine: Initializing Engine...
+[2017.09.23-16.02.52:106][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.09.23-16.02.52:328][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.09.23-16.02.52:328][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.09.23-16.02.52:469][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.09.23-16.02.52:478][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.09.23-16.02.52:496][  0]LogInit: FAudioDevice initialized.
+[2017.09.23-16.02.52:604][  0]LogDerivedDataCache: Saved boot cache 0.11s 93MB C:/Users/user/AppData/Local/UnrealEngine/4.17/DerivedDataCache/Boot.ddc.
+[2017.09.23-16.02.52:621][  0]LogInit: Texture streaming: Enabled
+[2017.09.23-16.02.52:733][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.09.23-16.02.52:970][  0]LogInit: Transaction tracking system initialized
+[2017.09.23-16.02.53:279][  0]BlueprintLog: New page: Editor Load
+[2017.09.23-16.02.54:276][  0]LocalizationService: Localization service is disabled
+[2017.09.23-16.02.55:221][  0]LogConsoleResponse: Display: 
+[2017.09.23-16.02.55:416][  0]LogFileCache: Scanning file cache for directory 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/' took 0.01s
+[2017.09.23-16.02.55:416][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.09.23-16.02.55:416][  0]LogCook: Display: Mobile HDR setting 1
+[2017.09.23-16.02.55:416][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2017.09.23-16.02.56:488][  0]SourceControl: Source control is disabled
+[2017.09.23-16.02.56:504][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files/Epic Games/UE_4.17/FeaturePacks/StarterContent.upack)
+[2017.09.23-16.02.56:521][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2017.09.23-16.02.56:535][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Architecture/Floor_400x400.uasset"
+[2017.09.23-16.02.56:544][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Architecture/Pillar_50x500.uasset"
+[2017.09.23-16.02.56:561][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
+[2017.09.23-16.02.56:571][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Architecture/Wall_400x200.uasset"
+[2017.09.23-16.02.56:581][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Architecture/Wall_400x300.uasset"
+[2017.09.23-16.02.56:590][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Architecture/Wall_400x400.uasset"
+[2017.09.23-16.02.56:600][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Architecture/Wall_500x500.uasset"
+[2017.09.23-16.02.56:610][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
+[2017.09.23-16.02.56:619][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
+[2017.09.23-16.02.56:627][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
+[2017.09.23-16.02.56:636][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
+[2017.09.23-16.02.56:646][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Collapse01.uasset"
+[2017.09.23-16.02.56:657][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Collapse02.uasset"
+[2017.09.23-16.02.56:663][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Collapse_Cue.uasset"
+[2017.09.23-16.02.56:672][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Explosion01.uasset"
+[2017.09.23-16.02.56:681][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Explosion02.uasset"
+[2017.09.23-16.02.56:687][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Explosion_Cue.uasset"
+[2017.09.23-16.02.56:696][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Fire01.uasset"
+[2017.09.23-16.02.56:702][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Fire01_Cue.uasset"
+[2017.09.23-16.02.56:713][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Fire_Sparks01.uasset"
+[2017.09.23-16.02.56:719][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2017.09.23-16.02.56:728][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Light01.uasset"
+[2017.09.23-16.02.56:735][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Light01_Cue.uasset"
+[2017.09.23-16.02.56:745][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Light02.uasset"
+[2017.09.23-16.02.56:751][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Light02_Cue.uasset"
+[2017.09.23-16.02.56:761][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Smoke01.uasset"
+[2017.09.23-16.02.56:767][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Smoke01_Cue.uasset"
+[2017.09.23-16.02.56:775][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
+[2017.09.23-16.02.56:793][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Starter_Birds01.uasset"
+[2017.09.23-16.02.56:826][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Starter_Music01.uasset"
+[2017.09.23-16.02.56:831][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
+[2017.09.23-16.02.56:845][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Starter_Wind05.uasset"
+[2017.09.23-16.02.56:858][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Starter_Wind06.uasset"
+[2017.09.23-16.02.56:869][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Steam01.uasset"
+[2017.09.23-16.02.56:875][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Audio/Steam01_Cue.uasset"
+[2017.09.23-16.02.56:885][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2017.09.23-16.02.56:894][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2017.09.23-16.02.56:903][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2017.09.23-16.02.56:911][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2017.09.23-16.02.56:920][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2017.09.23-16.02.56:929][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
+[2017.09.23-16.02.56:940][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2017.09.23-16.02.56:949][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
+[2017.09.23-16.02.56:955][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
+[2017.09.23-16.02.56:963][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
+[2017.09.23-16.02.56:973][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
+[2017.09.23-16.02.56:982][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
+[2017.09.23-16.02.56:991][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
+[2017.09.23-16.02.57:001][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
+[2017.09.23-16.02.57:011][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
+[2017.09.23-16.02.57:017][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
+[2017.09.23-16.02.57:281][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+[2017.09.23-16.02.57:291][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Advanced_Lighting.umap"
+[2017.09.23-16.02.57:300][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset"
+[2017.09.23-16.02.57:314][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Minimal_Default.umap"
+[2017.09.23-16.02.57:324][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset"
+[2017.09.23-16.02.57:351][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/StarterMap.umap"
+[2017.09.23-16.02.57:389][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap_BuiltData.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/StarterMap_BuiltData.uasset"
+[2017.09.23-16.02.57:408][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_AssetPlatform.uasset"
+[2017.09.23-16.02.57:422][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Basic_Floor.uasset"
+[2017.09.23-16.02.57:438][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Basic_Wall.uasset"
+[2017.09.23-16.02.57:453][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2017.09.23-16.02.57:471][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
+[2017.09.23-16.02.57:482][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2017.09.23-16.02.57:494][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2017.09.23-16.02.57:512][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2017.09.23-16.02.57:522][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2017.09.23-16.02.57:531][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2017.09.23-16.02.57:542][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2017.09.23-16.02.57:552][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2017.09.23-16.02.57:564][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
+[2017.09.23-16.02.57:577][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
+[2017.09.23-16.02.57:587][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
+[2017.09.23-16.02.57:599][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
+[2017.09.23-16.02.57:612][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
+[2017.09.23-16.02.57:622][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Glass.uasset"
+[2017.09.23-16.02.57:633][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Ground_Grass.uasset"
+[2017.09.23-16.02.57:645][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
+[2017.09.23-16.02.57:655][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Ground_Moss.uasset"
+[2017.09.23-16.02.57:665][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2017.09.23-16.02.57:675][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2017.09.23-16.02.57:686][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
+[2017.09.23-16.02.57:695][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Metal_Copper.uasset"
+[2017.09.23-16.02.57:705][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Metal_Gold.uasset"
+[2017.09.23-16.02.57:717][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Metal_Rust.uasset"
+[2017.09.23-16.02.57:725][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Metal_Steel.uasset"
+[2017.09.23-16.02.57:734][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
+[2017.09.23-16.02.57:743][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2017.09.23-16.02.57:754][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
+[2017.09.23-16.02.57:763][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Rock_Slate.uasset"
+[2017.09.23-16.02.57:773][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2017.09.23-16.02.57:782][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2017.09.23-16.02.57:792][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2017.09.23-16.02.57:803][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Tech_Panel.uasset"
+[2017.09.23-16.02.57:813][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Water_Lake.uasset"
+[2017.09.23-16.02.57:823][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Water_Ocean.uasset"
+[2017.09.23-16.02.57:831][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2017.09.23-16.02.57:842][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2017.09.23-16.02.57:857][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Wood_Oak.uasset"
+[2017.09.23-16.02.57:867][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Wood_Pine.uasset"
+[2017.09.23-16.02.57:878][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
+[2017.09.23-16.02.57:889][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
+[2017.09.23-16.02.57:902][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/P_Explosion.uasset"
+[2017.09.23-16.02.57:912][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/P_Fire.uasset"
+[2017.09.23-16.02.57:920][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/P_Smoke.uasset"
+[2017.09.23-16.02.57:933][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/P_Sparks.uasset"
+[2017.09.23-16.02.57:945][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/P_Steam_Lit.uasset"
+[2017.09.23-16.02.57:954][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/Materials/M_Burst.uasset"
+[2017.09.23-16.02.57:964][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2017.09.23-16.02.57:975][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
+[2017.09.23-16.02.57:983][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2017.09.23-16.02.57:995][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
+[2017.09.23-16.02.58:007][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
+[2017.09.23-16.02.58:019][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
+[2017.09.23-16.02.58:034][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
+[2017.09.23-16.02.58:048][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
+[2017.09.23-16.02.58:058][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Particles/Materials/M_Spark.uasset"
+[2017.09.23-16.02.58:070][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/MaterialSphere.uasset"
+[2017.09.23-16.02.58:081][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_Bush.uasset"
+[2017.09.23-16.02.58:091][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_Chair.uasset"
+[2017.09.23-16.02.58:100][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_CornerFrame.uasset"
+[2017.09.23-16.02.58:111][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_Couch.uasset"
+[2017.09.23-16.02.58:120][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_Door.uasset"
+[2017.09.23-16.02.58:129][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_DoorFrame.uasset"
+[2017.09.23-16.02.58:138][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_GlassWindow.uasset"
+[2017.09.23-16.02.58:146][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2017.09.23-16.02.58:155][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
+[2017.09.23-16.02.58:179][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2017.09.23-16.02.58:188][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_PillarFrame.uasset"
+[2017.09.23-16.02.58:196][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_PillarFrame300.uasset"
+[2017.09.23-16.02.58:206][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_Rock.uasset"
+[2017.09.23-16.02.58:214][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_Shelf.uasset"
+[2017.09.23-16.02.58:222][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_Stairs.uasset"
+[2017.09.23-16.02.58:231][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_Statue.uasset"
+[2017.09.23-16.02.58:241][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_TableRound.uasset"
+[2017.09.23-16.02.58:250][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/SM_WindowFrame.uasset"
+[2017.09.23-16.02.58:259][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/Materials/M_Bush.uasset"
+[2017.09.23-16.02.58:267][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/Materials/M_Chair.uasset"
+[2017.09.23-16.02.58:276][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/Materials/M_Door.uasset"
+[2017.09.23-16.02.58:285][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/Materials/M_Frame.uasset"
+[2017.09.23-16.02.58:295][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/Materials/M_Lamp.uasset"
+[2017.09.23-16.02.58:304][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2017.09.23-16.02.58:314][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2017.09.23-16.02.58:323][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/Materials/M_Rock.uasset"
+[2017.09.23-16.02.58:331][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/Materials/M_Shelf.uasset"
+[2017.09.23-16.02.58:341][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/Materials/M_Statue.uasset"
+[2017.09.23-16.02.58:349][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
+[2017.09.23-16.02.58:357][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Props/Materials/M_TableRound.uasset"
+[2017.09.23-16.02.58:366][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Cone.uasset"
+[2017.09.23-16.02.58:376][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Cube.uasset"
+[2017.09.23-16.02.58:384][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
+[2017.09.23-16.02.58:396][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2017.09.23-16.02.58:406][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Pipe.uasset"
+[2017.09.23-16.02.58:415][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
+[2017.09.23-16.02.58:424][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
+[2017.09.23-16.02.58:431][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Plane.uasset"
+[2017.09.23-16.02.58:441][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2017.09.23-16.02.58:451][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Sphere.uasset"
+[2017.09.23-16.02.58:460][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Torus.uasset"
+[2017.09.23-16.02.58:469][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Trim.uasset"
+[2017.09.23-16.02.58:476][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2017.09.23-16.02.58:486][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2017.09.23-16.02.58:494][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
+[2017.09.23-16.02.58:503][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Tube.uasset"
+[2017.09.23-16.02.58:511][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
+[2017.09.23-16.02.58:521][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
+[2017.09.23-16.02.58:530][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
+[2017.09.23-16.02.58:562][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2017.09.23-16.02.58:623][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2017.09.23-16.02.58:678][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2017.09.23-16.02.58:724][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2017.09.23-16.02.58:878][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2017.09.23-16.02.58:949][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2017.09.23-16.02.59:019][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2017.09.23-16.02.59:057][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2017.09.23-16.02.59:135][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2017.09.23-16.02.59:164][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2017.09.23-16.02.59:228][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2017.09.23-16.02.59:272][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2017.09.23-16.02.59:327][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2017.09.23-16.02.59:337][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Burst_M.uasset"
+[2017.09.23-16.02.59:348][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Bush_D.uasset"
+[2017.09.23-16.02.59:358][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Bush_N.uasset"
+[2017.09.23-16.02.59:367][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2017.09.23-16.02.59:376][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2017.09.23-16.02.59:387][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Chair_M.uasset"
+[2017.09.23-16.02.59:401][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Chair_N.uasset"
+[2017.09.23-16.02.59:410][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
+[2017.09.23-16.02.59:447][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2017.09.23-16.02.59:459][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2017.09.23-16.02.59:504][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2017.09.23-16.02.59:523][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2017.09.23-16.02.59:541][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2017.09.23-16.02.59:567][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2017.09.23-16.02.59:595][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2017.09.23-16.02.59:629][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2017.09.23-16.02.59:663][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2017.09.23-16.02.59:693][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2017.09.23-16.02.59:717][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2017.09.23-16.02.59:754][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2017.09.23-16.02.59:781][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2017.09.23-16.02.59:803][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2017.09.23-16.02.59:824][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2017.09.23-16.02.59:850][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2017.09.23-16.02.59:856][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2017.09.23-16.02.59:872][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2017.09.23-16.02.59:883][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Door_M.uasset"
+[2017.09.23-16.02.59:896][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Door_N.uasset"
+[2017.09.23-16.02.59:905][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
+[2017.09.23-16.02.59:921][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
+[2017.09.23-16.02.59:931][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
+[2017.09.23-16.02.59:945][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
+[2017.09.23-16.02.59:955][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Frame_M.uasset"
+[2017.09.23-16.02.59:967][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Frame_N.uasset"
+[2017.09.23-16.02.59:973][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Gradinet_01.uasset"
+[2017.09.23-16.03.00:025][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
+[2017.09.23-16.03.00:070][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
+[2017.09.23-16.03.00:204][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2017.09.23-16.03.00:243][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2017.09.23-16.03.00:314][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
+[2017.09.23-16.03.00:345][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
+[2017.09.23-16.03.00:357][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Lamp_M.uasset"
+[2017.09.23-16.03.00:373][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Lamp_N.uasset"
+[2017.09.23-16.03.00:405][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_MacroVariation.uasset"
+[2017.09.23-16.03.00:436][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2017.09.23-16.03.00:467][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
+[2017.09.23-16.03.00:498][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
+[2017.09.23-16.03.00:514][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
+[2017.09.23-16.03.00:607][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
+[2017.09.23-16.03.00:635][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
+[2017.09.23-16.03.00:655][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
+[2017.09.23-16.03.00:676][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
+[2017.09.23-16.03.00:704][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
+[2017.09.23-16.03.00:721][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_RockMesh_M.uasset"
+[2017.09.23-16.03.00:744][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_RockMesh_N.uasset"
+[2017.09.23-16.03.00:775][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2017.09.23-16.03.00:803][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
+[2017.09.23-16.03.00:826][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2017.09.23-16.03.00:855][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2017.09.23-16.03.00:900][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2017.09.23-16.03.00:938][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
+[2017.09.23-16.03.00:968][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
+[2017.09.23-16.03.00:997][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2017.09.23-16.03.01:007][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Shelf_M.uasset"
+[2017.09.23-16.03.01:072][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Shelf_N.uasset"
+[2017.09.23-16.03.01:078][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
+[2017.09.23-16.03.01:093][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
+[2017.09.23-16.03.01:101][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
+[2017.09.23-16.03.01:111][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Spark_Core.uasset"
+[2017.09.23-16.03.01:122][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Statue_M.uasset"
+[2017.09.23-16.03.01:134][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Statue_N.uasset"
+[2017.09.23-16.03.01:146][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_TableRound_M.uasset"
+[2017.09.23-16.03.01:158][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_TableRound_N.uasset"
+[2017.09.23-16.03.01:168][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
+[2017.09.23-16.03.01:177][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
+[2017.09.23-16.03.01:189][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2017.09.23-16.03.01:200][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2017.09.23-16.03.01:214][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
+[2017.09.23-16.03.01:229][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
+[2017.09.23-16.03.01:245][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Water_M.uasset"
+[2017.09.23-16.03.01:299][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Water_N.uasset"
+[2017.09.23-16.03.01:318][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2017.09.23-16.03.01:337][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2017.09.23-16.03.01:353][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2017.09.23-16.03.01:378][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
+[2017.09.23-16.03.01:401][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
+[2017.09.23-16.03.01:441][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
+[2017.09.23-16.03.01:458][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
+[2017.09.23-16.03.01:482][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2017.09.23-16.03.01:500][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2017.09.23-16.03.01:606][  0]LogRenderer: Reallocating scene render targets to support 256x256 Format 9 NumSamples 1 (Frame:1).
+[2017.09.23-16.03.01:773][  0]LogSavePackage: Save=22.13ms
+[2017.09.23-16.03.01:773][  0]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Floor_400x4000AE5B4224DC49392EA32A0BBBC7E389A.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Architecture/Floor_400x400.uasset'
+[2017.09.23-16.03.01:779][  0]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Architecture/Floor_400x400.uasset
+[2017.09.23-16.03.01:779][  0]LogFeaturePack: Warning: Inserted 1 feature packs
+[2017.09.23-16.03.01:784][  0]Cmd: MAP LOAD FILE="E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.09.23-16.03.01:784][  0]LightingResults: New page: Lighting Build
+[2017.09.23-16.03.01:824][  0]MapCheck: New page: Map Check
+[2017.09.23-16.03.01:825][  0]LightingResults: New page: Lighting Build
+[2017.09.23-16.03.02:152][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2017.09.23-16.03.02:164][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.09.23-16.03.02:176][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.09.23-16.03.02:237][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 60.525ms to complete.
+[2017.09.23-16.03.02:237][  0]LogFileHelpers: Loading map 'Minimal_Default' took 0.454
+[2017.09.23-16.03.02:420][  0]LogCollectionManager: Loaded 0 collections in 0.001320 seconds
+[2017.09.23-16.03.02:508][  0]LogFileCache: Scanning file cache for directory 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Collections/' took 0.01s
+[2017.09.23-16.03.02:508][  0]LogFileCache: Scanning file cache for directory 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/user/Collections/' took 0.01s
+[2017.09.23-16.03.02:508][  0]LogFileCache: Scanning file cache for directory 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Collections/' took 0.01s
+[2017.09.23-16.03.02:508][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2017.09.23-16.03.02:520][  0]LogContentBrowser: Native class hierarchy populated in 0.0112 seconds. Added 2387 classes and 502 folders.
+[2017.09.23-16.03.02:601][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0030 seconds. Added 0 classes and 0 folders.
+[2017.09.23-16.03.03:069][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0016 seconds. Added 0 classes and 0 folders.
+[2017.09.23-16.03.03:134][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0023 seconds. Added 1 classes and 2 folders.
+[2017.09.23-16.03.03:248][  0]LogSlate: Took 0.000223 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.09.23-16.03.03:251][  0]LogSlate: Took 0.000221 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.09.23-16.03.03:261][  0]LogSlate: Took 0.004568 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.09.23-16.03.03:327][  0]LogRenderer: Reallocating scene render targets to support 984x468 Format 9 NumSamples 1 (Frame:1).
+[2017.09.23-16.03.03:370][  0]LogSlate: Took 0.000245 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.09.23-16.03.03:494][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0015 seconds. Added 1 classes and 2 folders.
+[2017.09.23-16.03.03:495][  0]LogLoad: (Engine Initialization) Total time: 23.60 seconds
+[2017.09.23-16.03.03:495][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2017.09.23-16.03.03:495][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.09.23-16.03.03:495][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.09.23-16.03.04:698][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.09.23-16.03.04:734][  1]LogAssetRegistry: Asset discovery search completed in 18.9972 seconds
+[2017.09.23-16.03.04:736][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.09.23-16.03.04:736][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000075 seconds (updated 0 objects)
+[2017.09.23-16.04.56:941][989]LogSlate: Took 0.000170 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.09.23-16.05.37:418][935]SourceControl: On branch master
+[2017.09.23-16.05.37:419][935]SourceControl: Your branch is up-to-date with 'origin/master'.
+[2017.09.23-16.05.37:419][935]SourceControl: Changes not staged for commit:
+[2017.09.23-16.05.37:419][935]SourceControl:   (use "git add/rm <file>..." to update what will be committed)
+[2017.09.23-16.05.37:419][935]SourceControl:   (use "git checkout -- <file>..." to discard changes in working directory)
+[2017.09.23-16.05.37:419][935]SourceControl: 	deleted:    .gitignore
+[2017.09.23-16.05.37:419][935]SourceControl: Untracked files:
+[2017.09.23-16.05.37:419][935]SourceControl:   (use "git add <file>..." to include in what will be committed)
+[2017.09.23-16.05.37:419][935]SourceControl: 	Shooter/
+[2017.09.23-16.05.37:419][935]SourceControl: no changes added to commit (use "git add" and/or "git commit -a")
+[2017.09.23-16.05.43:159][578]LogSavePackage: Save=56.68ms
+[2017.09.23-16.05.43:159][578]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Minimal_Default7C73ADB4419BB82A2CA8B39FCCA2E76A.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.09.23-16.05.43:202][578]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.09.23-16.05.44:068][578]LogSlate: Took 0.000174 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.09.23-16.05.44:070][578]LogFileHelpers: Saving map 'Minimal_Default' took 1.059
+[2017.09.23-16.05.44:075][578]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Prototype/Blueprint/Mycharacter" FILE="E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Prototype/Blueprint/Mycharacter.uasset" SILENT=true
+[2017.09.23-16.05.44:094][578]LogSavePackage: Save=16.04ms
+[2017.09.23-16.05.44:094][578]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Mycharacter2471B8E24F90BB43B369EB8C1B763078.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Prototype/Blueprint/Mycharacter.uasset'
+[2017.09.23-16.05.44:097][578]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Prototype/Blueprint/Mycharacter.uasset
+[2017.09.23-16.05.45:854][759]SourceControl: fatal: C:/Program Files/Epic Games/UE_4.17/Engine/Content/: 'C:/Program Files/Epic Games/UE_4.17/Engine/Content/' is outside repository
+[2017.09.23-16.05.45:961][759]LogPackageName: Error: Illegal call to DoesPackageExist: 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Shooter.uproject' is not a standard unreal filename or a long path name. Reason: Path should be no less than 4 characters long.
+[2017.09.23-16.05.46:287][759]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.325 s
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: === Handled ensure: ===
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: 
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: Ensure condition failed: false [File:D:\Build\++UE4+Release-4.17+Compile\Sync\Engine\Source\Runtime\CoreUObject\Private\Misc\PackageName.cpp] [Line: 810]
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: Illegal call to DoesPackageExist: 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Shooter.uproject' is not a standard unreal filename or a long path name. Reason: Path should be no less than 4 characters long.
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: Stack: 
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E823606
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E5AC2D2
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E5C4746
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor-CoreUObject.dll!0x000000003F232045
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor-SourceControl.dll!0x00000000309473C2
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor-SourceControl.dll!0x0000000030947557
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor-SourceControlWindows.dll!0x00000000232E78EE
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor-SourceControlWindows.dll!0x00000000232A3755
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor-SourceControlWindows.dll!0x00000000232A2D2D
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor-SourceControlWindows.dll!0x00000000232B7DD4
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor-GitSourceControl.dll!0x0000000012AE32F9
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor-SourceControl.dll!0x000000003094C27C
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000002CFBD07F
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000002D84CEE6
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor.exe!0x000000008A48534A
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor.exe!0x000000008A493970
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor.exe!0x000000008A4939EA
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor.exe!0x000000008A4A02D9
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: UE4Editor.exe!0x000000008A4A1C47
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: KERNEL32.DLL!0x000000007EC72774
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: ntdll.dll!0x000000007EE50D51
+[2017.09.23-16.05.46:287][759]LogOutputDevice: Error: 
+[2017.09.23-16.05.46:289][759]LogStats:                SubmitErrorReport -  0.000 s
+[2017.09.23-16.05.46:900][759]LogStats:                    SendNewReport -  0.611 s
+[2017.09.23-16.05.46:900][759]LogStats:             FDebug::EnsureFailed -  0.939 s
+[2017.09.23-16.05.58:691][759]LogSourceControl: FGitCheckInWorker: commit successful
+[2017.09.23-16.05.58:855][759]SourceControl: Error: \nThis repository is configured for Git LFS but 'git-lfs' was not found on your path. If you no longer wish to use Git LFS, remove this hook by deleting .git/hooks/post-commit.\n
+[2017.09.23-16.05.58:855][759]SourceControl: [master 6d835e0] Matthis First Commit
+[2017.09.23-16.05.58:855][759]SourceControl:  3 files changed, 13 insertions(+)
+[2017.09.23-16.05.58:855][759]SourceControl:  create mode 100644 Shooter/Content/Prototype/Blueprint/Mycharacter.uasset
+[2017.09.23-16.05.58:855][759]SourceControl:  create mode 100644 Shooter/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.09.23-16.05.58:855][759]SourceControl:  create mode 100644 Shooter/Shooter.uproject
+[2017.09.23-16.05.58:863][759]SourceControl: Commited [master 6d835e0] Matthis First Commit.
+[2017.09.23-16.12.34:958][667]SourceControl: On branch master
+[2017.09.23-16.12.34:958][667]SourceControl: Your branch is ahead of 'origin/master' by 1 commit.
+[2017.09.23-16.12.34:958][667]SourceControl:   (use "git push" to publish your local commits)
+[2017.09.23-16.12.34:958][667]SourceControl: Changes not staged for commit:
+[2017.09.23-16.12.34:958][667]SourceControl:   (use "git add/rm <file>..." to update what will be committed)
+[2017.09.23-16.12.34:958][667]SourceControl:   (use "git checkout -- <file>..." to discard changes in working directory)
+[2017.09.23-16.12.34:958][667]SourceControl: 	deleted:    .gitignore
+[2017.09.23-16.12.34:958][667]SourceControl: Untracked files:
+[2017.09.23-16.12.34:958][667]SourceControl:   (use "git add <file>..." to include in what will be committed)
+[2017.09.23-16.12.34:958][667]SourceControl: 	Shooter/.gitignore
+[2017.09.23-16.12.34:958][667]SourceControl: 	Shooter/Config/
+[2017.09.23-16.12.34:958][667]SourceControl: 	Shooter/Content/StarterContent/Architecture/
+[2017.09.23-16.12.34:958][667]SourceControl: 	Shooter/Content/StarterContent/Audio/
+[2017.09.23-16.12.34:958][667]SourceControl: 	Shooter/Content/StarterContent/Blueprints/
+[2017.09.23-16.12.34:958][667]SourceControl: 	Shooter/Content/StarterContent/HDRI/
+[2017.09.23-16.12.34:958][667]SourceControl: 	Shooter/Content/StarterContent/Maps/Advanced_Lighting.umap
+[2017.09.23-16.12.34:958][667]SourceControl: 	Shooter/Content/StarterContent/Maps/StarterMap.umap
+[2017.09.23-16.12.34:958][667]SourceControl: 	Shooter/Content/StarterContent/Materials/
+[2017.09.23-16.12.34:958][667]SourceControl: 	Shooter/Content/StarterContent/Particles/
+[2017.09.23-16.12.34:958][667]SourceControl: 	Shooter/Content/StarterContent/Props/
+[2017.09.23-16.12.34:958][667]SourceControl: 	Shooter/Content/StarterContent/Shapes/
+[2017.09.23-16.12.34:958][667]SourceControl: 	Shooter/Content/StarterContent/Textures/
+[2017.09.23-16.12.34:958][667]SourceControl: 	Shooter/Source/
+[2017.09.23-16.12.34:958][667]SourceControl: no changes added to commit (use "git add" and/or "git commit -a")
+[2017.09.23-16.12.35:162][667]LogMetaData: Removing '/Game/Developers/user/Prototype/Blueprint/Mycharacter.Mycharacter:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.12.35:162][667]LogMetaData: Removing '/Game/Developers/user/Prototype/Blueprint/Mycharacter.SKEL_Mycharacter_C:UserConstructionScript' ref from Metadata '/Game/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.12.35:162][667]LogMetaData: Removing '/Game/Developers/user/Prototype/Blueprint/Mycharacter.SKEL_Mycharacter_C' ref from Metadata '/Game/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.12.35:162][667]LogMetaData: Removing '/Game/Developers/user/Prototype/Blueprint/Mycharacter.Mycharacter_C:UserConstructionScript' ref from Metadata '/Game/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.12.35:162][667]LogMetaData: Removing '/Game/Developers/user/Prototype/Blueprint/Mycharacter.Mycharacter_C' ref from Metadata '/Game/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.12.35:162][667]LogMetaData: Removing '/Game/Developers/user/Prototype/Blueprint/Mycharacter.Mycharacter:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.12.35:162][667]LogMetaData: Removing '/Game/Developers/user/Prototype/Blueprint/Mycharacter.Mycharacter:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.12.35:162][667]LogMetaData: Removing '/Game/Developers/user/Prototype/Blueprint/Mycharacter.Mycharacter:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.12.35:200][667]LogSavePackage: Save=15.54ms
+[2017.09.23-16.12.35:200][667]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/MycharacterA72D107D464AA5F1139C4EA4A09E2510.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/user/Prototype/Blueprint/Mycharacter.uasset'
+[2017.09.23-16.12.35:206][667]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/user/Prototype/Blueprint/Mycharacter.uasset
+[2017.09.23-16.12.35:321][667]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Prototype/Blueprint/Mycharacter" FILE="E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Prototype/Blueprint/Mycharacter.uasset" SILENT=true
+[2017.09.23-16.12.35:332][667]LogSavePackage: Save=4.42ms
+[2017.09.23-16.12.35:333][667]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/MycharacterAF0FBDCE4691A2D88029BFA2C7F3889D.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Prototype/Blueprint/Mycharacter.uasset'
+[2017.09.23-16.12.35:336][667]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Prototype/Blueprint/Mycharacter.uasset
+[2017.09.23-16.14.10:680][219]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere)
+[2017.09.23-16.14.11:342][290]LogSlate: Took 0.005898 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.09.23-16.14.15:801][822]SourceControl: On branch master
+[2017.09.23-16.14.15:801][822]SourceControl: Your branch is ahead of 'origin/master' by 1 commit.
+[2017.09.23-16.14.15:801][822]SourceControl:   (use "git push" to publish your local commits)
+[2017.09.23-16.14.15:801][822]SourceControl: Changes to be committed:
+[2017.09.23-16.14.15:801][822]SourceControl:   (use "git reset HEAD <file>..." to unstage)
+[2017.09.23-16.14.15:801][822]SourceControl: 	copied:     Shooter/Content/Prototype/Blueprint/Mycharacter.uasset -> Shooter/Content/Developers/user/Prototype/Blueprint/Mycharacter.uasset
+[2017.09.23-16.14.15:801][822]SourceControl: 	modified:   Shooter/Content/Prototype/Blueprint/Mycharacter.uasset
+[2017.09.23-16.14.15:801][822]SourceControl: Changes not staged for commit:
+[2017.09.23-16.14.15:801][822]SourceControl:   (use "git add/rm <file>..." to update what will be committed)
+[2017.09.23-16.14.15:801][822]SourceControl:   (use "git checkout -- <file>..." to discard changes in working directory)
+[2017.09.23-16.14.15:801][822]SourceControl: 	deleted:    .gitignore
+[2017.09.23-16.14.15:801][822]SourceControl: Untracked files:
+[2017.09.23-16.14.15:801][822]SourceControl:   (use "git add <file>..." to include in what will be committed)
+[2017.09.23-16.14.15:801][822]SourceControl: 	Shooter/.gitignore
+[2017.09.23-16.14.15:801][822]SourceControl: 	Shooter/Config/
+[2017.09.23-16.14.15:801][822]SourceControl: 	Shooter/Content/StarterContent/Architecture/
+[2017.09.23-16.14.15:801][822]SourceControl: 	Shooter/Content/StarterContent/Audio/
+[2017.09.23-16.14.15:801][822]SourceControl: 	Shooter/Content/StarterContent/Blueprints/
+[2017.09.23-16.14.15:801][822]SourceControl: 	Shooter/Content/StarterContent/HDRI/
+[2017.09.23-16.14.15:801][822]SourceControl: 	Shooter/Content/StarterContent/Maps/Advanced_Lighting.umap
+[2017.09.23-16.14.15:801][822]SourceControl: 	Shooter/Content/StarterContent/Maps/StarterMap.umap
+[2017.09.23-16.14.15:801][822]SourceControl: 	Shooter/Content/StarterContent/Materials/
+[2017.09.23-16.14.15:801][822]SourceControl: 	Shooter/Content/StarterContent/Particles/
+[2017.09.23-16.14.15:801][822]SourceControl: 	Shooter/Content/StarterContent/Props/
+[2017.09.23-16.14.15:801][822]SourceControl: 	Shooter/Content/StarterContent/Shapes/
+[2017.09.23-16.14.15:802][822]SourceControl: 	Shooter/Content/StarterContent/Textures/
+[2017.09.23-16.14.15:802][822]SourceControl: 	Shooter/Source/
+[2017.09.23-16.14.55:006][816]LogSavePackage: Save=52.90ms
+[2017.09.23-16.14.55:006][816]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Minimal_DefaultFCDFEE7347005F3375B717BD7C6826DB.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Minimal_Default.umap'
+[2017.09.23-16.14.55:010][816]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Minimal_Default.umap
+[2017.09.23-16.14.55:047][816]LogFileHelpers: Saving map 'Minimal_Default' took 0.182
+[2017.09.23-16.14.55:067][816]LogSavePackage: Save=14.27ms
+[2017.09.23-16.14.55:067][816]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/MycharacterD4C7B95F452A6167FCF748BA6D3F4997.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/user/Prototype/Blueprint/Mycharacter.uasset'
+[2017.09.23-16.14.55:070][816]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/user/Prototype/Blueprint/Mycharacter.uasset
+[2017.09.23-16.14.56:511][982]SourceControl: fatal: C:/Program Files/Epic Games/UE_4.17/Engine/Content/: 'C:/Program Files/Epic Games/UE_4.17/Engine/Content/' is outside repository
+[2017.09.23-16.15.06:555][982]LogSourceControl: FGitCheckInWorker: commit successful
+[2017.09.23-16.15.06:686][982]SourceControl: Error: \nThis repository is configured for Git LFS but 'git-lfs' was not found on your path. If you no longer wish to use Git LFS, remove this hook by deleting .git/hooks/post-commit.\n
+[2017.09.23-16.15.06:686][982]SourceControl: [master 72ae788] ChangeUsers
+[2017.09.23-16.15.06:686][982]SourceControl:  3 files changed, 0 insertions(+), 0 deletions(-)
+[2017.09.23-16.15.06:686][982]SourceControl:  copy Shooter/Content/{ => Developers/user}/Prototype/Blueprint/Mycharacter.uasset (79%)
+[2017.09.23-16.15.06:686][982]SourceControl:  rewrite Shooter/Content/Prototype/Blueprint/Mycharacter.uasset (100%)
+[2017.09.23-16.15.06:694][982]SourceControl: Commited [master 72ae788] ChangeUsers.
+[2017.09.23-16.21.55:064][653]SourceControl: Current branch master is up to date.
+[2017.09.23-16.21.55:088][653]LogUObjectGlobals: Warning: ReloadPackage failed to find a replacement object for 'Mycharacter_C:UserConstructionScript' in the new package '/Game/Developers/user/Prototype/Blueprint/Mycharacter'. Any existing references to this object will be nulled out.
+[2017.09.23-16.21.55:088][653]LogUObjectGlobals: Display: ReloadPackage failed to find a replacement object for 'Default__Mycharacter_C:CollisionCylinder.BodySetup_0' (transient) in the new package '/Game/Developers/user/Prototype/Blueprint/Mycharacter'. Any existing references to this object will be nulled out.
+[2017.09.23-16.24.38:165][646]SourceControl: On branch master
+[2017.09.23-16.24.38:165][646]SourceControl: Your branch is ahead of 'origin/master' by 1 commit.
+[2017.09.23-16.24.38:165][646]SourceControl:   (use "git push" to publish your local commits)
+[2017.09.23-16.24.38:165][646]SourceControl: nothing to commit, working tree clean
+[2017.09.23-16.24.38:360][646]LogMetaData: Removing '/Game/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter.Mycharacter_C' ref from Metadata '/Game/Developers/user/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.24.38:360][646]LogMetaData: Removing '/Game/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter.Mycharacter:UserConstructionScript.K2Node_FunctionEntry_0' ref from Metadata '/Game/Developers/user/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.24.38:360][646]LogMetaData: Removing '/Game/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter.Mycharacter:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Developers/user/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.24.38:360][646]LogMetaData: Removing '/Game/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter.Mycharacter:EventGraph.K2Node_Event_1' ref from Metadata '/Game/Developers/user/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.24.38:360][646]LogMetaData: Removing '/Game/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter.Mycharacter:EventGraph.K2Node_Event_2' ref from Metadata '/Game/Developers/user/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.24.38:360][646]LogMetaData: Removing '/Game/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter.SKEL_Mycharacter_C:ReceiveBeginPlay' ref from Metadata '/Game/Developers/user/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.24.38:360][646]LogMetaData: Removing '/Game/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter.SKEL_Mycharacter_C:ReceiveActorBeginOverlap' ref from Metadata '/Game/Developers/user/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.24.38:360][646]LogMetaData: Removing '/Game/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter.SKEL_Mycharacter_C:ReceiveTick' ref from Metadata '/Game/Developers/user/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.24.38:360][646]LogMetaData: Removing '/Game/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter.SKEL_Mycharacter_C:UserConstructionScript' ref from Metadata '/Game/Developers/user/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.24.38:360][646]LogMetaData: Removing '/Game/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter.SKEL_Mycharacter_C' ref from Metadata '/Game/Developers/user/Prototype/Blueprint/Mycharacter.PackageMetaData'
+[2017.09.23-16.24.38:395][646]LogSavePackage: Save=15.38ms
+[2017.09.23-16.24.38:395][646]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Mycharacter2A11D45E4F4657FF10308399585E0217.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter.uasset'
+[2017.09.23-16.24.38:400][646]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter.uasset
+[2017.09.23-16.24.38:528][646]LogSavePackage: Save=4.92ms
+[2017.09.23-16.24.38:528][646]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Mycharacter323526FD4A28AFD706AB79931DD4E2DF.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/user/Prototype/Blueprint/Mycharacter.uasset'
+[2017.09.23-16.24.38:531][646]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/user/Prototype/Blueprint/Mycharacter.uasset
+[2017.09.23-16.25.53:598][554]LogSlate: Took 0.000220 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.09.23-16.26.02:689][581]LogSavePackage: Save=56.90ms
+[2017.09.23-16.26.02:689][581]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Minimal_Default_Auto1788A792A42CA00219B0805B7E762E06B.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap'
+[2017.09.23-16.26.02:691][581]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto1.umap
+[2017.09.23-16.26.02:694][581]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.085
+[2017.09.23-16.26.02:694][581]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.085
+[2017.09.23-16.26.02:697][581]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter] ([1] browsable assets)...
+[2017.09.23-16.26.02:697][581]OBJ SavePackage: Finished generating thumbnails for package [/Game/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter]
+[2017.09.23-16.26.02:716][581]LogSavePackage: Save=15.80ms
+[2017.09.23-16.26.02:716][581]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Mycharacter_Auto1C8A2925E4E2853C7E1605E8A408EAF47.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Autosaves/Game/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter_Auto1.uasset'
+[2017.09.23-16.26.02:718][581]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Autosaves/Game/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter_Auto1.uasset
+[2017.09.23-16.26.02:718][581]LogFileHelpers: Auto-saving content packages took 0.022
+[2017.09.23-16.35.50:220][599]SourceControl: On branch master
+[2017.09.23-16.35.50:220][599]SourceControl: Your branch is ahead of 'origin/master' by 1 commit.
+[2017.09.23-16.35.50:220][599]SourceControl:   (use "git push" to publish your local commits)
+[2017.09.23-16.35.50:220][599]SourceControl: Changes to be committed:
+[2017.09.23-16.35.50:220][599]SourceControl:   (use "git reset HEAD <file>..." to unstage)
+[2017.09.23-16.35.50:220][599]SourceControl: 	new file:   Shooter/Content/Developers/MatthisPralat/Prototype/Blueprint/Mycharacter.uasset
+[2017.09.23-16.35.50:220][599]SourceControl: 	modified:   Shooter/Content/Developers/user/Prototype/Blueprint/Mycharacter.uasset
+[2017.09.23-16.35.50:609][599]LogSavePackage: Save=5.20ms
+[2017.09.23-16.35.50:609][599]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Mycharacter0C907A274D1D0E333E974D8C169C7FFD.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/DaGosth/Prototype/Blueprint/Mycharacter.uasset'
+[2017.09.23-16.35.50:620][599]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/DaGosth/Prototype/Blueprint/Mycharacter.uasset
+[2017.09.23-16.35.50:748][599]LogSavePackage: Save=4.45ms
+[2017.09.23-16.35.50:748][599]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Mycharacter417554844944C25A01CAD8A59088DEF4.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/user/Prototype/Blueprint/Mycharacter.uasset'
+[2017.09.23-16.35.50:752][599]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/user/Prototype/Blueprint/Mycharacter.uasset
+[2017.09.23-16.35.50:763][599]LogSavePackage: Save=4.52ms
+[2017.09.23-16.35.50:763][599]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Default__Mycharacter_C81584F4446487F477C8A91BC508C9A10.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/DaGosth/Prototype/Blueprint/Default__Mycharacter_C.uasset'
+[2017.09.23-16.35.50:766][599]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/DaGosth/Prototype/Blueprint/Default__Mycharacter_C.uasset
+[2017.09.23-16.35.50:900][599]LogSavePackage: Save=4.34ms
+[2017.09.23-16.35.50:901][599]LogSavePackage: Moving 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Mycharacter_C43B04B014AD3340D245BB0B4E8628952.tmp' to 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/DaGosth/Prototype/Blueprint/Mycharacter_C.uasset'
+[2017.09.23-16.35.50:904][599]LogSavePackage: Display: Finished SavePackage E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/DaGosth/Prototype/Blueprint/Mycharacter_C.uasset
+[2017.09.23-16.36.00:812][198]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.015 s
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: === Handled ensure: ===
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: 
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: Ensure condition failed: Found [File:D:\Build\++UE4+Release-4.17+Compile\Sync\Engine\Source\Runtime\CoreUObject\Private\Misc\RedirectCollector.cpp] [Line: 248]
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: Cannot remove redirection from /Game/Developers/DaGosth/Prototype/Blueprint/Mycharacter.Mycharacter, it was not registered
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: Stack: 
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E823606
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E5AC2D2
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E5C4746
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-CoreUObject.dll!0x000000003F271E43
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-AssetRegistry.dll!0x0000000048345648
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000002D48D09B
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000002D495DFE
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000002CC8E149
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000002CF03322
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000002CE84BB2
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000002CE877C9
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000002CEFB3B5
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x0000000032ADB967
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x0000000032B074D4
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x00000000329242BC
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x00000000328F7145
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x0000000032991452
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x0000000032979C92
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000003296B68F
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E7FB3C9
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E7E3B51
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E7FD22B
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E7DECB2
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: USER32.dll!0x000000007E96BC50
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: USER32.dll!0x000000007E96B5CF
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E7FD899
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000003299C576
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000003292DE33
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000002CF910AC
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-UnrealEd.dll!0x000000002D48C323
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x000000001390490D
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x000000001390CC86
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x0000000013883C9E
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x0000000013887109
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x0000000013908EB5
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x0000000013906B27
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x000000001396A2D9
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x0000000013884012
+[2017.09.23-16.36.00:812][198]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x00000000138873D9
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor-ContentBrowser.dll!0x0000000013909BC5
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x0000000032ADB967
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x0000000032B074D4
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x00000000329242BC
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x00000000328F7145
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x0000000032991452
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x0000000032979C92
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor-Slate.dll!0x000000003296B68F
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E7FB3C9
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E7E3B51
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E7FD22B
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E7DECB2
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: USER32.dll!0x000000007E96BC50
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: USER32.dll!0x000000007E96B5CF
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor-Core.dll!0x000000002E7FD936
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor.exe!0x000000008A484BE2
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor.exe!0x000000008A493970
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor.exe!0x000000008A4939EA
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor.exe!0x000000008A4A02D9
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: UE4Editor.exe!0x000000008A4A1C47
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: KERNEL32.DLL!0x000000007EC72774
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: ntdll.dll!0x000000007EE50D51
+[2017.09.23-16.36.00:813][198]LogOutputDevice: Error: 
+[2017.09.23-16.36.00:823][198]LogStats:                SubmitErrorReport -  0.000 s
