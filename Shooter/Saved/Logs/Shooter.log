@@ -369,3 +369,395 @@ LogInit: Object subsystem initialized
 [2018.07.05-16.33.59:013][  0]LogOutputDevice: Error: ntdll.dll!0x000000006A671431
 [2018.07.05-16.33.59:013][  0]LogOutputDevice: Error: 
 [2018.07.05-16.33.59:019][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2018.07.05-16.33.59:325][  0]LogStats:                    SendNewReport -  0.306 s
+[2018.07.05-16.33.59:325][  0]LogStats:             FDebug::EnsureFailed -  0.415 s
+[2018.07.05-16.33.59:367][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.05-16.33.59:424][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 56.714ms to complete.
+[2018.07.05-16.33.59:424][  0]LogFileHelpers: Loading map 'PrototypeScene' took 7.424
+[2018.07.05-16.34.01:601][  0]LogCollectionManager: Loaded 0 collections in 0.000952 seconds
+[2018.07.05-16.34.01:917][  0]LogFileCache: Scanning file cache for directory 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Collections/' took 0.01s
+[2018.07.05-16.34.01:917][  0]LogFileCache: Scanning file cache for directory 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Developers/user/Collections/' took 0.01s
+[2018.07.05-16.34.01:917][  0]LogFileCache: Scanning file cache for directory 'E:/Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Collections/' took 0.01s
+[2018.07.05-16.34.01:917][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2018.07.05-16.34.01:959][  0]LogContentBrowser: Native class hierarchy populated in 0.0408 seconds. Added 2431 classes and 518 folders.
+[2018.07.05-16.34.02:134][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0089 seconds. Added 0 classes and 0 folders.
+[2018.07.05-16.34.03:459][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0019 seconds. Added 0 classes and 0 folders.
+[2018.07.05-16.34.03:556][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0020 seconds. Added 1 classes and 2 folders.
+[2018.07.05-16.34.04:384][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0019 seconds. Added 2 classes and 3 folders.
+[2018.07.05-16.34.04:514][  0]LogSlate: Took 0.012572 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.07.05-16.34.04:535][  0]LogSlate: Took 0.018777 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.07.05-16.34.04:600][  0]LogSlate: Took 0.012363 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.07.05-16.34.05:215][  0]LogRenderer: Reallocating scene render targets to support 1016x328 Format 10 NumSamples 1 (Frame:1).
+[2018.07.05-16.34.05:960][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0018 seconds. Added 1 classes and 2 folders.
+[2018.07.05-16.34.05:961][  0]LogLoad: (Engine Initialization) Total time: 84.25 seconds
+[2018.07.05-16.34.05:961][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.07.05-16.34.05:970][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2018.07.05-16.34.05:970][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2018.07.05-16.34.06:480][  0]SourceControl: On branch Graphics_Prototype
+[2018.07.05-16.34.06:480][  0]SourceControl: Changes to be committed:
+[2018.07.05-16.34.06:480][  0]SourceControl:   (use "git reset HEAD <file>..." to unstage)
+[2018.07.05-16.34.06:480][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/FbxScene_ProtoMinion.uasset
+[2018.07.05-16.34.06:480][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/FbxScene_ProtoMinion_1.uasset
+[2018.07.05-16.34.06:480][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/L_Arm.uasset
+[2018.07.05-16.34.06:480][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/L_DownArm.uasset
+[2018.07.05-16.34.06:480][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/L_lames.uasset
+[2018.07.05-16.34.06:480][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/ProtoMinion.uasset
+[2018.07.05-16.34.06:480][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/ProtoMinion1.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/R_Arm.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/R_DownArm.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/R_Lames.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion02/RobotBody.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion03/FbxScene_ProtoMinion.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion03/ProtoMinion.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion03/ProtoMinion1.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion03/ProtoMinion2.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion03/RobotBody.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion03/RobotBody_Anim.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/ProtoMinion03/RobotBody_Skeleton.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	deleted:    Shooter/Content/Prototype/Assets/Proto_Minion/BaseMaterial_PBR.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	deleted:    Shooter/Content/Prototype/Assets/Proto_Minion/Minion_Mat.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	deleted:    Shooter/Content/Prototype/Assets/Proto_Minion/Proto_Minion_BaseColor.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	deleted:    Shooter/Content/Prototype/Assets/Proto_Minion/Proto_Minion_Normal.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	deleted:    Shooter/Content/Prototype/Assets/Proto_Minion/Proto_Minion_OcclusionRoughnessMetallic.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Proto_Minion/RobotBody_Anim_Blueprint.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	deleted:    Shooter/Content/Prototype/Assets/Proto_Minion/ShipMesh.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/NewBlueprint.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/ProtoMinion.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/ProtoMinion1.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/ProtoMinion2.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/ProtoMinion3.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/ProtoMinion4.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/ProtoMinion5.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/RobotBody.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/RobotBody_Anim.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	new file:   Shooter/Content/Prototype/Assets/Protomimi/RobotBody_Skeleton.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: Changes not staged for commit:
+[2018.07.05-16.34.06:481][  0]SourceControl:   (use "git add <file>..." to update what will be committed)
+[2018.07.05-16.34.06:481][  0]SourceControl:   (use "git checkout -- <file>..." to discard changes in working directory)
+[2018.07.05-16.34.06:481][  0]SourceControl: 	modified:   Shooter/Content/Prototype/Assets/Ennemys/SpaceShips/Proto_Minion/Materials/PP1_Lame_Inst.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	modified:   Shooter/Content/Prototype/Assets/ProtoMinion02/FbxScene_ProtoMinion.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	modified:   Shooter/Content/Prototype/Assets/Protomimi/RobotBody_Anim.uasset
+[2018.07.05-16.34.06:481][  0]SourceControl: 	modified:   Shooter/Content/Prototype/Ships/Pieces/Assets/Proto_Minion/Minion_Mat.uasset
+[2018.07.05-16.34.06:481][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.07.05-16.34.06:673][  0]LogSlate: Took 0.015138 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.07.05-16.34.07:397][  3]LogAssetRegistry: Asset discovery search completed in 52.1817 seconds
+[2018.07.05-16.34.07:411][  3]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.07.05-16.34.07:411][  3]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000066 seconds (updated 0 objects)
+[2018.07.05-16.34.07:423][  3]LogSlate: Took 0.000322 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.07.05-16.36.11:079][785]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (TEstLame_R_Lames_grp3)
+[2018.07.05-16.36.12:961][965]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.07.05-16.40.14:429][291]LogSlate: Took 0.000186 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.07.05-16.40.14:476][291]Cmd: MAP LOAD FILE="../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/Prototype/Levels/Game/Arena/PrototypeScene.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.07.05-16.40.14:476][291]LightingResults: New page: Lighting Build
+[2018.07.05-16.40.14:477][291]LoadErrors: New page: Loading map: PrototypeScene.umap
+[2018.07.05-16.40.14:491][291]MapCheck: New page: Map Check
+[2018.07.05-16.40.14:491][291]LightingResults: New page: Lighting Build
+[2018.07.05-16.40.14:556][291]LogAIModule: Creating AISystem for world PrototypeScene
+[2018.07.05-16.40.14:624][291]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.07.05-16.40.14:680][291]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.05-16.40.14:729][291]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 48.92ms to complete.
+[2018.07.05-16.40.14:730][291]LogFileHelpers: Loading map 'PrototypeScene' took 0.264
+[2018.07.05-16.40.17:970][652]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.05-16.40.18:092][652]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel' has LevelScriptBlueprint '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene' with GeneratedClass '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene_C' with ClassGeneratedBy '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene'
+[2018.07.05-16.40.18:093][652]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.05-16.40.18:119][652]PIE: New page: PIE session: PrototypeScene (Jul 5, 2018, 8:40:18 PM)
+[2018.07.05-16.40.18:119][652]LogUObjectGlobals: Warning: Failed to find object 'Class /Script/Shooter.GameInstanceShooter'
+[2018.07.05-16.40.18:119][652]LogPlayLevel: Creating play world package: /Game/Prototype/Levels/Game/Arena/UEDPIE_0_PrototypeScene
+[2018.07.05-16.40.18:145][652]LogPlayLevel: PIE: StaticDuplicateObject took: (0.026725s)
+[2018.07.05-16.40.18:146][652]LogAIModule: Creating AISystem for world PrototypeScene
+[2018.07.05-16.40.18:146][652]LogPlayLevel: PIE: World Init took: (0.000697s)
+[2018.07.05-16.40.18:146][652]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene to /Game/Prototype/Levels/Game/Arena/UEDPIE_0_PrototypeScene.PrototypeScene (0.027698s)
+[2018.07.05-16.40.18:166][652]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2018.07.05-16.40.18:181][652]LogInit: FAudioDevice initialized.
+[2018.07.05-16.40.18:293][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.18:304][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.18:305][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.18:305][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.18:305][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.18:305][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.18:305][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.18:339][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.18:476][652]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.07.05-16.40.18:476][652]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.07.05-16.40.18:476][652]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.07.05-16.40.18:476][652]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.07.05-16.40.18:477][652]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.07.05-16.40.18:477][652]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.07.05-16.40.18:477][652]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.07.05-16.40.18:804][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.18:804][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.18:804][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.18:804][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.18:804][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.18:804][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.18:804][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.18:804][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.18:805][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.18:805][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.18:805][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.18:805][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.18:805][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.18:807][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.18:807][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.18:807][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.18:807][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.18:808][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.18:808][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.18:808][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.18:808][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.18:809][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.18:809][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.18:809][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.18:988][652]LogBlueprint: Warning: [PlayerGhostHUD] 'ResurrectionTimer' variable not found. Base class was probably changed.
+[2018.07.05-16.40.19:004][652]LogBlueprint: Warning: [Compiler PlayerGhostHUD] Could not find a variable named "ResurrectionTimer" in 'PlayerGhostHUD'.
+Make sure 'PlayerGhostHUD' has been compiled for  Get ResurrectionTimer
+[2018.07.05-16.40.19:004][652]LogBlueprint: Error: [Compiler PlayerGhostHUD] In use pin  Observed Ghost  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:005][652]LogBlueprint: Error: [Compiler PlayerGhostHUD] The property associated with  Resurrection Timer  could not be found
+[2018.07.05-16.40.19:006][652]LogBlueprint: Warning: [Compiler PlayerGhostHUD] [0457.29] Compile of PlayerGhostHUD failed. 2 Fatal Issue(s) 1 Warning(s) [in 62 ms] (/Game/Prototype/UI/PlayerGhostHUD.PlayerGhostHUD)
+[2018.07.05-16.40.19:107][652]LogBlueprint: Warning: [SpellCasterWidget] 'CooldownTimer' variable not found. Base class was probably changed.
+[2018.07.05-16.40.19:107][652]LogBlueprint: Warning: [SpellCasterWidget] 'ReloadTimer' variable not found. Base class was probably changed.
+[2018.07.05-16.40.19:107][652]LogBlueprint: Warning: [SpellCasterWidget] 'ChargesCountMax' variable not found. Base class was probably changed.
+[2018.07.05-16.40.19:107][652]LogBlueprint: Warning: [SpellCasterWidget] 'Spell' variable not found. Base class was probably changed.
+[2018.07.05-16.40.19:108][652]LogBlueprint: Warning: [SpellCasterWidget] 'ChargesCount' variable not found. Base class was probably changed.
+[2018.07.05-16.40.19:108][652]LogBlueprint: Warning: [SpellCasterWidget] 'SpellImage' variable not found. Base class was probably changed.
+[2018.07.05-16.40.19:108][652]LogBlueprint: Warning: [SpellCasterWidget] 'Spell' variable not found. Base class was probably changed.
+[2018.07.05-16.40.19:110][652]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Target  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:110][652]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Return Value  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:116][652]LogBlueprint: Error: [Compiler SpellCasterWidget] Could not find a function named "HasSpellSetted" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Has Spell Setted
+[2018.07.05-16.40.19:116][652]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Observed Spell Caster  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:117][652]LogBlueprint: Warning: [Compiler SpellCasterWidget] Could not find a variable named "Spell" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Get Spell
+[2018.07.05-16.40.19:117][652]LogBlueprint: Warning: [Compiler SpellCasterWidget] Could not find a variable named "SpellImage" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Get SpellImage
+[2018.07.05-16.40.19:117][652]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Observed Spell Caster  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:118][652]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Observed Spell Caster  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:118][652]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Target  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:118][652]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Return Value  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:118][652]LogBlueprint: Error: [Compiler SpellCasterWidget] Could not find a function named "CanCast" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Can Cast
+[2018.07.05-16.40.19:118][652]LogBlueprint: Warning: [Compiler SpellCasterWidget] Could not find a variable named "ReloadTimer" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Get ReloadTimer
+[2018.07.05-16.40.19:118][652]LogBlueprint: Warning: [Compiler SpellCasterWidget] Could not find a variable named "CooldownTimer" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Get CooldownTimer
+[2018.07.05-16.40.19:118][652]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Observed Spell Caster  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:119][652]LogBlueprint: Warning: [Compiler SpellCasterWidget] Could not find a variable named "Spell" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Get Spell
+[2018.07.05-16.40.19:119][652]LogBlueprint: Warning: [Compiler SpellCasterWidget] Could not find a variable named "ChargesCountMax" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Get ChargesCountMax
+[2018.07.05-16.40.19:119][652]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Observed Spell Caster  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:119][652]LogBlueprint: Warning: [Compiler SpellCasterWidget] Could not find a variable named "ChargesCount" in 'SpellCasterWidget'.
+Make sure 'SpellCasterWidget' has been compiled for  Get ChargesCount
+[2018.07.05-16.40.19:119][652]LogBlueprint: Error: [Compiler SpellCasterWidget] In use pin  Observed Spell Caster  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:120][652]LogBlueprint: Error: [Compiler SpellCasterWidget] The property associated with  Spell  could not be found
+[2018.07.05-16.40.19:120][652]LogBlueprint: Error: [Compiler SpellCasterWidget] The property associated with  Spell Image  could not be found
+[2018.07.05-16.40.19:121][652]LogBlueprint: Warning: [Compiler SpellCasterWidget] [0457.41] Compile of SpellCasterWidget failed. 14 Fatal Issue(s) 7 Warning(s) [in 14 ms] (/Game/Prototype/UI/SpellCasterWidget.SpellCasterWidget)
+[2018.07.05-16.40.19:132][652]LogBlueprint: Warning: [PlayerShipHUD] 'SpellCasterA' variable not found. Base class was probably changed.
+[2018.07.05-16.40.19:132][652]LogBlueprint: Warning: [PlayerShipHUD] 'SpellCasterX' variable not found. Base class was probably changed.
+[2018.07.05-16.40.19:132][652]LogBlueprint: Warning: [PlayerShipHUD] 'SpellCasterY' variable not found. Base class was probably changed.
+[2018.07.05-16.40.19:132][652]LogBlueprint: Warning: [PlayerShipHUD] 'SpellCasterB' variable not found. Base class was probably changed.
+[2018.07.05-16.40.19:133][652]LogBlueprint: Warning: [PlayerShipHUD] 'bIsGodMode' variable not found. Base class was probably changed.
+[2018.07.05-16.40.19:135][652]LogBlueprint: Warning: [Compiler PlayerShipHUD] Could not find a variable named "bIsGodMode" in 'PlayerShipHUD'.
+Make sure 'PlayerShipHUD' has been compiled for  Get bIsGodMode
+[2018.07.05-16.40.19:135][652]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Target  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:135][652]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Return Value  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:135][652]LogBlueprint: Error: [Compiler PlayerShipHUD] Could not find a function named "GetPercentHealth" in 'PlayerShipHUD'.
+Make sure 'PlayerShipHUD' has been compiled for  Get Percent Health
+[2018.07.05-16.40.19:135][652]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Observed Ship  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:137][652]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Spell Caster Y  and  Observed Spell Caster : Object Reference is not compatible with Object Object Reference.
+[2018.07.05-16.40.19:137][652]LogBlueprint: Warning: [Compiler PlayerShipHUD] Could not find a variable named "SpellCasterY" in 'PlayerShipHUD'.
+Make sure 'PlayerShipHUD' has been compiled for  Get SpellCasterY
+[2018.07.05-16.40.19:137][652]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Spell Caster X  and  Observed Spell Caster : Object Reference is not compatible with Object Object Reference.
+[2018.07.05-16.40.19:137][652]LogBlueprint: Warning: [Compiler PlayerShipHUD] Could not find a variable named "SpellCasterX" in 'PlayerShipHUD'.
+Make sure 'PlayerShipHUD' has been compiled for  Get SpellCasterX
+[2018.07.05-16.40.19:137][652]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Spell Caster B  and  Observed Spell Caster : Object Reference is not compatible with Object Object Reference.
+[2018.07.05-16.40.19:137][652]LogBlueprint: Warning: [Compiler PlayerShipHUD] Could not find a variable named "SpellCasterB" in 'PlayerShipHUD'.
+Make sure 'PlayerShipHUD' has been compiled for  Get SpellCasterB
+[2018.07.05-16.40.19:137][652]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Observed Ship  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:137][652]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Observed Ship  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:137][652]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Observed Ship  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:137][652]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Observed Spell Caster  and  Spell Caster Y : Object Object Reference is not compatible with Object Reference.
+[2018.07.05-16.40.19:137][652]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Observed Spell Caster  and  Spell Caster X : Object Object Reference is not compatible with Object Reference.
+[2018.07.05-16.40.19:137][652]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Observed Spell Caster  and  Spell Caster B : Object Object Reference is not compatible with Object Reference.
+[2018.07.05-16.40.19:137][652]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Observed Spell Caster  and  Spell Caster A : Object Object Reference is not compatible with Object Reference.
+[2018.07.05-16.40.19:137][652]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Observed Ship  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:137][652]LogBlueprint: Error: [Compiler PlayerShipHUD] Can't connect pins  Spell Caster A  and  Observed Spell Caster : Object Reference is not compatible with Object Object Reference.
+[2018.07.05-16.40.19:137][652]LogBlueprint: Warning: [Compiler PlayerShipHUD] Could not find a variable named "SpellCasterA" in 'PlayerShipHUD'.
+Make sure 'PlayerShipHUD' has been compiled for  Get SpellCasterA
+[2018.07.05-16.40.19:138][652]LogBlueprint: Error: [Compiler PlayerShipHUD] In use pin  Observed Ship  no longer exists on this node. Please refresh node or break links to remove pin.
+[2018.07.05-16.40.19:138][652]LogBlueprint: Error: [Compiler PlayerShipHUD] The property associated with  Spell Caster A  could not be found
+[2018.07.05-16.40.19:138][652]LogBlueprint: Error: [Compiler PlayerShipHUD] The property associated with  Spell Caster B  could not be found
+[2018.07.05-16.40.19:138][652]LogBlueprint: Error: [Compiler PlayerShipHUD] The property associated with  Spell Caster X  could not be found
+[2018.07.05-16.40.19:138][652]LogBlueprint: Error: [Compiler PlayerShipHUD] The property associated with  Spell Caster Y  could not be found
+[2018.07.05-16.40.19:138][652]LogBlueprint: Error: [Compiler PlayerShipHUD] The property associated with  Is God Mode  could not be found
+[2018.07.05-16.40.19:139][652]LogBlueprint: Warning: [Compiler PlayerShipHUD] [0457.43] Compile of PlayerShipHUD failed. 22 Fatal Issue(s) 5 Warning(s) [in 8 ms] (/Game/Prototype/UI/PlayerShipHUD.PlayerShipHUD)
+[2018.07.05-16.40.19:141][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:141][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:141][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:141][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:141][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:141][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:142][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:142][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:142][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:142][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:142][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:142][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:143][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:143][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:143][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:145][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.07.05-16.40.19:145][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.07.05-16.40.19:145][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.07.05-16.40.19:145][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.07.05-16.40.19:145][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.07.05-16.40.19:145][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.07.05-16.40.19:188][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:189][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:189][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:189][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:189][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:189][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:201][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.19:201][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.19:202][652]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.07.05-16.40.19:202][652]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.07.05-16.40.19:203][652]LogLinker: Warning: CreateExport: Failed to load Parent for WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.07.05-16.40.19:205][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.19:206][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.19:206][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.19:206][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.19:206][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.19:206][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.07.05-16.40.19:207][652]LogLinker: Warning: CreateExport: Failed to load Parent for BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.07.05-16.40.19:582][652]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C'
+[2018.07.05-16.40.19:582][652]LogLoad: Game class is 'GameModeBase'
+[2018.07.05-16.40.19:604][652]LogWorld: Bringing World /Game/Prototype/Levels/Game/Arena/UEDPIE_0_PrototypeScene.PrototypeScene up for play (max tick rate 0) at 2018.07.05-18.40.19
+[2018.07.05-16.40.19:620][652]LogWorld: Bringing up level for play took: 0.024119
+[2018.07.05-16.40.19:738][652]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0023 seconds. Added 11 classes and 0 folders.
+[2018.07.05-16.40.19:790][652]PIE: Play in editor start time for /Game/Prototype/Levels/Game/Arena/UEDPIE_0_PrototypeScene 0.751
+[2018.07.05-16.40.19:790][652]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel' has LevelScriptBlueprint '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene' with GeneratedClass '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene_C' with ClassGeneratedBy '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene'
+[2018.07.05-16.40.19:915][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'BlinkDistance': BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.19:915][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ExecuteUbergraph_BlinkSpell': BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.19:915][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_SetActorLocation_ReturnValue': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.07.05-16.40.19:915][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_SetActorLocation_SweepHitResult': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Add_VectorVector_ReturnValue': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Multiply_VectorFloat_ReturnValue': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Normal_ReturnValue': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_GetLastInputVector_ReturnValue': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_GetComponentByClass_ReturnValue': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetActorLocation_ReturnValue': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_Event_castingComponent': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_Event_caster': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'EntryPoint': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:ExecuteUbergraph_BlinkSpell
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Casted': BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'castingComponent': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:Casted
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'caster': Function /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C:Casted
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UberGraphFrame': BlueprintGeneratedClass /Game/Prototype/Spells/Blink/BlinkSpell.BlinkSpell_C
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ProgressBar_29': WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.07.05-16.40.19:916][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ExecuteUbergraph_HealthBarSpaceShip': WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.07.05-16.40.19:917][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_LinearColorLerp_ReturnValue': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:ExecuteUbergraph_HealthBarSpaceShip
+[2018.07.05-16.40.19:917][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Divide_FloatFloat_ReturnValue': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:ExecuteUbergraph_HealthBarSpaceShip
+[2018.07.05-16.40.19:917][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Conv_IntToFloat_ReturnValue2': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:ExecuteUbergraph_HealthBarSpaceShip
+[2018.07.05-16.40.19:917][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Conv_IntToFloat_ReturnValue': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:ExecuteUbergraph_HealthBarSpaceShip
+[2018.07.05-16.40.19:917][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_Event_max': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:ExecuteUbergraph_HealthBarSpaceShip
+[2018.07.05-16.40.19:917][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_Event_current': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:ExecuteUbergraph_HealthBarSpaceShip
+[2018.07.05-16.40.19:917][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'EntryPoint': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:ExecuteUbergraph_HealthBarSpaceShip
+[2018.07.05-16.40.19:917][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UpdateHealth': WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.07.05-16.40.19:917][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'max': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:UpdateHealth
+[2018.07.05-16.40.19:917][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'current': Function /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C:UpdateHealth
+[2018.07.05-16.40.19:917][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UberGraphFrame': WidgetBlueprintGeneratedClass /Game/Prototype/UI/HealthBarSpaceShip.HealthBarSpaceShip_C
+[2018.07.05-16.40.19:918][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Sphere': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.19:918][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Trail': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.19:918][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ExecuteUbergraph_WeaponProjectileBulletGunModelized': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.19:918][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_SpawnEmitterAtLocation_ReturnValue': Function /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C:ExecuteUbergraph_WeaponProjectileBulletGunModelized
+[2018.07.05-16.40.19:918][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_K2_GetActorLocation_ReturnValue': Function /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C:ExecuteUbergraph_WeaponProjectileBulletGunModelized
+[2018.07.05-16.40.19:918][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'EntryPoint': Function /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C:ExecuteUbergraph_WeaponProjectileBulletGunModelized
+[2018.07.05-16.40.19:918][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ReceiveDestroyed': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.19:918][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UserConstructionScript': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.19:918][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UberGraphFrame': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.19:919][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Trail_GEN_VARIABLE': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.19:919][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DefaultSceneRoot_GEN_VARIABLE': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.19:919][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SimpleConstructionScript_0': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.19:919][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_0': SimpleConstructionScript /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C:SimpleConstructionScript_0
+[2018.07.05-16.40.19:919][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_1': SimpleConstructionScript /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C:SimpleConstructionScript_0
+[2018.07.05-16.40.19:919][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_2': SimpleConstructionScript /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C:SimpleConstructionScript_0
+[2018.07.05-16.40.19:919][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ProjectileBaseCollision': WeaponProjectileBulletGunModelized_C /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.Default__WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.19:920][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Sphere_GEN_VARIABLE': BlueprintGeneratedClass /Game/Prototype/Weapons/ShootingGun/WeaponProjectileBulletGunModelized.WeaponProjectileBulletGunModelized_C
+[2018.07.05-16.40.19:920][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UserConstructionScript': BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.19:920][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ShipBaseCollision': PawnShipDPS_C /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.Default__PawnShipDPS_C
+[2018.07.05-16.40.19:920][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ShipMovement': PawnShipDPS_C /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.Default__PawnShipDPS_C
+[2018.07.05-16.40.19:920][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'RotationPivot': PawnShipDPS_C /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.Default__PawnShipDPS_C
+[2018.07.05-16.40.19:920][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DefaultSceneRoot_GEN_VARIABLE': BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.19:920][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SimpleConstructionScript_0': BlueprintGeneratedClass /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C
+[2018.07.05-16.40.19:921][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_0': SimpleConstructionScript /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.PawnShipDPS_C:SimpleConstructionScript_0
+[2018.07.05-16.40.19:921][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CameraAttachmentArm': PawnShipDPS_C /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.Default__PawnShipDPS_C
+[2018.07.05-16.40.19:921][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'Model': PawnShipDPS_C /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.Default__PawnShipDPS_C
+[2018.07.05-16.40.19:921][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'HealthBarWidget': PawnShipDPS_C /Game/Prototype/Ships/SpaceShip1/PawnShipDPS.Default__PawnShipDPS_C
+[2018.07.05-16.40.19:921][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'HUD': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:921][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ExecuteUbergraph_PlayerControllerShooterUI': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:921][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_IsValid_ReturnValue': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:ExecuteUbergraph_PlayerControllerShooterUI
+[2018.07.05-16.40.19:921][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Create_ReturnValue2': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:ExecuteUbergraph_PlayerControllerShooterUI
+[2018.07.05-16.40.19:922][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_Event_ghost': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:ExecuteUbergraph_PlayerControllerShooterUI
+[2018.07.05-16.40.19:922][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'CallFunc_Create_ReturnValue': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:ExecuteUbergraph_PlayerControllerShooterUI
+[2018.07.05-16.40.19:922][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'K2Node_Event_ship': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:ExecuteUbergraph_PlayerControllerShooterUI
+[2018.07.05-16.40.19:922][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'EntryPoint': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:ExecuteUbergraph_PlayerControllerShooterUI
+[2018.07.05-16.40.19:922][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OnPossessGhost': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:922][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ghost': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:OnPossessGhost
+[2018.07.05-16.40.19:922][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OnUnPossess': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:922][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'OnPossessShip': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:923][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'ship': Function /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:OnPossessShip
+[2018.07.05-16.40.19:923][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UserConstructionScript': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:923][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UberGraphFrame': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:923][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'TransformComponent0': PlayerControllerShooterUI_C /Game/Prototype/UI/PlayerControllerShooterUI.Default__PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:923][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DefaultSceneRoot_GEN_VARIABLE': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:923][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SimpleConstructionScript_0': BlueprintGeneratedClass /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C
+[2018.07.05-16.40.19:923][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_0': SimpleConstructionScript /Game/Prototype/UI/PlayerControllerShooterUI.PlayerControllerShooterUI_C:SimpleConstructionScript_0
+[2018.07.05-16.40.19:924][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DefaultSceneRoot': BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.07.05-16.40.19:924][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'UserConstructionScript': BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.07.05-16.40.19:924][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'DefaultSceneRoot_GEN_VARIABLE': BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.07.05-16.40.19:924][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SimpleConstructionScript_0': BlueprintGeneratedClass /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C
+[2018.07.05-16.40.19:924][653]LoadErrors: Warning: CreateExport: Failed to load Outer for resource 'SCS_Node_0': SimpleConstructionScript /Game/Prototype/Game/GameModeShooterOverride.GameModeShooterOverride_C:SimpleConstructionScript_0
+[2018.07.05-16.40.25:014][254]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel' has LevelScriptBlueprint '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene' with GeneratedClass '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene_C' with ClassGeneratedBy '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene'
+[2018.07.05-16.40.25:047][254]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel' has LevelScriptBlueprint '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene' with GeneratedClass '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene_C' with ClassGeneratedBy '/Game/Prototype/Levels/Game/Arena/PrototypeScene.PrototypeScene:PersistentLevel.PrototypeScene'
+[2018.07.05-16.40.36:667][380]LogSlate: Took 0.000136 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.07.05-16.40.41:864][380]LogStaticMesh: Building static mesh Floor_400x400...
+[2018.07.05-16.40.41:896][380]LogStaticMesh: Built static mesh [0.04s] /Game/StarterContent/Architecture/Floor_400x400.Floor_400x400
+[2018.07.05-16.40.42:531][380]LogAIModule: Creating AISystem for world StarterMap
+[2018.07.05-16.40.42:804][380]Cmd: MAP LOAD FILE="../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/StarterMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.07.05-16.40.42:804][380]LightingResults: New page: Lighting Build
+[2018.07.05-16.40.42:805][380]LoadErrors: New page: Loading map: StarterMap.umap
+[2018.07.05-16.40.42:818][380]MapCheck: New page: Map Check
+[2018.07.05-16.40.42:818][380]LightingResults: New page: Lighting Build
+[2018.07.05-16.40.42:953][380]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.07.05-16.40.43:029][380]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.05-16.40.43:104][380]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 76.362ms to complete.
+[2018.07.05-16.40.43:104][380]LogFileHelpers: Loading map 'StarterMap' took 0.302
+[2018.07.05-16.40.49:547][942]LogAIModule: Creating AISystem for world Minimal_Default
+[2018.07.05-16.40.49:563][942]Cmd: MAP LOAD FILE="../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Minimal_Default.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.07.05-16.40.49:563][942]LightingResults: New page: Lighting Build
+[2018.07.05-16.40.49:564][942]LoadErrors: New page: Loading map: Minimal_Default.umap
+[2018.07.05-16.40.49:566][942]MapCheck: New page: Map Check
+[2018.07.05-16.40.49:566][942]LightingResults: New page: Lighting Build
+[2018.07.05-16.40.49:685][942]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.07.05-16.40.49:735][942]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.05-16.40.49:809][942]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 74.408ms to complete.
+[2018.07.05-16.40.49:820][942]LogFileHelpers: Loading map 'Minimal_Default' took 0.257
+[2018.07.05-16.41.00:258][964]LogAIModule: Creating AISystem for world Advanced_Lighting
+[2018.07.05-16.41.00:322][964]Cmd: MAP LOAD FILE="../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Advanced_Lighting.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.07.05-16.41.00:322][964]LightingResults: New page: Lighting Build
+[2018.07.05-16.41.00:323][964]LoadErrors: New page: Loading map: Advanced_Lighting.umap
+[2018.07.05-16.41.00:323][964]MapCheck: New page: Map Check
+[2018.07.05-16.41.00:324][964]LightingResults: New page: Lighting Build
+[2018.07.05-16.41.00:389][964]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.07.05-16.41.00:437][964]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.05-16.41.00:516][964]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 78.526ms to complete.
+[2018.07.05-16.41.00:517][964]LogFileHelpers: Loading map 'Advanced_Lighting' took 0.196
+[2018.07.05-16.41.04:661][397]LogSavePackage: Save=79.51ms
+[2018.07.05-16.41.04:661][397]LogSavePackage: Moving '../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Advanced_Lighting825255384DF9B046158024B0739F508E.tmp' to '../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Advanced_Lighting.umap'
+[2018.07.05-16.41.04:679][397]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Advanced_Lighting.umap
+[2018.07.05-16.41.04:891][397]LogSavePackage: Save=40.47ms
+[2018.07.05-16.41.04:891][397]LogSavePackage: Moving '../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Saved/Advanced_Lighting_BuiltDataC576FB564E57B50B4BB720B6281E5509.tmp' to '../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset'
+[2018.07.05-16.41.04:905][397]LogSavePackage: Display: Finished SavePackage ../../../../../../Users/user/Documents/Unreal Projects/Shooter/Shooter/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset
+[2018.07.05-16.56.02:874][599]LogTemp: Repeating last play command: Selected Viewport
+[2018.07.05-16.56.02:908][599]LogPlayLevel: PlayLevel: No blueprints needed recompiling
